@@ -1,0 +1,1 @@
+Este repositório está armazenando os slides que estou construindo para minha apresentação de qualificação do mestrado. [Veja os slides neste link.](https://github.com/csamuelsm/qualificacao/blob/main/main.pdf)
