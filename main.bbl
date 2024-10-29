@@ -1,0 +1,606 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Arajo2023}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7d2f335c2dcd957fd87c446e07b5ba17}{%
+           family={Araújo},
+           familyi={A\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=264f0a24ae73adec7090b2b389e68994}{%
+           family={Sampaio},
+           familyi={S\bibinitperiod},
+           given={Rudini},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{52445574ed9489c3611a273785cf7189}
+      \strng{fullhash}{52445574ed9489c3611a273785cf7189}
+      \strng{bibnamehash}{52445574ed9489c3611a273785cf7189}
+      \strng{authorbibnamehash}{52445574ed9489c3611a273785cf7189}
+      \strng{authornamehash}{52445574ed9489c3611a273785cf7189}
+      \strng{authorfullhash}{52445574ed9489c3611a273785cf7189}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0166-218X}
+      \field{journaltitle}{Discrete Applied Mathematics}
+      \field{month}{5}
+      \field{title}{Domination and convexity problems in the target set selection model}
+      \field{volume}{330}
+      \field{year}{2023}
+      \field{pages}{14\bibrangedash 23}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.dam.2022.12.021
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.dam.2022.12.021
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.dam.2022.12.021
+      \endverb
+    \endentry
+    \entry{barabasi2016network}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=15bacd7ddfc866c5dd96976d4b0244d5}{%
+           family={Barabási},
+           familyi={B\bibinitperiod},
+           given={Albert-László},
+           giveni={A\bibinithyphendelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5996b175b9fa8551c3fa09da65426167}{%
+           family={Pósfai},
+           familyi={P\bibinitperiod},
+           given={Márton},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{3c0a20b3e913df9584530b6efb70d6c7}
+      \strng{fullhash}{3c0a20b3e913df9584530b6efb70d6c7}
+      \strng{bibnamehash}{3c0a20b3e913df9584530b6efb70d6c7}
+      \strng{authorbibnamehash}{3c0a20b3e913df9584530b6efb70d6c7}
+      \strng{authornamehash}{3c0a20b3e913df9584530b6efb70d6c7}
+      \strng{authorfullhash}{3c0a20b3e913df9584530b6efb70d6c7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{La 4ème de couverture indique : "Networks are everywhere, from the Internet, to social networks, and the genetic networks that determine our biological existence. Illustrated throughout in full colour, this pioneering textbook, spanning a wide range of topics from physics to computer science, engineering, economics and the social sciences, introduces network science to an interdisciplinary audience. From the origins of the six degrees of separation to explaining why networks are robust to random failures, the author explores how viruses like Ebola and H1N1 spread, and why it is that our friends have more friends than we do. Using numerous real-world examples, this innovatively designed text includes clear delineation between undergraduate and graduate level material"}
+      \field{isbn}{9781107076266 1107076269}
+      \field{title}{Network science}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb http://barabasi.com/networksciencebook/
+      \endverb
+      \verb{url}
+      \verb http://barabasi.com/networksciencebook/
+      \endverb
+      \keyw{required sna snaseminar}
+    \endentry
+    \entry{Coleman1957-tv}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fe52bf156a34888d8c1bc0fecfe6c2e3}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28a8f554323c2e6c6891cec1e63dfd1f}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Elihu},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0393a33401b16037da838acf57e48552}{%
+           family={Menzel},
+           familyi={M\bibinitperiod},
+           given={Herbert},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{0dde281d231abc990826bb89cdd5c195}
+      \strng{fullhash}{0dde281d231abc990826bb89cdd5c195}
+      \strng{bibnamehash}{0dde281d231abc990826bb89cdd5c195}
+      \strng{authorbibnamehash}{0dde281d231abc990826bb89cdd5c195}
+      \strng{authornamehash}{0dde281d231abc990826bb89cdd5c195}
+      \strng{authorfullhash}{0dde281d231abc990826bb89cdd5c195}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sociometry}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{The diffusion of an innovation among physicians}
+      \field{volume}{20}
+      \field{year}{1957}
+      \field{pages}{253}
+      \range{pages}{1}
+    \endentry
+    \entry{Cordasco2023}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=af8ea8d2d9ac2e6d027b7bef0caf929b}{%
+           family={Cordasco},
+           familyi={C\bibinitperiod},
+           given={Gennaro},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=918344bf38d46f8159aea2c4bcc2142d}{%
+           family={Gargano},
+           familyi={G\bibinitperiod},
+           given={Luisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be19eadaee020cbc156aac25efe6741d}{%
+           family={Rescigno},
+           familyi={R\bibinitperiod},
+           given={Adele\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{1d46a1868e23902e309f31137f363150}
+      \strng{fullhash}{1d46a1868e23902e309f31137f363150}
+      \strng{bibnamehash}{1d46a1868e23902e309f31137f363150}
+      \strng{authorbibnamehash}{1d46a1868e23902e309f31137f363150}
+      \strng{authornamehash}{1d46a1868e23902e309f31137f363150}
+      \strng{authorfullhash}{1d46a1868e23902e309f31137f363150}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-0541}
+      \field{journaltitle}{Algorithmica}
+      \field{month}{4}
+      \field{number}{11}
+      \field{title}{Immunization in the Threshold Model: A Parameterized Complexity Study}
+      \field{volume}{85}
+      \field{year}{2023}
+      \field{pages}{3376\bibrangedash 3405}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1007/s00453-023-01118-y
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/s00453-023-01118-y
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s00453-023-01118-y
+      \endverb
+    \endentry
+    \entry{DREYER2009}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=48ff5f3affe2088a02d23f249dc4ee5c}{%
+           family={Dreyer},
+           familyi={D\bibinitperiod},
+           given={Paul\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee163961405447d024e668e702aacb2c}{%
+           family={Roberts},
+           familyi={R\bibinitperiod},
+           given={Fred\bibnamedelima S.},
+           giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e4fbadcdcdd67741c6912a8ee924bda5}
+      \strng{fullhash}{e4fbadcdcdd67741c6912a8ee924bda5}
+      \strng{bibnamehash}{e4fbadcdcdd67741c6912a8ee924bda5}
+      \strng{authorbibnamehash}{e4fbadcdcdd67741c6912a8ee924bda5}
+      \strng{authornamehash}{e4fbadcdcdd67741c6912a8ee924bda5}
+      \strng{authorfullhash}{e4fbadcdcdd67741c6912a8ee924bda5}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We will consider models of the spread of disease or opinion through social networks, represented as graphs. In our models, vertices will be in one of two states, 1 (“infected”) or 0 (“uninfected”) and change of state will take place at discrete times. After describing several such models, we will concentrate on the model, called an irreversible k-threshold process, where a vertex enters state 1 if at least k of its neighbors are in state 1, and where a vertex never leaves state 1 once it is in it. We will seek sets of vertices with the property that, if they are in state 1 at the beginning, then eventually all vertices end up in state 1. Such vertex sets correspond to vertices that can be infected with a disease or opinion so as to guarantee saturation of the population with the disease or opinion. We will also discuss ways to “defend” against such saturating sets, for example by “vaccination” or designing network topologies.}
+      \field{issn}{0166-218X}
+      \field{journaltitle}{Discrete Applied Mathematics}
+      \field{number}{7}
+      \field{title}{Irreversible k-threshold processes: Graph-theoretical threshold models of the spread of disease and of opinion}
+      \field{volume}{157}
+      \field{year}{2009}
+      \field{pages}{1615\bibrangedash 1627}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.dam.2008.09.012
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0166218X08004393
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0166218X08004393
+      \endverb
+      \keyw{Threshold models,Spread of disease,Spread of opinion,Social network,Firefighter problem}
+    \endentry
+    \entry{Flocchini2003}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=20b6ad07aadd55d6d4ef61a12de6eb2e}{%
+           family={Flocchini},
+           familyi={F\bibinitperiod},
+           given={Paola},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=baf1ebe2c6db1b86f5a9b4310f7bf229}{%
+           family={Královič},
+           familyi={K\bibinitperiod},
+           given={Rastislav},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=57e83cdd0532b183831b3126dd133a6d}{%
+           family={Ružička},
+           familyi={R\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4b4d8624aa1bfd88b180843b10d8cae}{%
+           family={Roncato},
+           familyi={R\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6be36aa685cd777bf33d24fa6a13f7c}{%
+           family={Santoro},
+           familyi={S\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{973959361d92ae6c0fdc1f8a37f2b5ae}
+      \strng{fullhash}{020bbeb6e8513ed24fe4df4a74ab6a04}
+      \strng{bibnamehash}{973959361d92ae6c0fdc1f8a37f2b5ae}
+      \strng{authorbibnamehash}{973959361d92ae6c0fdc1f8a37f2b5ae}
+      \strng{authornamehash}{973959361d92ae6c0fdc1f8a37f2b5ae}
+      \strng{authorfullhash}{020bbeb6e8513ed24fe4df4a74ab6a04}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1570-8667}
+      \field{journaltitle}{Journal of Discrete Algorithms}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{On time versus size for monotone dynamic monopolies in regular topologies}
+      \field{volume}{1}
+      \field{year}{2003}
+      \field{pages}{129\bibrangedash 150}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1016/s1570-8667(03)00022-4
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/S1570-8667(03)00022-4
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/S1570-8667(03)00022-4
+      \endverb
+    \endentry
+    \entry{Keiler2023}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=4e59477513ca8c146c651bdcd861b574}{%
+           family={Keiler},
+           familyi={K\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=404f98733d76121d04e73d3f56d6a712}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={Carlos\bibnamedelimb Vinicius\bibnamedelimb Gomes\bibnamedelima Costa},
+           giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2163e4433b978c9d69743bf574ec3fda}{%
+           family={Maia},
+           familyi={M\bibinitperiod},
+           given={Ana\bibnamedelima Karolinna},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=264f0a24ae73adec7090b2b389e68994}{%
+           family={Sampaio},
+           familyi={S\bibinitperiod},
+           given={Rudini},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f23ac7e85d8fa0e0f95c4813702523da}{%
+           family={Sau},
+           familyi={S\bibinitperiod},
+           given={Ignasi},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{ac66ff2cecfa1261dc5d691dd687d228}
+      \strng{fullhash}{432645bade0c71af74061bfc7b4226e7}
+      \strng{bibnamehash}{ac66ff2cecfa1261dc5d691dd687d228}
+      \strng{authorbibnamehash}{ac66ff2cecfa1261dc5d691dd687d228}
+      \strng{authornamehash}{ac66ff2cecfa1261dc5d691dd687d228}
+      \strng{authorfullhash}{432645bade0c71af74061bfc7b4226e7}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0166-218X}
+      \field{journaltitle}{Discrete Applied Mathematics}
+      \field{month}{10}
+      \field{title}{Target set selection with maximum activation time}
+      \field{volume}{338}
+      \field{year}{2023}
+      \field{pages}{199\bibrangedash 217}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/j.dam.2023.06.004
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.dam.2023.06.004
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.dam.2023.06.004
+      \endverb
+    \endentry
+    \entry{kempe}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=548c8439009be7e3768757c6ff4fc6d3}{%
+           family={Kempe},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e405ae3c720db1b0e447ff5b601b968f}{%
+           family={Kleinberg},
+           familyi={K\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3b65c0aec42ebdc08432a6ece3a86584}{%
+           family={Tardos},
+           familyi={T\bibinitperiod},
+           given={Éva},
+           giveni={É\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Washington, D.C.}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{7039dc176746e2d4e628b938d1c74828}
+      \strng{fullhash}{7039dc176746e2d4e628b938d1c74828}
+      \strng{bibnamehash}{7039dc176746e2d4e628b938d1c74828}
+      \strng{authorbibnamehash}{7039dc176746e2d4e628b938d1c74828}
+      \strng{authornamehash}{7039dc176746e2d4e628b938d1c74828}
+      \strng{authorfullhash}{7039dc176746e2d4e628b938d1c74828}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Models for the processes by which ideas and influence propagate through a social network have been studied in a number of domains, including the diffusion of medical and technological innovations, the sudden and widespread adoption of various strategies in game-theoretic settings, and the effects of "word of mouth" in the promotion of new products. Recently, motivated by the design of viral marketing strategies, Domingos and Richardson posed a fundamental algorithmic problem for such social network processes: if we can try to convince a subset of individuals to adopt a new product or innovation, and the goal is to trigger a large cascade of further adoptions, which set of individuals should we target?We consider this problem in several of the most widely studied models in social network analysis. The optimization problem of selecting the most influential nodes is NP-hard here, and we provide the first provable approximation guarantees for efficient algorithms. Using an analysis framework based on submodular functions, we show that a natural greedy strategy obtains a solution that is provably within 63\% of optimal for several classes of models; our framework suggests a general approach for reasoning about the performance guarantees of algorithms for these types of influence problems in social networks.We also provide computational experiments on large collaboration networks, showing that in addition to their provable guarantees, our approximation algorithms significantly out-perform node-selection heuristics based on the well-studied notions of degree centrality and distance centrality from the field of social networks.}
+      \field{booktitle}{Proceedings of the Ninth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}
+      \field{isbn}{1581137370}
+      \field{series}{KDD '03}
+      \field{title}{Maximizing the spread of influence through a social network}
+      \field{year}{2003}
+      \field{pages}{137\bibrangedash 146}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/956750.956769
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/956750.956769
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/956750.956769
+      \endverb
+      \keyw{approximation algorithms,diffusion of innovations,social networks,viral marketing}
+    \endentry
+    \entry{Marcilon2018}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f8486ce61fd4f09dd7201f14e88a41a9}{%
+           family={Marcilon},
+           familyi={M\bibinitperiod},
+           given={Thiago},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=264f0a24ae73adec7090b2b389e68994}{%
+           family={Sampaio},
+           familyi={S\bibinitperiod},
+           given={Rudini},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{aa2da4413bf290ff5f84d163fcc6e861}
+      \strng{fullhash}{aa2da4413bf290ff5f84d163fcc6e861}
+      \strng{bibnamehash}{aa2da4413bf290ff5f84d163fcc6e861}
+      \strng{authorbibnamehash}{aa2da4413bf290ff5f84d163fcc6e861}
+      \strng{authornamehash}{aa2da4413bf290ff5f84d163fcc6e861}
+      \strng{authorfullhash}{aa2da4413bf290ff5f84d163fcc6e861}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0304-3975}
+      \field{journaltitle}{Theoretical Computer Science}
+      \field{month}{1}
+      \field{title}{The maximum time of 2-neighbor bootstrap percolation: Complexity results}
+      \field{volume}{708}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.tcs.2017.10.014
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.tcs.2017.10.014
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.tcs.2017.10.014
+      \endverb
+    \endentry
+    \entry{ryan2017acceptance}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=522d6cd601963c5bbabe5a168cb852cd}{%
+           family={Ryan},
+           familyi={R\bibinitperiod},
+           given={Bryce},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9f9b3cef4d86bf212618ad364723bd50}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={Neal},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f078045642e1608baa4493331c17b2fa}
+      \strng{fullhash}{f078045642e1608baa4493331c17b2fa}
+      \strng{bibnamehash}{f078045642e1608baa4493331c17b2fa}
+      \strng{authorbibnamehash}{f078045642e1608baa4493331c17b2fa}
+      \strng{authornamehash}{f078045642e1608baa4493331c17b2fa}
+      \strng{authorfullhash}{f078045642e1608baa4493331c17b2fa}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Acceptance and diffusion of hybrid corn seed in two Iowa communities}
+      \field{year}{1950}
+    \endentry
+    \entry{SorianoPaos2022}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=c3fa252f399b5b62096ea1d3272266b2}{%
+           family={Soriano‐Paños},
+           familyi={S\bibinithyphendelim P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed917827264f5dd3034f8955ef732ab2}{%
+           family={Cota},
+           familyi={C\bibinitperiod},
+           given={Wesley},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e22a097d1e9120b76d5383f7587c302d}{%
+           family={Ferreira},
+           familyi={F\bibinitperiod},
+           given={Silvio\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3a50a51656c45b67ebd266458832b26}{%
+           family={Ghoshal},
+           familyi={G\bibinitperiod},
+           given={Gourab},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a357114624f649b1b1dedd6e3c92cbd}{%
+           family={Arenas},
+           familyi={A\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3cdd528ea6024b87e2687c1a99adf20e}{%
+           family={Gómez‐Gardeñes},
+           familyi={G\bibinithyphendelim G\bibinitperiod},
+           given={Jesús},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{8b8fa5d413a2acf87c1390c3bbe15edc}
+      \strng{fullhash}{9a786b0ed6b6b024d55ae6fb333c7410}
+      \strng{bibnamehash}{8b8fa5d413a2acf87c1390c3bbe15edc}
+      \strng{authorbibnamehash}{8b8fa5d413a2acf87c1390c3bbe15edc}
+      \strng{authornamehash}{8b8fa5d413a2acf87c1390c3bbe15edc}
+      \strng{authorfullhash}{9a786b0ed6b6b024d55ae6fb333c7410}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1521-3889}
+      \field{journaltitle}{Annalen der Physik}
+      \field{month}{3}
+      \field{number}{6}
+      \field{title}{Modeling Communicable Diseases, Human Mobility, and Epidemics: A Review}
+      \field{volume}{534}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1002/andp.202100482
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1002/andp.202100482
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1002/andp.202100482
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
