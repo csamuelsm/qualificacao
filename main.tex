@@ -694,17 +694,182 @@ Universidade Federal do Ceará}
 
 \begin{frame}{Influence Immunization Bounding (cont.)}
 	Influence Immunization Bounding was introduced by \parencite{Cordasco2023}.
+	%\begin{itemize}
+	%	\item<1-> $\W[1]$-hard parameterized by $k$ or by $l$ even if $t(v)=1 \quad \forall v \in V(G)$;
+	%	\item<1-> $\W[1]$-hard parameterized by the neighborhood diversity $nd(G)$;
+	%	\item<1-> $\W[1]$-hard parameterized by the treewidth $tw(G)$;
+	%	\item<2-> $\W[2]$-hard parameterized by $|S|+l$ even on bipartite graphs;
+	%	\item<2-> $\W[2]$-hard parameterized by $\Delta(G) + l$ even if $t(v) \leq 2 \quad \forall v \in V(G)$.
+	%	\item<3-> $\FPT$ parameterized by $k + l$;
+	%	\item<3-> $\FPT$ parameterized by $k + |S|$;
+	%	\item<3-> $\FPT$ parameterized by $min(\Delta(G), k)+tw(G)+l$;
+	%	\item<3-> $\FPT$ parameterized by $k + nd(G)$;
+	%	\item<3-> $\FPT$ parameterized by $l + nd(G)$.
+	%\end{itemize}
+	\begin{center}
+		\begin{tabular}{ c | c  c }
+			%\hline
+			\textbf{Parameter} & \textbf{Hardness} & \\
+			%\hline
+			$k$ & $\W[1]$-hard & $t(v)=1 \quad \forall v$ \\
+			$l$ & $\W[1]$-hard & $t(v)=1 \quad \forall v$ \\
+			$k+l$ & $\FPT$ &  \\
+			$|S| + l$ & $\W[2]$-hard & Bipartite graphs \\
+			$k+|S|$ & $\FPT$ & \\
+			$\Delta(G) + l$ & $\W[2]$-hard & $t(v) \leq 2 \quad \forall v$ \\
+			$tw(G)$ & $\W[1]$-hard & \\
+			$nd(G)$ & $\W[1]$-hard & \\
+			$k+nd(G)$ & $\FPT$ & \\
+			$l+nd(G)$ & $\FPT$ & \\
+			$\min(\Delta(G), k)+tw(G)+l$ & $\FPT$ & \\
+			%\hline
+		\end{tabular}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}{Influence Immunization Bounding (cont.)}
+	Let $G=(V,E)$ be a graph with thresholds $t:V(G) \rightarrow \mathbb{N}$ and seed set $S \subseteq V(G)$.
+	
+	\begin{definition}
+		Let $Y \subseteq V(G)$. If, by immunizing the vertices of $Y$, the infection in $(G, t)$ is restricted to \textbf{at most} $k$ vertices, we say that $Y$ is a \textbf{$k$-immunizing set}.
+	\end{definition}
+	
+	\begin{definition}
+		The \textbf{$k$-immunization number of $(G, t)$}, denoted by $$\text{Im}(G, t, k)$$, is size of a \textbf{mimimum $k$-immunizing set} of $(G, t)$.
+	\end{definition}
+\end{frame}
+
+\begin{frame}{Influence Immunization Bounding (cont.)}
+	
+	\begin{minipage}[t]{0.6\textwidth}
+		\onslide<1->{
+			Consider the graph on the right.
+			\begin{example}
+				$Y = \{c, h\}$ is a $3$-immunizing set of $(G, t)$.
+				
+				$\text{Im}(G, t, k=3) = 2$.
+			\end{example}
+		}
+		\onslide<2->{
+			\begin{Definition}
+				If $k = |S|$, then we say that $\text{Im}(G, t, k=|S|)$ is the \textbf{inhibition number of $(G, t)$}, and denote it by $\text{In}(G, t)$.
+			\end{Definition}
+			
+			\begin{example}
+				$\text{In}(G, t) = \text{Im}(G, t, k=3)=2$.
+			\end{example}
+		}
+		
+		\onslide<3->{
+			\begin{remark}
+				For any suitable $k$, we have that $$\text{Im}(G, t, k) \leq \text{In}(G, t)$$
+			\end{remark}
+		}
+	\end{minipage}\begin{minipage}[t]{0.4\textwidth}
+		\only<1->{
+			\begin{figure}
+				\centering
+				\tikz \graph [spring layout, nodes={draw,circle}] {
+					{[clique] a[label=above:{\textcolor{red}{1}}, fill=red], b[label=above:{\textcolor{red}{2}}], c[label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm], d[label=right:{\textcolor{red}{3}}]};
+					{[clique] c, d, e[fill=red, label=left:{\textcolor{red}{1}}], f[label=right:{\textcolor{red}{2}}]};
+					{[clique] e, f, g[label=above:{\textcolor{red}{2}}]};
+					g -- h[fill=red, label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm];
+				};
+				
+			\end{figure}
+		}
+	\end{minipage}
+	
+\end{frame}
+
+\begin{frame}{Influence Immunization Bounding (cont.)}
+	We can also define a \textbf{restricted version} of \textsc{IIB}, which we call \textsc{r-IIB}.
+	
+	\onslide<1->{
+		\noindent\makebox[\textwidth][c]{%
+			\begin{minipage}{0.70\textwidth}
+				\begin{framed}
+					\textbf{Restricted Influence Immunization Bounding} (\textsc{r-IIB})\\
+					\textit{Input}: A graph $G=(V, E)$ with thresholds $t:V(G) \rightarrow \mathbb{N}$, seed set $S \subseteq V(G)$, and $k, l \in \mathbb{N}$.\\
+					\textit{Question}: Decide whether there exists $Y \subseteq \textcolor{red}{V(G) \setminus S}$ such that $|Y| \leq l$ and $Y$ is a $k$-immunizing set of $G$.
+				\end{framed}
+		\end{minipage}}
+	}
+	
 	\begin{itemize}
-		\item<1-> $\W[1]$-hard parameterized by $k$ or by $l$ even if $t(v)=1 \quad \forall v \in V(G)$;
-		\item<1-> $\W[1]$-hard parameterized by the neighborhood diversity $nd(G)$;
-		\item<1-> $\W[1]$-hard parameterized by the treewidth $tw(G)$;
-		\item<2-> $\W[2]$-hard parameterized by $|S|+l$ even on bipartite graphs;
-		\item<2-> $\W[2]$-hard parameterized by $\Delta(G) + l$ even if $t(v) \leq 2 \quad \forall v \in V(G)$.
-		\item<3-> $\FPT$ parameterized by $k + l$;
-		\item<3-> $\FPT$ parameterized by $k + |S|$;
-		\item<3-> $\FPT$ parameterized by $min(\Delta(G), k)+tw(G)+l$;
-		\item<3-> $\FPT$ parameterized by $k + nd(G)$;
-		\item<3-> $\FPT$ parameterized by $l + nd(G)$.
+		\item \textsc{r-IIB} is also $\W[1]$-hard when parameterized by $k$ or by $l$.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Influence Immunization Bounding (cont.)}
+	
+	\begin{minipage}[t]{0.6\textwidth}
+		\only<1-2>{
+			Consider the graph on the right.
+			
+			\begin{definition}
+				$Y \subseteq V(G)$ is a \textbf{restricted $k$-immunizing set} of $(G, t)$ if $Y$ is a $k$-immunizing set of $(G, t)$ and $Y \cap S = \emptyset$.
+			\end{definition}
+			
+			\begin{itemize}
+				\item<1-> \textcolor{red}{\textbf{$Y = \{c, h\}$ is \underline{not} a restricted $k$-immunizing set of $(G, t)$.}}.
+				\item<2-> \textcolor{blue}{\textbf{$Y = \{c, g\}$ \underline{is} a restricted $k$-immunizing set of $(G, t)$.}}
+			\end{itemize}
+		}
+		
+		\only<3->{
+			\begin{definition}
+				The \textbf{restricted $k$-immunization number of $(G, t)$}, denoted by $$\text{Im}_r(G, t, k)$$, is the size of a \textbf{mimimum restricted $k$-immunizing set} of $(G, t)$.
+			\end{definition}
+			
+			\begin{itemize}
+				\item The \textbf{restricted inhibition number} $\text{In}_r(G, t)$ is analogous.
+				\item \textbf{But why study the restricted version?}
+			\end{itemize}
+			
+		}
+			
+	\end{minipage}\begin{minipage}[t]{0.4\textwidth}
+		\only<1>{
+			\begin{figure}
+				\centering
+				\tikz \graph [spring layout, nodes={draw,circle}] {
+					{[clique] a[label=above:{\textcolor{red}{1}}, fill=red], b[label=above:{\textcolor{red}{2}}], c[label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm], d[label=right:{\textcolor{red}{3}}]};
+					{[clique] c, d, e[fill=red, label=left:{\textcolor{red}{1}}], f[label=right:{\textcolor{red}{2}}]};
+					{[clique] e, f, g[label=above:{\textcolor{red}{2}}]};
+					g -- h[fill=red, label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm];
+				};
+				
+			\end{figure}
+		}
+		
+		\only<2->{
+			\begin{figure}
+				\centering
+				\tikz \graph [spring layout, nodes={draw,circle}] {
+					{[clique] a[label=above:{\textcolor{red}{1}}, fill=red], b[label=above:{\textcolor{red}{2}}], c[label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm], d[label=right:{\textcolor{red}{3}}]};
+					{[clique] c, d, e[fill=red, label=left:{\textcolor{red}{1}}], f[label=right:{\textcolor{red}{2}}]};
+					{[clique] e, f, g[label=above:{\textcolor{red}{2}}, draw=blue, line width=1mm]};
+					g -- h[fill=red, label=left:{\textcolor{red}{1}}];
+				};
+				
+			\end{figure}
+		}
+		
+	\end{minipage}
+	
+\end{frame}
+
+\begin{frame}{Influence Immunization Bounding (cont.)}
+	The restricted version gives an upper bound for the original problem.
+	
+	\begin{remark}
+		For any suitable $k$, we have that $$\text{Im}(G, t, k) \leq \text{Im}_r(G, t, k)$$
+	\end{remark}
+	
+	\begin{itemize}
+		\item<1-> A restricted $k$-immunizing set for $(G, t)$ is also a (unrestricted) $k$-immunizing set for $(G, t)$.
 	\end{itemize}
 \end{frame}
 
