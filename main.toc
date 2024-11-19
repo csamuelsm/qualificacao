@@ -4,3 +4,4 @@
 \beamer@sectionintoc {3}{Influence Immunization Bounding}{31}{0}{3}
 \beamer@sectionintoc {4}{Parameterized Complexity}{43}{0}{4}
 \beamer@sectionintoc {5}{Influence Immunization Bounding (cont.)}{59}{0}{5}
+\beamer@sectionintoc {6}{Our Results}{69}{0}{6}

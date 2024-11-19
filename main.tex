@@ -39,6 +39,8 @@
   color option=AmurmapleGreen
 }
 
+%\usepackage{cmbright}
+
 \usetheme[
 %nogauge,
 nomail,
@@ -126,6 +128,19 @@ Universidade Federal do Ceará}
 
 \bibliography{biblio.bib}
 \usefonttheme{default}
+\DeclareMathVersion{sans}
+\SetSymbolFont{operators}{sans}{OT1}{cmbr}{m}{n}
+\SetSymbolFont{letters}{sans}{OML}{cmbrm}{m}{it}
+\SetSymbolFont{symbols}{sans}{OMS}{cmbrs}{m}{n}
+\SetMathAlphabet{\mathit}{sans}{OT1}{cmbr}{m}{sl}
+\SetMathAlphabet{\mathbf}{sans}{OT1}{cmbr}{bx}{n}
+\SetMathAlphabet{\mathtt}{sans}{OT1}{cmtl}{m}{n}
+\SetSymbolFont{largesymbols}{sans}{OMX}{iwona}{m}{n}
+\sffamily\mathversion{sans}
+%\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\sfdefault}{cmbr}
+%\renewcommand{\ttdefault}{cmbr}
+%\usefonttheme{professionalfonts}
 
 \begin{document}
 
@@ -871,6 +886,54 @@ Universidade Federal do Ceará}
 	\begin{itemize}
 		\item<1-> A restricted $k$-immunizing set for $(G, t)$ is also a (unrestricted) $k$-immunizing set for $(G, t)$.
 	\end{itemize}
+\end{frame}
+
+\section{Our Results}
+
+\begin{frame}
+	\sectionpage
+\end{frame}
+
+\part{Paths and Complete Graphs with $t(v) = c$}
+
+\begin{frame}
+	\partpage
+\end{frame}
+
+\part{Polynomial Algorithm for the $k$-Immunization Number in Trees}
+
+\begin{frame}
+	\partpage
+\end{frame}
+
+\part{Polynomial Algorithm the Inhibition Number when $t(v) = 1$}
+
+\begin{frame}
+	\partpage
+\end{frame}
+
+\part{Hardness for Chordal Graphs}
+
+\begin{frame}
+	\partpage
+\end{frame}
+
+\part{Hardness for Bipartite Graphs}
+
+\begin{frame}
+	\partpage
+\end{frame}
+
+\part{Hardness for Planar Bipartite Subcubic Graphs}
+
+\begin{frame}
+	\partpage
+\end{frame}
+
+\part{Pathwidth Based Bounds}
+
+\begin{frame}
+	\partpage
 \end{frame}
 
 \end{document}
