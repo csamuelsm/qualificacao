@@ -5,3 +5,6 @@
 \beamer@sectionintoc {4}{Parameterized Complexity}{43}{0}{4}
 \beamer@sectionintoc {5}{Influence Immunization Bounding (cont.)}{59}{0}{5}
 \beamer@sectionintoc {6}{Our Results}{69}{0}{6}
+\beamer@subsectionintoc {6}{1}{A bound for paths with $t(v)=2$}{71}{1}{6}
+\beamer@subsectionintoc {6}{2}{Exact value for paths with $t(v)=2$}{74}{1}{6}
+\beamer@subsectionintoc {6}{3}{Complete graphs with $t(v)=c$}{75}{1}{6}

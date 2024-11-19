@@ -20,7 +20,7 @@
 % \hypersetup{colorlinks=true}
 
 \usepackage{tikz}
-\usetikzlibrary {graphs, graphs.standard, graphdrawing}
+\usetikzlibrary {graphs, graphs.standard, graphdrawing, fit}
 \usegdlibrary {circular}
 \usegdlibrary{force}
 \usegdlibrary{trees}
@@ -113,6 +113,8 @@ nomail,
     basicstyle=\ttfamily,
   },listing only,
 }
+
+\newtheorem{proposition}{Proposition}
 
 
 \title[Restricting infections on graph classes]{Restricting infections on graph classes}
@@ -899,6 +901,186 @@ Universidade Federal do Ceará}
 \begin{frame}
 	\partpage
 \end{frame}
+
+\subsection{A bound for paths with $t(v)=2$}
+
+\begin{frame}{Paths with $t(v)=2$}
+	
+	\begin{definition}
+		Let $G = (V, E)$ be a graph and $S \subseteq V(G)$ a seed set of $G$. Then $P = v_1 v_2 \dots v_k$ is a \textbf{$S$-alternating path} of $G$ if $P$ is a path of $G$ with \textit{at least~3 vertices} and the vertices of $P$ alternate with respect to their membership in $S$.
+	\end{definition}
+	
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}{0.45\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.8, every node/.style={circle, draw, inner sep=0pt, minimum size=6pt}]
+				\foreach \x in {0,...,4}
+				{
+					\ifodd\x
+					\node (\x) at (\x,0) [fill=white] {};
+					\else
+					\node (\x) at (\x,0) [fill=black] {};
+					\fi
+				}
+				\draw (0) -- (1) -- (2) -- (3) -- (4);
+			\end{tikzpicture}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}{0.45\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.8, every node/.style={circle, draw, inner sep=0pt, minimum size=6pt}]
+				\foreach \x in {0,...,4}
+				{
+					\ifodd\x
+					\node (\x) at (\x,0) [fill=black] {};
+					\else
+					\node (\x) at (\x,0) [fill=white] {};
+					\fi
+				}
+				\draw (0) -- (1) -- (2) -- (3) -- (4);
+			\end{tikzpicture}
+		\end{subfigure}
+	\end{figure}
+	
+\end{frame}
+
+\begin{frame}{Paths with $t(v)=2$}
+	\begin{itemize}
+		\item \textbf{Main observation:} for each $S$-alternating path of length~4, \textbf{we need only one vertex to inhibit} the infection.
+	\end{itemize}
+	
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}{0.45\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.8, every node/.style={circle, draw, inner sep=0pt, minimum size=6pt}]
+				\foreach \x in {0,...,3}
+				{
+					\ifodd\x
+					\node (\x) at (\x,0) [fill=white] {};
+					\else
+					\node (\x) at (\x,0) [fill=black] {};
+					\fi
+				}
+				\draw (0) -- (1) -- (2) -- (3);
+				
+				\node[draw=blue, rectangle, inner sep=5pt, fit=(2)] {};
+			\end{tikzpicture}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}{0.45\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.8, every node/.style={circle, draw, inner sep=0pt, minimum size=6pt}]
+				\foreach \x in {0,...,3}
+				{
+					\ifodd\x
+					\node (\x) at (\x,0) [fill=black] {};
+					\else
+					\node (\x) at (\x,0) [fill=white] {};
+					\fi
+				}
+				\draw (0) -- (1) -- (2) -- (3);
+				
+				\node[draw=blue, rectangle, inner sep=5pt, fit=(1)] {};
+			\end{tikzpicture}
+		\end{subfigure}
+		\caption{When the $S$-alternating paths has length~4, we can inhibit the infection by immunizing only one vertex.}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}{0.45\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.8, every node/.style={circle, draw, inner sep=0pt, minimum size=6pt}]
+				\foreach \x in {0,...,2}
+				{
+					\ifodd\x
+					\node (\x) at (\x,0) [fill=white] {};
+					\else
+					\node (\x) at (\x,0) [fill=black] {};
+					\fi
+				}
+				\draw (0) -- (1) -- (2);
+				
+				\node[draw=blue, rectangle, inner sep=5pt, fit=(2)] {};
+			\end{tikzpicture}
+			\caption{The infection stops by immunizing any vertex. The immunized vertex is shown in blue.}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}{0.45\textwidth}
+			\centering
+			\begin{tikzpicture}[scale=0.8, every node/.style={circle, draw, inner sep=0pt, minimum size=6pt}]
+				\foreach \x in {0,...,2}
+				{
+					\ifodd\x
+					\node (\x) at (\x,0) [fill=black] {};
+					\else
+					\node (\x) at (\x,0) [fill=white] {};
+					\fi
+				}
+				\draw (0) -- (1) -- (2);
+			\end{tikzpicture}
+			\caption{When the $S$-alternating path has length~3 and starts with a uninfected vertex, the infection does not spread.}
+			\label{subfig:3-alt-path-unin}
+		\end{subfigure}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}{Paths with $t(v)=2$}
+	\begin{itemize}
+		\item We can split the path into $S$-alternating paths of length~4.
+	\end{itemize}
+	
+	\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}[scale=0.8, every node/.style={circle, draw, inner sep=0pt, minimum size=6pt}]
+			\foreach \x in {0,...,13}
+			{
+				\ifodd\x
+				\node (\x) at (\x,0) [fill=black] {};
+				\else
+				\node (\x) at (\x,0) [fill=white] {};
+				\fi
+			}
+			\node[draw=none, inner sep=5pt] (-2) at (-2, 0) {$\dots$};
+			\node[draw=none, inner sep=5pt] (15) at (15, 0) {$\dots$};
+			\node[draw] (-1) at (-1, 0) {};
+			\node[draw, fill=black] (14) at (14, 0) {};
+			
+			\draw (-2) -- (-1) -- (0) -- (1) -- (2) -- (3) -- (4) -- (5) -- (6) -- (7) -- (8) -- (9) -- (10) -- (11) -- (12) -- (13) -- (14) -- (15);
+			
+			\node[draw=red, rectangle, fit=(1) (2) (3) (4), inner sep=5pt] {};
+			\node[draw=red, rectangle, fit=(5) (6) (7) (8), inner sep=5pt] {};
+			\node[draw=red, rectangle, fit=(9) (10) (11) (12), inner sep=5pt] {};
+			\node[draw, rectangle, fit=(0) (1) (2) (3) (4) (5) (6) (7) (8) (9) (10) (11) (12) (13), inner sep=10pt] {};
+			
+		\end{tikzpicture}
+		\caption{Splitting a bigger $S$-alternating path into pieces of length~4 starting with infected vertices.}
+		\label{fig:split-paths}
+	\end{figure}
+	
+	\begin{proposition}
+		Let $G = P_n$ with $t(v)=2$ for all $v \in V(G)$. Then, for any $k \in \mathbb{N}$, \[
+			\text{Im}(G, t, k) \leq \text{In}(G, t) \leq \lceil \frac{n}{4} \rceil
+		\]
+	\end{proposition}
+\end{frame}
+
+\subsection{Exact value for paths with $t(v)=2$}
+
+\begin{frame}{Exact value for paths with $t(v)=2$}
+	\begin{definition}
+		Let $G=(V, E)$ be a graph and $S \subseteq V(G)$ a seed set of $G$. Then:
+		\begin{itemize}
+			\item $P=v_1v_2v_3$ is a $\bullet\circ\bullet$-path if $P$ is a \textbf{maximal $S$-alternating path} of length exactly~3 such that $v_1, v_3 \in S$.
+			\item $P=v_1v_2v_3v_4$ is a $\bullet\circ\bullet\circ$-path if $P$ is a $S$-alternating path of length~4 such that $v_1, v_3 \in S$.
+		\end{itemize}
+	\end{definition}
+\end{frame}
+
+\subsection{Complete graphs with $t(v)=c$}
 
 \part{Polynomial Algorithm for the $k$-Immunization Number in Trees}
 
