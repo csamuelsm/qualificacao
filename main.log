@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.5.8)  19 NOV 2024 13:40
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.5.8)  21 NOV 2024 17:09
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1993,6 +1993,31 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ] [80
 
+] [81
+
+] [82
+
+] [83
+
+] [84
+
+] [85
+
+] [86
+
+]
+
+LaTeX Font Warning: Font shape `TU/lmss/m/scit' undefined
+(Font)              using `TU/lmss/m/sc' instead on input line 1327.
+
+[87
+
+] [88
+
+] [89
+
+] [90
+
 ]
 \tf@nav=\write7
 
@@ -2017,18 +2042,26 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53428 strings out of 477805
+ 53534 strings out of 477805
  125016,1977958 words of node,token memory allocated
- 2545 words of node memory still in use:
+ 2539 words of node memory still in use:
    34 hlist, 7 vlist, 2 rule, 1 disc, 2 local_par, 52 glue, 7 kern, 10 penalty, 
-27 glyph, 267 attribute, 77 glue_spec, 135 attribute_list, 6 write, 1 save_pos, 
+27 glyph, 265 attribute, 77 glue_spec, 134 attribute_list, 6 write, 1 save_pos, 
 48 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 5 pdf_action, 14 pdf_colorstac
 k nodes
-   avail lists: 1:10,2:6259,3:1860,4:266,5:264,6:53,7:3846,8:32,9:985,10:25,11:2
+   avail lists: 1:10,2:6266,3:1857,4:316,5:276,6:53,7:4032,8:32,9:985,10:25,11:2
 57
- 71890 multiletter control sequences out of 65536+600000
+ 71973 multiletter control sequences out of 65536+600000
  103 fonts using 7988455 bytes
- 128i,14n,134p,1715b,2160s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,14n,134p,1715b,2152s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+warning  (pdf backend): unreferenced destination with name 'cite.0@Bertossi1984-
+vk'
+
+warning  (pdf backend): unreferenced destination with name 'cite.0@Liu2009-pf'
+
+warning  (pdf backend): unreferenced destination with name 'cite.0@Dirac1961-pi'
+
 
 warning  (pdf backend): unreferenced destination with name 'cite.0@Cordasco2023'
 
@@ -2079,10 +2112,10 @@ fbright/hfbrsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/
 hfbrsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy9.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 >
-Output written on main.pdf (80 pages, 577163 bytes).
+Output written on main.pdf (90 pages, 605251 bytes).
 
-PDF statistics: 841 PDF objects out of 1000 (max. 8388607)
- 691 compressed objects within 7 object streams
- 191 named destinations out of 1000 (max. 131072)
+PDF statistics: 921 PDF objects out of 1000 (max. 8388607)
+ 760 compressed objects within 8 object streams
+ 214 named destinations out of 1000 (max. 131072)
  144 words of extra memory for PDF output out of 10000 (max. 100000000)
 

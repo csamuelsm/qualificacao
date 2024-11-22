@@ -2362,17 +2362,24 @@
     <bcf:citekey order="13">Marcilon2018</bcf:citekey>
     <bcf:citekey order="14">Arajo2023</bcf:citekey>
     <bcf:citekey order="15">Cordasco2023</bcf:citekey>
-    <bcf:citekey order="16">barabasi2016network</bcf:citekey>
-    <bcf:citekey order="17">ryan2017acceptance</bcf:citekey>
-    <bcf:citekey order="18">Coleman1957-tv</bcf:citekey>
-    <bcf:citekey order="19">SorianoPaos2022</bcf:citekey>
-    <bcf:citekey order="20">kempe</bcf:citekey>
-    <bcf:citekey order="21">DREYER2009</bcf:citekey>
-    <bcf:citekey order="22">Keiler2023</bcf:citekey>
-    <bcf:citekey order="23">Flocchini2003</bcf:citekey>
-    <bcf:citekey order="24">Marcilon2018</bcf:citekey>
-    <bcf:citekey order="25">Arajo2023</bcf:citekey>
-    <bcf:citekey order="26">Cordasco2023</bcf:citekey>
+    <bcf:citekey order="16">Dirac1961-pi</bcf:citekey>
+    <bcf:citekey order="17">Dirac1961-pi</bcf:citekey>
+    <bcf:citekey order="18">Liu2009-pf</bcf:citekey>
+    <bcf:citekey order="19">Bertossi1984-vk</bcf:citekey>
+    <bcf:citekey order="20">barabasi2016network</bcf:citekey>
+    <bcf:citekey order="21">ryan2017acceptance</bcf:citekey>
+    <bcf:citekey order="22">Coleman1957-tv</bcf:citekey>
+    <bcf:citekey order="23">SorianoPaos2022</bcf:citekey>
+    <bcf:citekey order="24">kempe</bcf:citekey>
+    <bcf:citekey order="25">DREYER2009</bcf:citekey>
+    <bcf:citekey order="26">Keiler2023</bcf:citekey>
+    <bcf:citekey order="27">Flocchini2003</bcf:citekey>
+    <bcf:citekey order="28">Marcilon2018</bcf:citekey>
+    <bcf:citekey order="29">Arajo2023</bcf:citekey>
+    <bcf:citekey order="30">Cordasco2023</bcf:citekey>
+    <bcf:citekey order="31">Dirac1961-pi</bcf:citekey>
+    <bcf:citekey order="32">Liu2009-pf</bcf:citekey>
+    <bcf:citekey order="33">Bertossi1984-vk</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

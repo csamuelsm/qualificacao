@@ -46,7 +46,7 @@
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0166-218X}
@@ -97,7 +97,7 @@
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{La 4ème de couverture indique : "Networks are everywhere, from the Internet, to social networks, and the genetic networks that determine our biological existence. Illustrated throughout in full colour, this pioneering textbook, spanning a wide range of topics from physics to computer science, engineering, economics and the social sciences, introduces network science to an interdisciplinary audience. From the origins of the six degrees of separation to explaining why networks are robust to random failures, the author explores how viruses like Ebola and H1N1 spread, and why it is that our friends have more friends than we do. Using numerous real-world examples, this innovatively designed text includes clear delineation between undergraduate and graduate level material"}
@@ -111,6 +111,43 @@
       \verb http://barabasi.com/networksciencebook/
       \endverb
       \keyw{required sna snaseminar}
+    \endentry
+    \entry{Bertossi1984-vk}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cd84af8219d5641d4971f0e09f15dcba}{%
+           family={Bertossi},
+           familyi={B\bibinitperiod},
+           given={Alan\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{cd84af8219d5641d4971f0e09f15dcba}
+      \strng{fullhash}{cd84af8219d5641d4971f0e09f15dcba}
+      \strng{bibnamehash}{cd84af8219d5641d4971f0e09f15dcba}
+      \strng{authorbibnamehash}{cd84af8219d5641d4971f0e09f15dcba}
+      \strng{authornamehash}{cd84af8219d5641d4971f0e09f15dcba}
+      \strng{authorfullhash}{cd84af8219d5641d4971f0e09f15dcba}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A dominating set of an undirected graph G is a set D of nodes such that every node of G either is in D or is adjacent to some node of D. It is shown that the problem of finding a minimum cardinality dominating set is NP-complete for split graphs (a subclass of chordal graphs) and bipartite graphs.}
+      \field{journaltitle}{Inf. Process. Lett.}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{Dominating sets for split and bipartite graphs}
+      \field{volume}{19}
+      \field{year}{1984}
+      \field{pages}{37\bibrangedash 40}
+      \range{pages}{4}
     \endentry
     \entry{Coleman1957-tv}{article}{}
       \name{author}{3}{}{%
@@ -145,7 +182,7 @@
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Sociometry}
@@ -191,7 +228,7 @@
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1432-0541}
@@ -212,6 +249,43 @@
       \verb{url}
       \verb http://dx.doi.org/10.1007/s00453-023-01118-y
       \endverb
+    \endentry
+    \entry{Dirac1961-pi}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d1924e7f9e34c8344a3120de52c8ec6b}{%
+           family={Dirac},
+           familyi={D\bibinitperiod},
+           given={G\bibnamedelima A},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{d1924e7f9e34c8344a3120de52c8ec6b}
+      \strng{fullhash}{d1924e7f9e34c8344a3120de52c8ec6b}
+      \strng{bibnamehash}{d1924e7f9e34c8344a3120de52c8ec6b}
+      \strng{authorbibnamehash}{d1924e7f9e34c8344a3120de52c8ec6b}
+      \strng{authornamehash}{d1924e7f9e34c8344a3120de52c8ec6b}
+      \strng{authorfullhash}{d1924e7f9e34c8344a3120de52c8ec6b}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Abh. Math. Semin. Univ. Hambg.}
+      \field{month}{4}
+      \field{number}{1-2}
+      \field{title}{On rigid circuit graphs}
+      \field{volume}{25}
+      \field{year}{1961}
+      \field{pages}{71\bibrangedash 76}
+      \range{pages}{6}
     \endentry
     \entry{DREYER2009}{article}{}
       \name{author}{2}{}{%
@@ -237,7 +311,7 @@
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We will consider models of the spread of disease or opinion through social networks, represented as graphs. In our models, vertices will be in one of two states, 1 (“infected”) or 0 (“uninfected”) and change of state will take place at discrete times. After describing several such models, we will concentrate on the model, called an irreversible k-threshold process, where a vertex enters state 1 if at least k of its neighbors are in state 1, and where a vertex never leaves state 1 once it is in it. We will seek sets of vertices with the property that, if they are in state 1 at the beginning, then eventually all vertices end up in state 1. Such vertex sets correspond to vertices that can be infected with a disease or opinion so as to guarantee saturation of the population with the disease or opinion. We will also discuss ways to “defend” against such saturating sets, for example by “vaccination” or designing network topologies.}
@@ -305,7 +379,7 @@
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1570-8667}
@@ -372,7 +446,7 @@
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0166-218X}
@@ -429,7 +503,7 @@
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Models for the processes by which ideas and influence propagate through a social network have been studied in a number of domains, including the diffusion of medical and technological innovations, the sudden and widespread adoption of various strategies in game-theoretic settings, and the effects of "word of mouth" in the promotion of new products. Recently, motivated by the design of viral marketing strategies, Domingos and Richardson posed a fundamental algorithmic problem for such social network processes: if we can try to convince a subset of individuals to adopt a new product or innovation, and the goal is to trigger a large cascade of further adoptions, which set of individuals should we target?We consider this problem in several of the most widely studied models in social network analysis. The optimization problem of selecting the most influential nodes is NP-hard here, and we provide the first provable approximation guarantees for efficient algorithms. Using an analysis framework based on submodular functions, we show that a natural greedy strategy obtains a solution that is provably within 63\% of optimal for several classes of models; our framework suggests a general approach for reasoning about the performance guarantees of algorithms for these types of influence problems in social networks.We also provide computational experiments on large collaboration networks, showing that in addition to their provable guarantees, our approximation algorithms significantly out-perform node-selection heuristics based on the well-studied notions of degree centrality and distance centrality from the field of social networks.}
@@ -450,6 +524,49 @@
       \verb https://doi.org/10.1145/956750.956769
       \endverb
       \keyw{approximation algorithms,diffusion of innovations,social networks,viral marketing}
+    \endentry
+    \entry{Liu2009-pf}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6cc6412880753e91c8777499c6cfc1e8}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chunmei},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=72cf762f2daf5a1f954147d13e8ddc7d}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Yinglei},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{8b3c932016936d72f8cdf88cf1d31af4}
+      \strng{fullhash}{8b3c932016936d72f8cdf88cf1d31af4}
+      \strng{bibnamehash}{8b3c932016936d72f8cdf88cf1d31af4}
+      \strng{authorbibnamehash}{8b3c932016936d72f8cdf88cf1d31af4}
+      \strng{authornamehash}{8b3c932016936d72f8cdf88cf1d31af4}
+      \strng{authorfullhash}{8b3c932016936d72f8cdf88cf1d31af4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Comb. Optim.}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{Parameterized dominating set problem in chordal graphs: complexity and lower bound}
+      \field{volume}{18}
+      \field{year}{2009}
+      \field{pages}{87\bibrangedash 97}
+      \range{pages}{11}
     \endentry
     \entry{Marcilon2018}{article}{}
       \name{author}{2}{}{%
@@ -478,7 +595,7 @@
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0304-3975}
@@ -523,7 +640,7 @@
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Acceptance and diffusion of hybrid corn seed in two Iowa communities}
@@ -580,7 +697,7 @@
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1521-3889}

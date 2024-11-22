@@ -1100,6 +1100,234 @@ Universidade Federal do Ceará}
 	\partpage
 \end{frame}
 
+\begin{frame}{Hardness for Chordal Graphs}
+	\begin{definition}
+		A graph $G$ is \textit{chordal} if every cycle $C$ of length at least~4 in $G$ has a \textit{chord}: an edge between no consecutive vertices of $C$.
+	\end{definition}
+	
+	\begin{minipage}[c]{0.5\textwidth}
+	
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+				a -- b -- {[clique] c, d, e};
+				e -- f;
+				d -- f;
+			};		
+		\end{figure}
+	
+	\end{minipage}\begin{minipage}[c]{0.5\textwidth}
+		
+		Chordal graphs are a superclass of several important graph classes:
+		\begin{itemize}
+			\item Trees;
+			\item Split Graphs;
+			\item Interval Graphs.
+		\end{itemize}
+		
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Hardness for Chordal Graphs}
+	\begin{definition}
+		Given a graph $G$, a vertex $v \in V(G)$ is a \textit{simplicial vertex} of $G$ if $N_G(v)$ is a clique.
+	\end{definition}
+	
+	\begin{definition}
+		Given a graph $G$, an ordering $v_1, \dots, v_n$ of $V(G)$
+		is a \textit{perfect elimination ordering} if for all $i \in [n]$, $v_i$ is a simplicial vertex of $G[\{v_1, \dots, v_i\}]$.
+	\end{definition}
+	
+	\only<1>{	
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+				a[draw=blue, thick] -- b[draw=red];
+				b -- c;
+				b -- d;
+				b -- e;
+				c -- d;
+				c -- e;
+				d -- e;
+				e -- f;
+				d -- f;
+			};		
+		\end{figure}	
+	}
+	
+	\only<2>{	
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+				a[draw=none, color=white] --[white] b[draw=blue, thick];
+				b -- c[draw=red];
+				b -- d[draw=red];
+				b -- e[draw=red];
+				c --[red] d;
+				c --[red] e;
+				d --[red] e;
+				e -- f;
+				d -- f;
+			};		
+		\end{figure}	
+	}
+	
+	\only<3>{	
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+				a[draw=none, color=white] --[white] b[draw=none, color=white];
+				b --[white] c[draw=blue, thick];
+				b --[white] d[draw=red];
+				b --[white] e[draw=red];
+				c -- d;
+				c -- e;
+				d --[red] e;
+				e -- f;
+				d -- f;
+			};		
+		\end{figure}	
+	}
+	
+	\only<4>{	
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+				a[draw=none, color=white] --[white] b[draw=none, color=white];
+				b --[white] c[draw=none, color=white];
+				b --[white] d[draw=blue, thick];
+				b --[white] e[draw=red];
+				c --[white] d;
+				c --[white] e;
+				d -- e;
+				e --[red] f[draw=red];
+				d -- f;
+			};		
+		\end{figure}	
+	}
+	
+	\only<5>{	
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+				a[draw=none, color=white] --[white] b[draw=none, color=white];
+				b --[white] c[draw=none, color=white];
+				b --[white] d[draw=none, color=white];
+				b --[white] e[draw=blue, thick];
+				c --[white] d;
+				c --[white] e;
+				d --[white] e;
+				e -- f[draw=red];
+				d --[white] f;
+			};		
+		\end{figure}	
+	}
+	
+	\only<6>{	
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+				a[draw=none, color=white] --[white] b[draw=none, color=white];
+				b --[white] c[draw=none, color=white];
+				b --[white] d[draw=none, color=white];
+				b --[white] e[draw=none, color=white];
+				c --[white] d;
+				c --[white] e;
+				d --[white] e;
+				e --[white] f[draw=blue, thick];
+				d --[white] f;
+			};		
+		\end{figure}	
+	}
+	
+	\begin{itemize}
+		\item Perfect elimination ordering: $f, e, d, c, b, a$.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Hardness for Chordal Graphs}
+	\begin{theorem}[\cite{Dirac1961-pi}]
+		A graph $G$ is chordal if and only if $G$ has a perfect elimination ordering.
+	\end{theorem}
+	
+	\begin{theorem}[\cite{Dirac1961-pi}]
+		Let $G$ be a graph. If $G$ is chordal and not complete, then $G$ has two non-adjacent simplicial vertices.
+	\end{theorem}
+	
+\end{frame}
+
+\begin{frame}{Hardness for Chordal Graphs}
+	\begin{definition}
+		Given a graph $G$, a set $D \subseteq V(G)$ is a \textit{dominating set} if every vertex from $V(G) \setminus D$ has at least one neighbor in $D$.
+	\end{definition}
+	
+	\begin{minipage}[c]{0.45\textwidth}
+	
+	\begin{figure}
+		\centering
+		\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+			a -- b[fill=black, text=white];
+			b -- c;
+			b -- d;
+			b -- e;
+			c -- d;
+			c -- e;
+			d -- e;
+			e -- f[fill=black, text=white];
+			d -- f;
+		};		
+	\end{figure}
+	
+	\end{minipage}\begin{minipage}[c]{0.55\textwidth}
+		\textsc{$k$-Dominating Set} is:
+		\begin{itemize}
+			\item $\W[1]$-hard for chordal graphs parameterized by $k$ \parencite{Liu2009-pf};
+			\item $\NP$-hard for split graphs \parencite{Bertossi1984-vk}.
+		\end{itemize}
+	\end{minipage}
+	
+\end{frame}
+
+\begin{frame}{Hardness for Chordal Graphs}
+	
+	\begin{proposition}
+		\textsc{Influence Immunization Bounding} is $\W[1]$-hard parameterized by the maximum number of infected vertices $k$ on chordal graphs. Moreover, it is $\NP$-complete on split graphs.
+	\end{proposition}
+	
+	\begin{minipage}[c]{0.50\textwidth}
+		\only<1>{
+			\begin{figure}
+				\centering
+				\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+					a -- b;
+					b -- c;
+					b -- d;
+					b -- e;
+					c -- d;
+					c -- e;
+					d -- e;
+					e -- f;
+					d -- f;
+				};		
+			\end{figure}
+			\begin{itemize}
+				\item $S = \emptyset$;
+				\item $U = \emptyset$;
+			\end{itemize}
+		}
+	\end{minipage}\begin{minipage}[c]{0.50\textwidth}
+		Let $\langle G, k \rangle$ be an instance of \textsc{$k$-Dominating Set} in which $G$ is chordal.
+		\begin{enumerate}
+			\item Initialize $S = \emptyset$ and $U = \emptyset$;
+			\item Find a simplicial vertex $s$ of $G$;
+			\item Update $S = S \cup N_G(s)$ and $U = U \cup \{s\}$;
+			\item Define $t(s) = d_G(s)$;
+			\item Repeat steps (2-5) on $G - N_G[s]$.
+		\end{enumerate}
+	\end{minipage}
+	
+\end{frame}
+
 \part{Hardness for Bipartite Graphs}
 
 \begin{frame}
