@@ -710,7 +710,8 @@ Universidade Federal do Ceará}
 \section{Influence Immunization Bounding (cont.)}
 
 \begin{frame}{Influence Immunization Bounding (cont.)}
-	Influence Immunization Bounding was introduced by \parencite{Cordasco2023}.
+	\fullcite{Cordasco2023}
+	%Influence Immunization Bounding was introduced by \parencite{Cordasco2023}.
 	%\begin{itemize}
 	%	\item<1-> $\W[1]$-hard parameterized by $k$ or by $l$ even if $t(v)=1 \quad \forall v \in V(G)$;
 	%	\item<1-> $\W[1]$-hard parameterized by the neighborhood diversity $nd(G)$;
@@ -742,6 +743,8 @@ Universidade Federal do Ceará}
 			%\hline
 		\end{tabular}
 	\end{center}
+	
+	
 	
 \end{frame}
 
@@ -1246,12 +1249,17 @@ Universidade Federal do Ceará}
 \end{frame}
 
 \begin{frame}{Hardness for Chordal Graphs}
+	
 	\begin{theorem}[\cite{Dirac1961-pi}]
 		A graph $G$ is chordal if and only if $G$ has a perfect elimination ordering.
 	\end{theorem}
 	
 	\begin{theorem}[\cite{Dirac1961-pi}]
 		Let $G$ be a graph. If $G$ is chordal and not complete, then $G$ has two non-adjacent simplicial vertices.
+	\end{theorem}
+
+	\begin{theorem}[\cite{Dirac1961-pi}]
+		If a graph $G$ is chordal, then any induced subgraph of $G$ is chordal.
 	\end{theorem}
 	
 \end{frame}
@@ -1315,17 +1323,126 @@ Universidade Federal do Ceará}
 				\item $U = \emptyset$;
 			\end{itemize}
 		}
+		\only<2>{
+			\begin{figure}
+				\centering
+				\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+					a[draw=blue, thick] -- b[fill=red];
+					b -- c;
+					b -- d;
+					b -- e;
+					c -- d;
+					c -- e;
+					d -- e;
+					e -- f;
+					d -- f;
+				};		
+			\end{figure}
+			\begin{itemize}
+				\item $S = \{b\}$;
+				\item $U = \{a\}$;
+			\end{itemize}
+		}
+		\only<3>{
+			\begin{figure}
+				\centering
+				\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+					a[opacity=0.3] --[opacity=0.3] b[fill=red,opacity=0.3];
+					b --[opacity=0.3] c[draw=blue, thick];
+					b --[opacity=0.3] d[fill=red];
+					b --[opacity=0.3] e[fill=red];
+					c -- d;
+					c -- e;
+					d -- e;
+					e -- f;
+					d -- f;
+				};		
+			\end{figure}
+			\begin{itemize}
+				\item $S = \{b, d, e\}$;
+				\item $U = \{a, c\}$;
+			\end{itemize}
+		}
+		\only<4>{
+			\begin{figure}
+				\centering
+				\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+					a[opacity=0.3] --[opacity=0.3] b[fill=red,opacity=0.3];
+					b --[opacity=0.3] c[opacity=0.3];
+					b --[opacity=0.3] d[fill=red, opacity=0.3];
+					b --[opacity=0.3] e[fill=red, opacity=0.3];
+					c --[opacity=0.3] d;
+					c --[opacity=0.3] e;
+					d --[opacity=0.3] e;
+					e --[opacity=0.3] f[draw=blue, thick];
+					d --[opacity=0.3] f;
+				};		
+			\end{figure}
+			\begin{itemize}
+				\item $S = \{b, d, e\}$;
+				\item $U = \{a, c, f\}$;
+			\end{itemize}
+		}
+		\only<5>{
+			\begin{figure}
+				\centering
+				\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+					a[label=above:{\textcolor{red}{1}}] -- b[fill=red];
+					b -- c[label=above:{\textcolor{red}{3}}];
+					b -- d[fill=red];
+					b -- e[fill=red];
+					c -- d;
+					c -- e;
+					d -- e;
+					e -- f[label=above:{\textcolor{red}{2}}];
+					d -- f;
+				};		
+			\end{figure}
+			\begin{itemize}
+				\item $S = \{b, d, e\}$;
+				\item $U = \{a, c, f\}$;
+			\end{itemize}
+		}
 	\end{minipage}\begin{minipage}[c]{0.50\textwidth}
 		Let $\langle G, k \rangle$ be an instance of \textsc{$k$-Dominating Set} in which $G$ is chordal.
 		\begin{enumerate}
 			\item Initialize $S = \emptyset$ and $U = \emptyset$;
 			\item Find a simplicial vertex $s$ of $G$;
 			\item Update $S = S \cup N_G(s)$ and $U = U \cup \{s\}$;
-			\item Define $t(s) = d_G(s)$;
-			\item Repeat steps (2-5) on $G - N_G[s]$.
+			\item Repeat steps (2-5) on $G[V(G) \setminus N_G[s]]$.
+			%\item For each $v \in U$, define $t(v) = |N_G(v) \cap S|$;
+			\item Define $t(v) = d_G(v)$ for all $v$;
 		\end{enumerate}
 	\end{minipage}
 	
+\end{frame}
+
+\begin{frame}{Hardness for Chordal Graphs}
+	
+	\begin{itemize}
+		\item \textcolor{red}{\textbf{$G$ has a dominating set of size $\leq k$ if and only if $(G, t, S)$ has a $|S|$-imunizing set of size $\leq k$.}}
+	\end{itemize}
+	
+	%\begin{minipage}[c]{0.50\textwidth}
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}, horizontal'=a to f] {
+				a[label=above:{\textcolor{red}{1}}] -- b[fill=red, very thick, draw=blue];
+				b -- c[label=above:{\textcolor{red}{3}}];
+				b -- d[fill=red];
+				b -- e[fill=red];
+				c -- d;
+				c -- e;
+				d -- e;
+				e -- f[label=above:{\textcolor{red}{2}}, very thick, draw=blue];
+				d -- f;
+			};		
+		\end{figure}
+	%\end{minipage}\begin{minipage}[c]{0.50\textwidth}
+	%\end{minipage}
+	\begin{itemize}
+		\item We conclude that \textsc{IIB} is $\W[1]$-hard for chordal graphs parameterized by $k$, and also $\NP$-complete for split graphs.
+	\end{itemize}
 \end{frame}
 
 \part{Hardness for Bipartite Graphs}
@@ -1344,6 +1461,10 @@ Universidade Federal do Ceará}
 
 \begin{frame}
 	\partpage
+\end{frame}
+
+\begin{frame}[noframenumbering,plain,allowframebreaks]{References}
+	\printbibliography[heading=none]
 \end{frame}
 
 \end{document}

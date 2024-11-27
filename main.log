@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.5.8)  21 NOV 2024 17:09
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.5.8)  27 NOV 2024 18:55
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1869,19 +1869,19 @@ LaTeX Font Warning: Font shape `TU/lmss/bx/sc' undefined
 ] [60
 
 ]
-Overfull \vbox (5.71176pt too high) detected at line 801
+Overfull \vbox (5.71176pt too high) detected at line 804
  []
 
 [61
 
 ]
-Overfull \vbox (5.71176pt too high) detected at line 801
+Overfull \vbox (5.71176pt too high) detected at line 804
  []
 
 [62
 
 ]
-Overfull \vbox (5.71176pt too high) detected at line 801
+Overfull \vbox (5.71176pt too high) detected at line 804
  []
 
 [63
@@ -1897,7 +1897,7 @@ Overfull \vbox (5.71176pt too high) detected at line 801
 ] [68
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 897--897
+Underfull \hbox (badness 10000) in paragraph at lines 900--900
  [][]\TU/lmss/m/n/20.74 Sec-tion 6: [][]\TU/lmss/bx/n/20.74 Our Re-sults[][]
  []
 
@@ -1906,82 +1906,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 897--897
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 899.
+(hyperref)                removing `math shift' on input line 902.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 899.
+(hyperref)                removing `math shift' on input line 902.
 
 [70
 
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 905.
+(hyperref)                than one, level fixed on input line 908.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 905.
+(hyperref)                removing `math shift' on input line 908.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 905.
+(hyperref)                removing `math shift' on input line 908.
 
 [71
 
 ] [72
 
 ]
-Overfull \hbox (2.69711pt too wide) in paragraph at lines 1069--1069
+Overfull \hbox (2.69711pt too wide) in paragraph at lines 1072--1072
  [] 
  []
 
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 1069.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 1072.
 
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 1069.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 1072.
 
 [73
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1071.
+(hyperref)                removing `math shift' on input line 1074.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1071.
+(hyperref)                removing `math shift' on input line 1074.
 
 [74
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1083.
+(hyperref)                removing `math shift' on input line 1086.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1083.
+(hyperref)                removing `math shift' on input line 1086.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1085.
+(hyperref)                removing `math shift' on input line 1088.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1085.
+(hyperref)                removing `math shift' on input line 1088.
 
 [75
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1091.
+(hyperref)                removing `math shift' on input line 1094.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1091.
+(hyperref)                removing `math shift' on input line 1094.
 
 [76
 
@@ -2008,15 +2008,53 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 LaTeX Font Warning: Font shape `TU/lmss/m/scit' undefined
-(Font)              using `TU/lmss/m/sc' instead on input line 1327.
+(Font)              using `TU/lmss/m/sc' instead on input line 1418.
 
 [87
 
-] [88
+]
 
-] [89
+LaTeX Font Warning: Font shape `TU/lmss/m/scit' undefined
+(Font)              using `TU/lmss/m/sc' instead on input line 1418.
 
-] [90
+[88
+
+]
+
+LaTeX Font Warning: Font shape `TU/lmss/m/scit' undefined
+(Font)              using `TU/lmss/m/sc' instead on input line 1418.
+
+[89
+
+]
+
+LaTeX Font Warning: Font shape `TU/lmss/m/scit' undefined
+(Font)              using `TU/lmss/m/sc' instead on input line 1418.
+
+[90
+
+]
+
+LaTeX Font Warning: Font shape `TU/lmss/m/scit' undefined
+(Font)              using `TU/lmss/m/sc' instead on input line 1418.
+
+[91
+
+] [92
+
+] [93
+
+] [94
+
+] [95
+
+] [96
+
+</usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [97
+
+
+] [98
+
 
 ]
 \tf@nav=\write7
@@ -2042,80 +2080,43 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53534 strings out of 477805
+ 53673 strings out of 477805
  125016,1977958 words of node,token memory allocated
- 2539 words of node memory still in use:
-   34 hlist, 7 vlist, 2 rule, 1 disc, 2 local_par, 52 glue, 7 kern, 10 penalty, 
-27 glyph, 265 attribute, 77 glue_spec, 134 attribute_list, 6 write, 1 save_pos, 
-48 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 5 pdf_action, 14 pdf_colorstac
-k nodes
-   avail lists: 1:10,2:6266,3:1857,4:316,5:276,6:53,7:4032,8:32,9:985,10:25,11:2
-57
- 71973 multiletter control sequences out of 65536+600000
- 103 fonts using 7988455 bytes
+ 11137 words of node memory still in use:
+   40 hlist, 7 vlist, 12 rule, 60 disc, 6 local_par, 8 math, 239 glue, 52 kern, 
+76 penalty, 777 glyph, 483 attribute, 77 glue_spec, 243 attribute_list, 9 write,
+ 4 pdf_start_link, 4 pdf_end_link, 4 pdf_dest, 8 pdf_action, 50 pdf_colorstack n
+odes
+   avail lists: 1:10,2:5955,3:1834,4:298,5:248,6:62,7:5885,8:73,9:969,10:25,11:2
+80
+ 72096 multiletter control sequences out of 65536+600000
+ 104 fonts using 8114543 bytes
  128i,14n,134p,1715b,2152s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@Bertossi1984-
-vk'
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@Liu2009-pf'
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@Dirac1961-pi'
-
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@Cordasco2023'
-
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@Arajo2023'
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@Marcilon2018'
-
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@Flocchini2003
-'
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@Keiler2023'
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@DREYER2009'
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@kempe'
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@SorianoPaos20
-22'
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@Coleman1957-t
-v'
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@ryan2017accep
-tance'
-
-warning  (pdf backend): unreferenced destination with name 'cite.0@barabasi2016n
-etwork'
 </usr/share/texmf/fonts/opentype/public/lm/lmsans12-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmsans17-regular.otf></usr/share/texmf/fonts/opentype
-/public/lm/lmromancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/
-lmsans9-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/fontawe
-some5/FontAwesome5Free-Solid-900.otf></usr/share/texmf/fonts/opentype/public/lm/
-lmsans10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique
-.otf></usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/
-texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentyp
-e/public/lm/lmsans8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr17.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/hfbright/hfbr9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/hfbright/hfbrmi10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/hfbright/hfbrmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/hfbright/hfbrmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/h
-fbright/hfbrsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/
-hfbrsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy9.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
->
-Output written on main.pdf (90 pages, 605251 bytes).
+/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmrom
+ancaps10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans9-regular.
+otf></usr/share/texlive/texmf-dist/fonts/opentype/public/fontawesome5/FontAwesom
+e5Free-Solid-900.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-regular
+.otf></usr/share/texmf/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share
+/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/open
+type/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmsa
+ns8-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr17.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/hfbright/hfbr9.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/hfbright/hfbrmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/hfbright/hfbrmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright
+/hfbrmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy9.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (98 pages, 637466 bytes).
 
-PDF statistics: 921 PDF objects out of 1000 (max. 8388607)
- 760 compressed objects within 8 object streams
- 214 named destinations out of 1000 (max. 131072)
+PDF statistics: 1010 PDF objects out of 1200 (max. 8388607)
+ 834 compressed objects within 9 object streams
+ 230 named destinations out of 1000 (max. 131072)
  144 words of extra memory for PDF output out of 10000 (max. 100000000)
 

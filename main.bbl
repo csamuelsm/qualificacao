@@ -243,12 +243,6 @@
       \verb{doi}
       \verb 10.1007/s00453-023-01118-y
       \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1007/s00453-023-01118-y
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1007/s00453-023-01118-y
-      \endverb
     \endentry
     \entry{Dirac1961-pi}{article}{}
       \name{author}{1}{}{%
