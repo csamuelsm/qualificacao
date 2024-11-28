@@ -20,7 +20,7 @@
 % \hypersetup{colorlinks=true}
 
 \usepackage{tikz}
-\usetikzlibrary {graphs, graphs.standard, graphdrawing, fit, arrows.meta}
+\usetikzlibrary {graphs, graphs.standard, graphdrawing, fit, arrows.meta, positioning, calc, decorations.pathmorphing, shapes}
 \usegdlibrary {layered} 
 \usegdlibrary {circular}
 \usegdlibrary{force}
@@ -1105,11 +1105,11 @@ Universidade Federal do Ceará}
 	\partpage
 \end{frame}
 
-\part{Polynomial Algorithm the Inhibition Number when $t(v) = 1$}
-
-\begin{frame}
-	\partpage
-\end{frame}
+%\part{Polynomial Algorithm the Inhibition Number when $t(v) = 1$}
+%
+%\begin{frame}
+%	\partpage
+%\end{frame}
 
 \part{Hardness for Chordal Graphs}
 
@@ -1313,7 +1313,7 @@ Universidade Federal do Ceará}
 \begin{frame}{Hardness for Chordal Graphs}
 	
 	\begin{proposition}
-		\textsc{Influence Immunization Bounding} is $\W[1]$-hard parameterized by the maximum number of infected vertices $k$ on chordal graphs. Moreover, it is $\NP$-complete on split graphs.
+		\textsc{Influence Immunization Bounding} is $\W[1]$-hard parameterized by the maximum number of immunized vertices $l$ on chordal graphs. Moreover, it is $\NP$-complete on split graphs.
 	\end{proposition}
 	
 	\begin{minipage}[c]{0.50\textwidth}
@@ -1434,7 +1434,7 @@ Universidade Federal do Ceará}
 \begin{frame}{Hardness for Chordal Graphs}
 	
 	\begin{itemize}
-		\item \textcolor{red}{\textbf{$G$ has a dominating set of size $\leq k$ if and only if $(G, t, S)$ has a $|S|$-imunizing set of size $\leq k$.}}
+		\item \textcolor{red}{\textbf{$G$ has a dominating set of size $\leq k$ if and only if $(G, t, S)$ has a $|S|$-imunizing set of size $\leq l = k$.}}
 	\end{itemize}
 	
 	%\begin{minipage}[c]{0.50\textwidth}
@@ -1455,7 +1455,7 @@ Universidade Federal do Ceará}
 	%\end{minipage}\begin{minipage}[c]{0.50\textwidth}
 	%\end{minipage}
 	\begin{itemize}
-		\item We conclude that \textsc{IIB} is $\W[1]$-hard for chordal graphs parameterized by $k$, and also $\NP$-complete for split graphs.
+		\item We conclude that \textsc{IIB} is $\W[1]$-hard for chordal graphs parameterized by $l$, and also $\NP$-complete for split graphs.
 	\end{itemize}
 \end{frame}
 
@@ -1463,6 +1463,191 @@ Universidade Federal do Ceará}
 
 \begin{frame}
 	\partpage
+\end{frame}
+
+\begin{frame}{Hardness for Bipartite Graphs}
+	\begin{minipage}{.45\textwidth}
+		\cite{Cordasco2023} showed that \textsc{IIB} is $\W[2]$-hard parameterized by $|S|+l$ even on bipartite graphs.
+		\begin{itemize}
+			\item Their graph looked like this. \textbf{The part $B$ has mixed susceptible and infected vertices.}
+		\end{itemize}
+		\begin{proposition}
+			\textsc{IIB} is $\NP$-complete on bipartite graphs even if $A$ is entirely susceptible and $B$ is entirely infected.
+		\end{proposition}
+	\end{minipage}\begin{minipage}{.55\textwidth}
+		\begin{figure}[h]
+			\centering
+			\resizebox{.6\linewidth}{!}{\begin{tikzpicture}[thick,
+				every node/.style={draw,circle},
+				label distance=-1mm,
+				every fit/.style={ellipse,draw,inner sep=-2pt,text width=2cm},
+				]
+				
+				\node[label={[text=red]left:$1$}] (0) at (0, 0) {};
+				\node[label={[text=red]left:$1$}] (1) [below of=0] {};
+				\node[label={[text=red]left:$1$}] (2) [below of=1] {};
+				\node[draw=none] (3) [below of=2] {$\vdots$};
+				\node[label={[text=red]left:$1$}] (4) [below of=3] {};
+				
+				\node[fit=(0) (4), label=above:$A$] (f1) {};
+				
+				\node[fill=black] (5) at (5, 1.5) {};
+				\node[fill=black] (6) [below of=5] {};
+				\node[draw=none] (8) [below of=6] {$\vdots$};
+				\node[fill=black] (9) [below of=8] {};
+				
+				\node[label={[text=red]right:$t_1$}] (10) [below of=9] {};
+				\node[draw=none] (11) [below of=10] {$\vdots$};
+				\node[label={[text=red]right:$t_{k-1}$}] (12) [below of=11] {};
+				\node[label={[text=red]right:$t_{k}$}] (13) [below of=12] {};
+				
+				\draw[-] (3.7, -2) -- (6.3, -2);
+				
+				\node[fit=(5) (13), label=above:$B$] (f2) {};
+				
+				\draw[-] (0) -- (5);
+				\draw[-] (0) -- (6);
+				\draw[-] (0) -- (9);
+				\draw[-] (1) -- (5);
+				\draw[-] (1) -- (6);
+				\draw[-] (1) -- (9);
+				\draw[-] (2) -- (5);
+				\draw[-] (2) -- (6);
+				\draw[-] (2) -- (9);
+				\draw[-] (4) -- (5);
+				\draw[-] (4) -- (6);
+				\draw[-] (4) -- (9);
+				
+				\draw[-] (4) -- (13);
+				\draw[-] (4) -- (10);
+				\draw[-] (2) -- (12);
+				\draw[-] (1) -- (10);
+				\draw[-] (1) -- (13);
+				\draw[-] (0) -- (13);
+				
+			\end{tikzpicture}}
+		\end{figure}
+	\end{minipage}
+\end{frame}
+
+\begin{frame}{Hardness for Bipartite Graphs}
+	\begin{itemize}
+		\item On the \textsc{Set Cover} problem, we are given a universe set $\mathcal{U} = \{a_1, a_2, \dots, a_n\}$, a collection $\mathcal{S} = \{S_1, S_2, \dots, S_m\}$ of subsets of $\mathcal{U}$, and a parameter $c \in \mathbb{N}$, and the goal is to find $C \subset \mathcal{S}$ such that $|C| \leq c$ and the union of all sets in $C$ is equal to $\mathcal{U}$.
+	\end{itemize}
+	\begin{enumerate}
+		\item Create a bipartite graph $G$ such that $V(G) = \mathcal{U} \cup \mathcal{S}$ and $E(G) = \{a_iS_j \mid a_i \in S_j\}$;
+		\item Define $k = |\mathcal{S}|$, $l = c$, and set the seed set $S = \mathcal{S}$;
+		\item Set $t(a_i) = d_G(a_i)$, for all $i \in [n]$.
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Hardness for Bipartite Graphs}
+	\begin{minipage}{.5\textwidth}
+		\begin{example}
+			\begin{itemize}
+				\item $\mathcal{U} = \{1, 2, 3, 4, 5\}$;
+				\item $\mathcal{S} = \{S_1=\{1,2,3\}, S_2=\{2,4\}, S_3=\{3,4\}, S_4=\{4,5\}\}$; and 
+				\item $c = 2$.
+			\end{itemize}
+		\end{example}
+		\onslide<2>{
+			\begin{proposition}
+				$(\mathcal{U}, \mathcal{S})$ has a set cover of size $\leq c$ if and only if $(G, t)$ has a $|\mathcal{S}|$-immunizing set of size $\leq c$.
+			\end{proposition}
+			\begin{itemize}
+				\item The problem remains hard even on this restricted instance for bipartite graphs.
+			\end{itemize}
+		}
+	\end{minipage}\begin{minipage}{.5\textwidth}
+		\only<1>{
+		\begin{figure}[h]
+			\centering
+			\resizebox{.8\textwidth}{!}{\begin{tikzpicture}[thick,
+				every node/.style={draw,circle},
+				label distance=-1mm,
+				every fit/.style={draw,text width=2cm},
+				]
+				
+				\node[label={[text=red]left:$1$}] (1) at (0, 0) {$1$};
+				\node[label={[text=red]left:$2$}] (2) [below of=1] {$2$};
+				\node[label={[text=red]left:$2$}] (3) [below of=2] {$3$};
+				\node[label={[text=red]left:$3$}] (4) [below of=3] {$4$};
+				\node[label={[text=red]left:$1$}] (5) [below of=4] {$5$};
+				
+				\node[ellipse, inner sep=-2pt, fit=(1) (5), label=above:$A$] (f1) {};
+				
+				\node[fill=black, text=white] (s1) at (5, 0) {$S_1$};
+				\node[fill=black, text=white] (s2) at (5, -1.33) {$S_2$};
+				\node[fill=black, text=white] (s3) at (5, -2.66) {$S_3$};
+				\node[fill=black, text=white] (s4) at (5, -4) {$S_4$};
+				
+				\node[ellipse, inner sep=-2pt, fit=(s1) (s4), label=above:$B$] (f2) {};
+				
+				\draw[-] (1) -- (s1);
+				
+				\draw[-] (2) -- (s1);
+				\draw[-] (2) -- (s2);
+				
+				\draw[-] (3) -- (s1);
+				\draw[-] (3) -- (s3);
+				
+				\draw[-] (4) -- (s2);
+				\draw[-] (4) -- (s3);
+				\draw[-] (4) -- (s4);
+				
+				\draw[-] (5) -- (s4);
+				
+				%\node[regular polygon,regular polygon sides=4, inner sep=-15pt, fit=(s1), draw=blue] (y1) {};
+				%\node[regular polygon,regular polygon sides=4, inner sep=-15pt, fit=(s4), draw=blue] (y2) {};
+				
+			\end{tikzpicture}}
+		\end{figure}
+		}
+		\only<2>{
+			\begin{figure}[h]
+				\centering
+				\resizebox{.8\textwidth}{!}{\begin{tikzpicture}[thick,
+						every node/.style={draw,circle},
+						label distance=-1mm,
+						every fit/.style={draw,text width=2cm},
+						]
+						
+						\node[label={[text=red]left:$1$}] (1) at (0, 0) {$1$};
+						\node[label={[text=red]left:$2$}] (2) [below of=1] {$2$};
+						\node[label={[text=red]left:$2$}] (3) [below of=2] {$3$};
+						\node[label={[text=red]left:$3$}] (4) [below of=3] {$4$};
+						\node[label={[text=red]left:$1$}] (5) [below of=4] {$5$};
+						
+						\node[ellipse, inner sep=-2pt, fit=(1) (5), label=above:$A$] (f1) {};
+						
+						\node[fill=black, text=white] (s1) at (5, 0) {$S_1$};
+						\node[fill=black, text=white] (s2) at (5, -1.33) {$S_2$};
+						\node[fill=black, text=white] (s3) at (5, -2.66) {$S_3$};
+						\node[fill=black, text=white] (s4) at (5, -4) {$S_4$};
+						
+						\node[ellipse, inner sep=-2pt, fit=(s1) (s4), label=above:$B$] (f2) {};
+						
+						\draw[-] (1) -- (s1);
+						
+						\draw[-] (2) -- (s1);
+						\draw[-] (2) -- (s2);
+						
+						\draw[-] (3) -- (s1);
+						\draw[-] (3) -- (s3);
+						
+						\draw[-] (4) -- (s2);
+						\draw[-] (4) -- (s3);
+						\draw[-] (4) -- (s4);
+						
+						\draw[-] (5) -- (s4);
+						
+						\node[regular polygon,regular polygon sides=4, inner sep=-15pt, fit=(s1), draw=blue] (y1) {};
+						\node[regular polygon,regular polygon sides=4, inner sep=-15pt, fit=(s4), draw=blue] (y2) {};
+						
+				\end{tikzpicture}}
+			\end{figure}
+		}
+	\end{minipage}
 \end{frame}
 
 \part{Hardness for Planar Bipartite Subcubic Graphs}

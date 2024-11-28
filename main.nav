@@ -88,81 +88,81 @@
 \headcommand {\beamer@subsectionpages {74}{73}}
 \headcommand {\slideentry {6}{0}{1}{74/74}{}{2}}
 \headcommand {\beamer@framepages {74}{74}}
-\headcommand {\partentry {Polynomial Algorithm the Inhibition Number when $t(v) = 1$}{3}}
+\headcommand {\partentry {Hardness for Chordal Graphs}{3}}
 \headcommand {\beamer@partpages {74}{74}}
 \headcommand {\beamer@sectionpages {74}{74}}
 \headcommand {\beamer@subsectionpages {74}{74}}
 \headcommand {\slideentry {6}{0}{2}{75/75}{}{3}}
 \headcommand {\beamer@framepages {75}{75}}
-\headcommand {\partentry {Hardness for Chordal Graphs}{4}}
-\headcommand {\beamer@partpages {75}{75}}
-\headcommand {\beamer@sectionpages {75}{75}}
-\headcommand {\beamer@subsectionpages {75}{75}}
-\headcommand {\slideentry {6}{0}{3}{76/76}{}{4}}
+\headcommand {\slideentry {6}{0}{3}{76/76}{}{3}}
 \headcommand {\beamer@framepages {76}{76}}
-\headcommand {\slideentry {6}{0}{4}{77/77}{}{4}}
-\headcommand {\beamer@framepages {77}{77}}
-\headcommand {\slideentry {6}{0}{5}{78/83}{}{4}}
-\headcommand {\beamer@framepages {78}{83}}
-\headcommand {\slideentry {6}{0}{6}{84/84}{}{4}}
+\headcommand {\slideentry {6}{0}{4}{77/82}{}{3}}
+\headcommand {\beamer@framepages {77}{82}}
+\headcommand {\slideentry {6}{0}{5}{83/83}{}{3}}
+\headcommand {\beamer@framepages {83}{83}}
+\headcommand {\slideentry {6}{0}{6}{84/84}{}{3}}
 \headcommand {\beamer@framepages {84}{84}}
-\headcommand {\slideentry {6}{0}{7}{85/85}{}{4}}
-\headcommand {\beamer@framepages {85}{85}}
-\headcommand {\slideentry {6}{0}{8}{86/90}{}{4}}
-\headcommand {\beamer@framepages {86}{90}}
+\headcommand {\slideentry {6}{0}{7}{85/89}{}{3}}
+\headcommand {\beamer@framepages {85}{89}}
+\headcommand {\slideentry {6}{0}{8}{90/90}{}{3}}
+\headcommand {\beamer@framepages {90}{90}}
+\headcommand {\partentry {Hardness for Bipartite Graphs}{4}}
+\headcommand {\beamer@partpages {75}{90}}
+\headcommand {\beamer@sectionpages {75}{90}}
+\headcommand {\beamer@subsectionpages {75}{90}}
 \headcommand {\slideentry {6}{0}{9}{91/91}{}{4}}
 \headcommand {\beamer@framepages {91}{91}}
-\headcommand {\partentry {Hardness for Bipartite Graphs}{5}}
-\headcommand {\beamer@partpages {76}{91}}
-\headcommand {\beamer@sectionpages {76}{91}}
-\headcommand {\beamer@subsectionpages {76}{91}}
-\headcommand {\slideentry {6}{0}{10}{92/92}{}{5}}
+\headcommand {\slideentry {6}{0}{10}{92/92}{}{4}}
 \headcommand {\beamer@framepages {92}{92}}
-\headcommand {\partentry {Hardness for Planar Bipartite Subcubic Graphs}{6}}
-\headcommand {\beamer@partpages {92}{92}}
-\headcommand {\beamer@sectionpages {92}{92}}
-\headcommand {\beamer@subsectionpages {92}{92}}
-\headcommand {\slideentry {6}{0}{11}{93/93}{}{6}}
+\headcommand {\slideentry {6}{0}{11}{93/93}{}{4}}
 \headcommand {\beamer@framepages {93}{93}}
-\headcommand {\slideentry {6}{0}{12}{94/94}{}{6}}
-\headcommand {\beamer@framepages {94}{94}}
-\headcommand {\slideentry {6}{0}{13}{95/96}{}{6}}
-\headcommand {\beamer@framepages {95}{96}}
-\headcommand {\slideentry {6}{0}{14}{97/97}{}{6}}
+\headcommand {\slideentry {6}{0}{12}{94/95}{}{4}}
+\headcommand {\beamer@framepages {94}{95}}
+\headcommand {\partentry {Hardness for Planar Bipartite Subcubic Graphs}{5}}
+\headcommand {\beamer@partpages {91}{95}}
+\headcommand {\beamer@sectionpages {91}{95}}
+\headcommand {\beamer@subsectionpages {91}{95}}
+\headcommand {\slideentry {6}{0}{13}{96/96}{}{5}}
+\headcommand {\beamer@framepages {96}{96}}
+\headcommand {\slideentry {6}{0}{14}{97/97}{}{5}}
 \headcommand {\beamer@framepages {97}{97}}
-\headcommand {\slideentry {6}{0}{15}{98/98}{}{6}}
-\headcommand {\beamer@framepages {98}{98}}
-\headcommand {\slideentry {6}{0}{16}{99/99}{}{6}}
-\headcommand {\beamer@framepages {99}{99}}
-\headcommand {\slideentry {6}{0}{17}{100/101}{}{6}}
-\headcommand {\beamer@framepages {100}{101}}
-\headcommand {\slideentry {6}{0}{18}{102/104}{}{6}}
-\headcommand {\beamer@framepages {102}{104}}
-\headcommand {\partentry {Pathwidth Based Bounds}{7}}
-\headcommand {\beamer@partpages {93}{104}}
-\headcommand {\beamer@sectionpages {93}{104}}
-\headcommand {\beamer@subsectionpages {93}{104}}
-\headcommand {\slideentry {6}{0}{19}{105/105}{}{7}}
-\headcommand {\beamer@framepages {105}{105}}
-\headcommand {\beamer@sectionpages {105}{105}}
-\headcommand {\beamer@subsectionpages {105}{105}}
-\headcommand {\sectionentry {7}{Conclusion and Future Work}{106}{Conclusion and Future Work}{7}}
-\headcommand {\slideentry {7}{0}{1}{106/106}{}{7}}
-\headcommand {\beamer@framepages {106}{106}}
-\headcommand {\slideentry {7}{0}{2}{107/107}{}{7}}
-\headcommand {\beamer@framepages {107}{107}}
-\headcommand {\slideentry {7}{0}{3}{108/108}{}{7}}
+\headcommand {\slideentry {6}{0}{15}{98/99}{}{5}}
+\headcommand {\beamer@framepages {98}{99}}
+\headcommand {\slideentry {6}{0}{16}{100/100}{}{5}}
+\headcommand {\beamer@framepages {100}{100}}
+\headcommand {\slideentry {6}{0}{17}{101/101}{}{5}}
+\headcommand {\beamer@framepages {101}{101}}
+\headcommand {\slideentry {6}{0}{18}{102/102}{}{5}}
+\headcommand {\beamer@framepages {102}{102}}
+\headcommand {\slideentry {6}{0}{19}{103/104}{}{5}}
+\headcommand {\beamer@framepages {103}{104}}
+\headcommand {\slideentry {6}{0}{20}{105/107}{}{5}}
+\headcommand {\beamer@framepages {105}{107}}
+\headcommand {\partentry {Pathwidth Based Bounds}{6}}
+\headcommand {\beamer@partpages {96}{107}}
+\headcommand {\beamer@sectionpages {96}{107}}
+\headcommand {\beamer@subsectionpages {96}{107}}
+\headcommand {\slideentry {6}{0}{21}{108/108}{}{6}}
 \headcommand {\beamer@framepages {108}{108}}
-\headcommand {\slideentry {7}{0}{4}{109/109}{}{7}}
+\headcommand {\beamer@sectionpages {108}{108}}
+\headcommand {\beamer@subsectionpages {108}{108}}
+\headcommand {\sectionentry {7}{Conclusion and Future Work}{109}{Conclusion and Future Work}{6}}
+\headcommand {\slideentry {7}{0}{1}{109/109}{}{6}}
 \headcommand {\beamer@framepages {109}{109}}
-\headcommand {\slideentry {7}{0}{4}{109/110}{}{7}}
-\headcommand {\beamer@framepages {109}{110}}
-\headcommand {\slideentry {7}{0}{4}{109/111}{}{7}}
-\headcommand {\beamer@framepages {109}{111}}
-\headcommand {\slideentry {7}{0}{4}{109/112}{}{7}}
-\headcommand {\beamer@framepages {109}{112}}
-\headcommand {\beamer@partpages {105}{112}}
-\headcommand {\beamer@subsectionpages {106}{112}}
-\headcommand {\beamer@sectionpages {106}{112}}
-\headcommand {\beamer@documentpages {112}}
-\headcommand {\gdef \inserttotalframenumber {50}}
+\headcommand {\slideentry {7}{0}{2}{110/110}{}{6}}
+\headcommand {\beamer@framepages {110}{110}}
+\headcommand {\slideentry {7}{0}{3}{111/111}{}{6}}
+\headcommand {\beamer@framepages {111}{111}}
+\headcommand {\slideentry {7}{0}{4}{112/112}{}{6}}
+\headcommand {\beamer@framepages {112}{112}}
+\headcommand {\slideentry {7}{0}{4}{112/113}{}{6}}
+\headcommand {\beamer@framepages {112}{113}}
+\headcommand {\slideentry {7}{0}{4}{112/114}{}{6}}
+\headcommand {\beamer@framepages {112}{114}}
+\headcommand {\slideentry {7}{0}{4}{112/115}{}{6}}
+\headcommand {\beamer@framepages {112}{115}}
+\headcommand {\beamer@partpages {108}{115}}
+\headcommand {\beamer@subsectionpages {109}{115}}
+\headcommand {\beamer@sectionpages {109}{115}}
+\headcommand {\beamer@documentpages {115}}
+\headcommand {\gdef \inserttotalframenumber {52}}
