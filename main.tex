@@ -20,7 +20,8 @@
 % \hypersetup{colorlinks=true}
 
 \usepackage{tikz}
-\usetikzlibrary {graphs, graphs.standard, graphdrawing, fit}
+\usetikzlibrary {graphs, graphs.standard, graphdrawing, fit, arrows.meta}
+\usegdlibrary {layered} 
 \usegdlibrary {circular}
 \usegdlibrary{force}
 \usegdlibrary{trees}
@@ -154,73 +155,84 @@ Universidade Federal do Ceará}
 
 \onslide<1->{
     Several phenomena happen in a \textbf{contagion-like manner}.
+    
+    \begin{minipage}{0.5\textwidth}
+    	\begin{itemize}
+    		\item<1-> Spreading of pathogens, like viruses or bacteria;
+    		\item<2-> The diffusion of innovation, (mis-)information, and memes.    		
+    		%\item<3-> Even bedbugs seem to spread from hotel to hotel via travelers \parencite{barabasi2016network}.
+    	\end{itemize}
+    \end{minipage}\begin{minipage}{0.5\textwidth}
+	    \only<2>{
+	    	\begin{information}
+	    		{\footnotesize Studies found that most people adopt innovative ideas based on the experience of their neighbors or community.
+	    		\begin{itemize}
+	    			\item The adoption of hybrid seed corn among farmers \parencite{ryan2017acceptance};
+	    			\item The adoption of tetracycline by physicians \parencite{Coleman1957-tv}.
+	    		\end{itemize}
+	    		}
+	    	\end{information}
+	    }
+	\end{minipage}
 
-    \begin{itemize}
-        \item<1-> Spreading of pathogens, like viruses or bacteria;
-        \item<2-> The diffusion of innovation, (mis-)information, and memes.
-        \only<2>{
-            \begin{information}
-                Studies found that most people adopt innovative ideas based on the experience of their neighbors or community.
-                \begin{itemize}
-                    \item The adoption of hybrid seed corn among farmers \parencite{ryan2017acceptance};
-                    \item The adoption of tetracycline by physicians \parencite{Coleman1957-tv}.
-                \end{itemize}
-            \end{information}
-        }
-        \item<3-> Even bedbugs seem to spread from hotel to hotel via travelers \parencite{barabasi2016network}.
-    \end{itemize}
+    
 }
 
 \end{frame}
 
 \begin{frame}{Introduction}
-    \onslide<1->{
-        The early models built to study such phenomena are the so-called \textit{compartmental models}.
-        \begin{itemize}
-            \item Compartments are states;
-            \item Each agent/individual belongs to one state.
-        \end{itemize}
-    }
-    
-    \only<2>{
-        \begin{exampleblock}{Example (SIR)}
-            \begin{figure}
-                \centering
-                \begin{subfigure}[c]{0.6\textwidth}
-                    \centering
-                    \includegraphics[width=\textwidth]{SIR.png}
-                \end{subfigure}\quad
-                \begin{subfigure}[c]{0.25\textwidth}
-                    \centering
-                    \includegraphics[width=\textwidth]{sir-graphic.png}
-                \end{subfigure}
-            \end{figure}
-        \end{exampleblock}
-    }
-
-    \onslide<3->{
-        \begin{definition}[Homogeneous Mixing Hypothesis]
-            The assumption that every individual from one compartment has the same chance of interacting with an individual from another compartment.
-        \end{definition}
-    }
-
-    \begin{itemize}
-        \item<4-> The homogeneous mixing hypothesis is \textcolor{red}{\textbf{false}}.
-        \item<5-> The \textbf{structure of the contact network} is what facilitates the contagion.
-    \end{itemize}
-    
-    \only<5>{
-    \begin{information}
-    	Studies have shown that the airport mobility network provides reliable information for the prediction and control of airborne epidemics like H1N1 \parencite{SorianoPaos2022}.
-    	\end{information}
-    }
+	\begin{minipage}{\textwidth}
+		\onslide<1->{
+			The early models built to study such phenomena are the so-called \textit{compartmental models}.
+			\begin{itemize}
+				\item Compartments are states;
+				\item Each agent/individual belongs to one state.
+			\end{itemize}
+		}
+		
+		\onslide<3->{
+			\begin{definition}[Homogeneous Mixing Hypothesis]
+				The assumption that every individual from one compartment has the same chance of interacting with an individual from another compartment.
+			\end{definition}
+		}
+		
+		\begin{itemize}
+			\item<4-> The homogeneous mixing hypothesis is \textcolor{red}{\textbf{false}}.
+			\item<5-> The \textbf{structure of the contact network} is what facilitates the contagion.
+		\end{itemize}
+		
+	\end{minipage}
+%	\begin{minipage}{\textwidth}
+%		\only<2>{
+%			\begin{exampleblock}{Example (SIR)}
+%				\begin{figure}
+%					\centering
+%					\begin{subfigure}[c]{0.5\textwidth}
+%						\centering
+%						\includegraphics[width=\textwidth]{SIR.png}
+%					\end{subfigure}\quad
+%					\begin{subfigure}[c]{0.2\textwidth}
+%						\centering
+%						\includegraphics[width=\textwidth]{sir-graphic.png}
+%					\end{subfigure}
+%				\end{figure}
+%			\end{exampleblock}
+%		}
+%		\only<5>{
+%			\begin{information}
+%				{\footnotesize Studies have shown that the airport mobility network provides reliable information for the prediction and control of airborne epidemics like H1N1 \parencite{SorianoPaos2022}.}
+%			\end{information}
+%		}
+%	\end{minipage}
 \end{frame}
 
 \section{The Threshold Model}
 
 \begin{frame}{Modeling Contagion on Graphs: Threshold Model}
-
+	
+\onslide<1->{
 \begin{itemize}
+
     \item<1-> Let's consider each vertex as an individual.
     \begin{itemize}
         \item<1-> A vertex is either \textbf{active (infected)} or \textbf{inactive (susceptible)}.
@@ -232,26 +244,28 @@ Universidade Federal do Ceará}
         \item<4-> Bigger thresholds: laggards / greater resistance.
     \end{itemize}
 \end{itemize}
-
-\only<2>{
-	\begin{figure}
-		\centering
-		\tikz \graph [spring layout, nodes={draw,circle}] { a[label=above:{\textcolor{red}{1}}] -- {u[fill=red], w, x[fill=red], y, z[fill=red]} };
-	\end{figure}
 }
-
-\only<3>{
-	\begin{figure}
-		\centering
-		\tikz \graph [spring layout, nodes={draw,circle}] { a[fill=red, label=above:{\textcolor{red}{1}}] -- {u[fill=red], w, x[fill=red], y, z[fill=red]} };
-	\end{figure}
-}
-
-\only<4>{
-	\begin{figure}
-		\centering
-		\tikz \graph [spring layout, nodes={draw,circle}] { a[label=above:{\textcolor{blue}{5}}] -- {u[fill=red], w, x[fill=red], y, z[fill=red]} };
-	\end{figure}
+\onslide<2->{
+	\only<2>{
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}] { a[label=above:{\textcolor{red}{1}}] -- {u[fill=red], w, x[fill=red], y, z[fill=red]} };
+		\end{figure}
+	}
+	
+	\only<3>{
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}] { a[fill=red, label=above:{\textcolor{red}{1}}] -- {u[fill=red], w, x[fill=red], y, z[fill=red]} };
+		\end{figure}
+	}
+	
+	\only<4>{
+		\begin{figure}
+			\centering
+			\tikz \graph [spring layout, nodes={draw,circle}] { a[label=above:{\textcolor{blue}{5}}] -- {u[fill=red], w, x[fill=red], y, z[fill=red]} };
+		\end{figure}
+	}
 }
     
 \end{frame}
@@ -1461,6 +1475,10 @@ Universidade Federal do Ceará}
 	\begin{definition}
 		A graph $G$ is planar if it can be drawn on the plane without crossing edges.
 	\end{definition}
+	
+	\begin{theorem}[\cite{Wagner1937-ud}]
+		A graph $G$ is planar if and only if $G$ does not have a $K_5$ minor nor a $K_{3,3}$ minor.
+	\end{theorem}
 \end{frame}
 
 \begin{frame}{Hardness for Planar Bipartite Subcubic Graphs}
@@ -1478,8 +1496,173 @@ Universidade Federal do Ceará}
 		$
 	\end{example}
 	
+	\onslide<2>{
+		\begin{proposition}
+			\textsc{r-3-Sat} $\leq_P$ (Planar Bipartite Subcubic) \textsc{IIB}.
+		\end{proposition}
+	}
+	
+\end{frame}
+
+\begin{frame}{Hardness for Planar Bipartite Subcubic Graphs}
 	\begin{itemize}
-		\item We show that \textsc{r-3-Sat} $\leq_P$ (Planar Bipartite Subcubic) \textsc{IIB}
+		\item Given a \textsc{r-3-Sat} formula $\varphi$, let:
+		\begin{itemize}
+			\item $V(\varphi)$ the set of variables of $\varphi$;
+			\item $\mathcal{C}(\varphi)$ the set of clauses of $\varphi$.
+		\end{itemize}
+		\item Let's create a graph $G_{\varphi}$ with thresholds $t_{\varphi}$. For each variable $x \in V(\varphi)$, we are going to add the following gadget to $G_{\varphi}$:
+	\end{itemize}
+	
+	\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}[thick,
+			every node/.style={draw,circle},
+			label distance=-1mm,
+			]
+			
+			\node[fill=red] (x) at (0, 0) {$x$};
+			\node[fill=gray, label={[text=red]above:$2$}] (x') at (-1.5, -1.5) {$x'$};
+			\node[fill=red] (x2) at (0, -3) {$\overline{x}$};
+			
+			\draw[-] (x) -- (x');
+			\draw[-] (x2) -- (x');
+			
+		\end{tikzpicture}
+		\label{fig:planar-variable-gadget}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Hardness for Planar Bipartite Subcubic Graphs}
+	\begin{itemize}
+		\item For each clause $C \in \mathcal{C}(\varphi)$, we are going to add a vertex in $G_{\varphi}$ and connect it to its literals, setting $t_{\varphi}(C)=|C|$.
+	\end{itemize}
+	
+	\begin{example}
+		$C = (u \lor v \lor \overline{w})$.
+	\end{example}
+	
+	\begin{figure}
+		\centering
+		\tikz \graph [layered layout, nodes={draw,circle}, node distance=1.5cm] {
+			"$u$"[fill=red] -- "$u'$"[fill=gray, label=left:{\textcolor{red}{2}}] -- "$\overline{u}$"[fill=red]; 
+			"$v$"[fill=red] -- "$v'$"[fill=gray, label=right:{\textcolor{red}{2}}] -- "$\overline{v}$"[fill=red];
+			"$w$"[fill=red] -- "$w'$"[fill=gray, label=right:{\textcolor{red}{2}}] -- "$\overline{w}$"[fill=red];
+			"$C$"[label=left:{\textcolor{red}{3}}] -- {"$u$", "$v$", "$\overline{w}$"};
+		};		
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Hardness for Planar Bipartite Subcubic Graphs}
+	\begin{minipage}{0.5\textwidth}
+		\begin{itemize}
+			\item Example of $G_{\varphi}$ for the \textsc{r-3-Sat} formula $\varphi = (u \lor v \lor \overline{w}) \land (\overline{u} \lor v \lor x) \land (u \lor \overline{x} \lor \overline{y}) \land (\overline{v} \lor w \lor x) \land (w \lor z \lor y) \land (y \lor \overline{z}) \land (z)$.
+		\end{itemize}
+	\end{minipage}\begin{minipage}{0.5\textwidth}
+		\begin{figure}[h]
+			\centering
+			\resizebox{.9\linewidth}{!}{\begin{tikzpicture}[thick,
+				every node/.style={draw,circle},
+				label distance=-1mm,
+				node distance=2cm,
+				]
+				
+				\node[fill=gray, label={[text=red]above:$2$}] (w') at (0, 0) {$w'$};
+				\node[fill=red] (not_w) [below left of=w'] {$\overline{w}$};
+				\draw[-] (w') -- (not_w);
+				\node[label={[text=red]above:$3$}] (c1) [below left of=not_w] {$C_1$};
+				\draw[-] (not_w) -- (c1);
+				\node[fill=red] (v) [right of=c1] {$v$};
+				\draw[-] (c1) -- (v);
+				\node[fill=gray, label={[text=red]above:$2$}] (v') [below right of=v] {$v'$};
+				\draw[-] (v') -- (v);
+				\node[fill=red](not_v) [below left of=v'] {$\overline{v}$};
+				\draw[-] (v') -- (not_v);
+				\node[label={[text=red]above:$3$}] (c4) [below right of=not_v] {$C_4$};
+				\draw[-] (c4) -- (not_v);
+				\node[fill=red] (w) [right of=c4] {$w$};
+				\draw[-] (c4) -- (w);
+				\draw[-] (w') -- (w);
+				\node[fill=red] (u) [below left of=c1] {$u$};
+				\draw[-] (c1) -- (u);
+				\node[label={[text=red]above:$3$}] (c2) [below left of=v] {$C_2$};
+				\draw[-] (c2) -- (v);
+				\node[fill=gray, label={[text=red]left:$2$}] (u') [below of=u] {$u'$};
+				\draw[-] (u') -- (u);
+				\node[fill=red] (x) [below of=c2] {$x$};
+				\draw[-] (c2) -- (x);
+				\node[fill=red] (not_u) at ($(c2)!0.5!(u')$) {$\overline{u}$};
+				\draw[-] (c2) -- (not_u);
+				\draw[-] (u') -- (not_u);
+				\node[fill=gray, label={[text=red]right:$2$}] (x') [below left of=x] {$x'$};
+				\draw[-] (x') -- (x);
+				\draw[-] (c4) -- (x);
+				\node[fill=red] (not_x) [left of=x'] {$\overline{x}$};
+				\draw[-] (x') -- (not_x);
+				\node[label={[text=red]above:$3$}] (c3) [left of=not_x] {$C_3$};
+				\draw[-] (c3) -- (not_x);
+				\draw[-] (c3) -- (u);
+				\node[fill=red] (y) [below of=c3] {$\overline{y}$};
+				\draw[-] (c3) -- (y);
+				\node[fill=gray, label={[text=red]above:$2$}] (y') [right of=y] {$y'$};
+				\draw[-] (y') -- (y);
+				\node[fill=red] (not_y) [right of=y'] {$y$};
+				\draw[-] (y') -- (not_y);
+				\node[label={[text=red]left:$2$}] (c6) [below of=not_y] {$C_6$};
+				\draw[-] (c6) -- (not_y);
+				\node[fill=red] (not_z) [right of=c6] {$\overline{z}$};
+				\draw[-] (c6) -- (not_z);
+				\node[fill=gray, label={[text=red]above:$2$}] (z') [right of=not_z] {$z'$};
+				\draw[-] (z') -- (not_z);
+				\node[fill=red] (z) [right of=z'] {$z$};
+				\draw[-] (z') -- (z);
+				\node[label={[text=red]right:$3$}] (c5) at ($(w)!0.5!(z)$) {$C_5$};
+				\draw[-] (c5) -- (z);
+				\draw[-] (c5) -- (w);
+				\draw[-] (c5) -- (not_y);
+				\node[label={[text=red]above:$1$}] (c7) [right of=z] {$C_7$};
+				\draw[-] (c7) -- (z);
+				
+				\end{tikzpicture}
+			}
+		\end{figure}
+	\end{minipage}
+\end{frame}
+
+
+\begin{frame}{Hardness for Planar Bipartite Subcubic Graphs}
+	\begin{itemize}
+		\item Suppose $\varphi$ has a satisfying assignment $\mathcal{S}:V(\varphi) \rightarrow \{\textsc{True}, \textsc{False}\}$.
+	\end{itemize}
+	
+	\begin{proposition}
+		$Y = (\{x \mid \mathcal{S}(x) = \textsc{True}\} \cup \{\overline{x} \mid \mathcal{S}(x) = \textsc{False}\}$) is a $(2|V(\varphi)|)$-immunizing set for $(G_{\varphi}, t_{\varphi})$ and $|Y| \leq |V(\varphi)|$.
+	\end{proposition}
+	
+	\begin{itemize}
+		\item<2> Now, suppose $Y$ is a $(2|V(\varphi)|)$-immunizing set for $(G_{\varphi}, t_{\varphi})$ and $|Y| \leq |V(\varphi)|$. 
+	\end{itemize}
+	
+	\onslide<2>{
+		\begin{proposition}
+			For every $x \in V(\varphi)$, either $x \in Y$ or $\overline{x} \in Y$.
+		\end{proposition}
+	}
+	
+	\begin{itemize}
+		\item<2> Thus, we can build a satisfying assignment for $\varphi$ from $Y$.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Hardness for Planar Bipartite Subcubic Graphs}
+	\begin{proposition}
+		$G_{\varphi}$ is planar bipartite subcubic.
+	\end{proposition}
+	\begin{itemize}
+		\item<1-> Clause vertices have degree at most~3, positive literals vertices have degree~3, negative literals vertices have degree~2, and auxiliary vertices have degree~2.
+		\item<2-> Let $A$ be the set of auxiliary vertices. Then we have the partition $(X, Y)$ of $V(G_{\varphi})$ such that $X = A \cup \mathcal{C}(\varphi)$ and $Y=\{x, \overline{x} \mid x \in V(\varphi)\}$.
+		\item<3-> Since $G_{\varphi}$ is subcubic, it cannot have a $K_5$ minor.
+		\item<3-> In order to have a $K_{3, 3}$ minor, we should have 3~clauses connected with 3~equal positive literals. Since each positive literal appears only twice, $G_{\varphi}$ is planar.
 	\end{itemize}
 \end{frame}
 
@@ -1487,6 +1670,38 @@ Universidade Federal do Ceará}
 
 \begin{frame}
 	\partpage
+\end{frame}
+
+\section{Conclusion and Future Work}
+
+\begin{frame}
+	\sectionpage
+\end{frame}
+
+\begin{frame}{Conclusion and Future Work}
+	\begin{figure}
+	\centering
+	\tikz [nodes={text height=.7em, text depth=.2em,
+		draw=black!20, thick, fill=white, font=\footnotesize},
+	>={Stealth[round,sep]}, rounded corners, semithick]
+	\graph [layered layout, level distance=1.6cm, sibling sep=1em, sibling distance=1.2cm] {
+		"General Graphs"[label={[text width=2.5cm, align=left]right:{\textcolor{red}{$\W$-hard}\\\textcolor{blue}{Polyn. for inhibition when $t(v)=1$}}}] -> {"Complete"[label={[text width=2cm, align=center]below:{\textcolor{blue}{Polynomial $t(v)=c$}}}], "Minor-closed"[label={[text width=2.2cm, align=center]below:{\textcolor{blue}{Assymp. bounds for conn. $S$}}}], "Chordal"[label={[text width=2cm, align=center]below:{\textcolor{blue}{$\W[1]$-hard}}}], "Bipartite"[label={[text width=2cm, align=center]below:{\textcolor{red}{$W[2]$-hard}\\ \textcolor{blue}{$\NP$-c}}}], "Bounded $nd(G)$"[label=below:{\textcolor{red}{$\W[1]-hard$}}], "Bounded $\Delta(G)$"[label={[text width=2.2cm, align=left]right:{\textcolor{red}{$\W[2]$-hard}}}]};
+		"Minor-closed" -> {"Bounded $tw(G)$"[label={[text width=2.2cm, align=right]left:{\textcolor{red}{$\W[1]$-hard}}}], "Planar"[label={[text width=2cm, align=center]below:{\textcolor{blue}{$\NP$-c}}}]};
+		"Bounded $\Delta(G)$" -> "$\Delta(G) \leq 3$"[label={[text width=2cm, align=center]below:{\textcolor{blue}{$\NP$-c}}}];
+		"Bounded $tw(G)$" -> "Trees"[label={[text width=2cm, align=right]left:{\textcolor{blue}{Polynomial}}}];
+		"Chordal" -> "Trees";
+		"Bipartite" -> {"Trees", "Planar $\cap$ Bipartite $\cap$ $\Delta(G) \leq 3$"[label={[text width=2cm, align=left]right:{\textcolor{blue}{$\NP$-c}}}]};
+		"Planar" -> {"Trees", "Planar $\cap$ Bipartite $\cap$ $\Delta(G) \leq 3$"};
+		"$\Delta(G) \leq 3$" -> "Planar $\cap$ Bipartite $\cap$ $\Delta(G) \leq 3$";
+		{"Trees", "Planar $\cap$ Bipartite $\cap$ $\Delta(G) \leq 3$"} -> "Paths"[label={[text width=2cm, align=left]right:{\textcolor{blue}{Polynomial}}}];
+		"Chordal" -> "Split"[label={[text width=2cm, align=left]right:{\textcolor{blue}{$\NP$-c}}}];
+	};
+	
+	\end{figure}
+\end{frame}
+
+\begin{frame}{}
+	Obrigado.
 \end{frame}
 
 \begin{frame}[noframenumbering,plain,allowframebreaks]{References}
