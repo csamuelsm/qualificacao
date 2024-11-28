@@ -1457,6 +1457,32 @@ Universidade Federal do Ceará}
 	\partpage
 \end{frame}
 
+\begin{frame}{Hardness for Planar Bipartite Subcubic Graphs}
+	\begin{definition}
+		A graph $G$ is planar if it can be drawn on the plane without crossing edges.
+	\end{definition}
+\end{frame}
+
+\begin{frame}{Hardness for Planar Bipartite Subcubic Graphs}
+	\begin{itemize}
+		\item In \textsc{Restricted 3-Sat}, we are given a 3-Sat CNF formula in which every variable \textbf{occurs \textit{exactly}~3 times}: twice as positive and once as negative.
+		\begin{itemize}
+			\item \textsc{r-3-Sat} is $\NP$-complete \parencite{Dahlhaus1994}.
+		\end{itemize}
+	\end{itemize}
+	
+	\begin{example}
+		$
+			\label{eq:formula_phi}
+			\varphi = (u \lor v \lor \overline{w}) \land (\overline{u} \lor v \lor x) \land (u \lor \overline{x} \lor \overline{y}) \land (\overline{v} \lor w \lor x) \land (w \lor z \lor y) \land (y \lor \overline{z}) \land (z)
+		$
+	\end{example}
+	
+	\begin{itemize}
+		\item We show that \textsc{r-3-Sat} $\leq_P$ (Planar Bipartite Subcubic) \textsc{IIB}
+	\end{itemize}
+\end{frame}
+
 \part{Pathwidth Based Bounds}
 
 \begin{frame}

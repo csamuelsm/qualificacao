@@ -46,7 +46,7 @@
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0166-218X}
@@ -97,7 +97,7 @@
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{La 4ème de couverture indique : "Networks are everywhere, from the Internet, to social networks, and the genetic networks that determine our biological existence. Illustrated throughout in full colour, this pioneering textbook, spanning a wide range of topics from physics to computer science, engineering, economics and the social sciences, introduces network science to an interdisciplinary audience. From the origins of the six degrees of separation to explaining why networks are robust to random failures, the author explores how viruses like Ebola and H1N1 spread, and why it is that our friends have more friends than we do. Using numerous real-world examples, this innovatively designed text includes clear delineation between undergraduate and graduate level material"}
@@ -136,7 +136,7 @@
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{A dominating set of an undirected graph G is a set D of nodes such that every node of G either is in D or is adjacent to some node of D. It is shown that the problem of finding a minimum cardinality dominating set is NP-complete for split graphs (a subclass of chordal graphs) and bipartite graphs.}
@@ -182,7 +182,7 @@
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Sociometry}
@@ -228,7 +228,7 @@
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1432-0541}
@@ -242,6 +242,73 @@
       \range{pages}{30}
       \verb{doi}
       \verb 10.1007/s00453-023-01118-y
+      \endverb
+    \endentry
+    \entry{Dahlhaus1994}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=58ffb7103f9b95a220b50ddf87a6a939}{%
+           family={Dahlhaus},
+           familyi={D\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21d5b87b854f14113dbb3442620163df}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90d8eb7f4d8c3ff8f908463faac84495}{%
+           family={Papadimitriou},
+           familyi={P\bibinitperiod},
+           given={C.\bibnamedelimi H.},
+           giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c86b2da84f8e18c3c5e6194460cbfbb}{%
+           family={Seymour},
+           familyi={S\bibinitperiod},
+           given={P.\bibnamedelimi D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd1c2e59eab9c4fd3957f6a110a62911}{%
+           family={Yannakakis},
+           familyi={Y\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Society for Industrial \& Applied Mathematics (SIAM)}%
+      }
+      \strng{namehash}{c6995b21413ac0b2054e4067a637a491}
+      \strng{fullhash}{1f6ca2d3d990b26c25f0b74dacf24e81}
+      \strng{bibnamehash}{c6995b21413ac0b2054e4067a637a491}
+      \strng{authorbibnamehash}{c6995b21413ac0b2054e4067a637a491}
+      \strng{authornamehash}{c6995b21413ac0b2054e4067a637a491}
+      \strng{authorfullhash}{1f6ca2d3d990b26c25f0b74dacf24e81}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1095-7111}
+      \field{journaltitle}{SIAM Journal on Computing}
+      \field{month}{8}
+      \field{number}{4}
+      \field{title}{The Complexity of Multiterminal Cuts}
+      \field{volume}{23}
+      \field{year}{1994}
+      \field{pages}{864\bibrangedash 894}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1137/s0097539792225297
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1137/s0097539792225297
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1137/s0097539792225297
       \endverb
     \endentry
     \entry{Dirac1961-pi}{article}{}
@@ -269,7 +336,7 @@
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Abh. Math. Semin. Univ. Hambg.}
@@ -305,7 +372,7 @@
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We will consider models of the spread of disease or opinion through social networks, represented as graphs. In our models, vertices will be in one of two states, 1 (“infected”) or 0 (“uninfected”) and change of state will take place at discrete times. After describing several such models, we will concentrate on the model, called an irreversible k-threshold process, where a vertex enters state 1 if at least k of its neighbors are in state 1, and where a vertex never leaves state 1 once it is in it. We will seek sets of vertices with the property that, if they are in state 1 at the beginning, then eventually all vertices end up in state 1. Such vertex sets correspond to vertices that can be infected with a disease or opinion so as to guarantee saturation of the population with the disease or opinion. We will also discuss ways to “defend” against such saturating sets, for example by “vaccination” or designing network topologies.}
@@ -373,7 +440,7 @@
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1570-8667}
@@ -440,7 +507,7 @@
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0166-218X}
@@ -497,7 +564,7 @@
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Models for the processes by which ideas and influence propagate through a social network have been studied in a number of domains, including the diffusion of medical and technological innovations, the sudden and widespread adoption of various strategies in game-theoretic settings, and the effects of "word of mouth" in the promotion of new products. Recently, motivated by the design of viral marketing strategies, Domingos and Richardson posed a fundamental algorithmic problem for such social network processes: if we can try to convince a subset of individuals to adopt a new product or innovation, and the goal is to trigger a large cascade of further adoptions, which set of individuals should we target?We consider this problem in several of the most widely studied models in social network analysis. The optimization problem of selecting the most influential nodes is NP-hard here, and we provide the first provable approximation guarantees for efficient algorithms. Using an analysis framework based on submodular functions, we show that a natural greedy strategy obtains a solution that is provably within 63\% of optimal for several classes of models; our framework suggests a general approach for reasoning about the performance guarantees of algorithms for these types of influence problems in social networks.We also provide computational experiments on large collaboration networks, showing that in addition to their provable guarantees, our approximation algorithms significantly out-perform node-selection heuristics based on the well-studied notions of degree centrality and distance centrality from the field of social networks.}
@@ -550,7 +617,7 @@
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Comb. Optim.}
@@ -589,7 +656,7 @@
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0304-3975}
@@ -634,7 +701,7 @@
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Acceptance and diffusion of hybrid corn seed in two Iowa communities}
@@ -691,7 +758,7 @@
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1521-3889}
