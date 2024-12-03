@@ -118,16 +118,16 @@ nomail,
 \newtheorem{proposition}{Proposition}
 
 
-\title[Restricting infections on graph classes]{Restricting infections on graph classes}
+\title[Restricting infections on graphs]{Restricting infections on graphs}
 \author[S.~Santos]{Samuel Santos}
-%\subtitle{Qualificação de Mestrado}
+\subtitle{Immunization problems}
 \institute[UFC]{UFC\\
 Universidade Federal do Ceará}
 \date{December 2024}
 \titlegraphic{\includegraphics[width=2.4cm]{ufc-logo.png}}
 \mail{csamuelssm@alu.ufc.br}
 %\webpage{www.ceremade.dauphine.fr/~chupin/}
-\collaboration{Supervised by Ana Karolinna Maia de Oliveira and Carlos Vinícius Gomes Costa Lima}
+\collaboration{Supervised by Ana Karolinna Maia and Carlos Vinícius G. C. Lima}
 
 \bibliography{biblio.bib}
 \usefonttheme{default}
@@ -156,75 +156,75 @@ Universidade Federal do Ceará}
 \onslide<1->{
     Several phenomena happen in a \textbf{contagion-like manner}.
     
-    \begin{minipage}{0.5\textwidth}
+    \begin{minipage}{\textwidth}
     	\begin{itemize}
-    		\item<1-> Spreading of pathogens, like viruses or bacteria;
-    		\item<2-> The diffusion of innovation, (mis-)information, and memes.    		
+    		\item<1-> Viruses or bacteria;
+    		\item<1-> Innovation, (mis-)information, and memes. \parencite{ryan2017acceptance, Coleman1957-tv}	
     		%\item<3-> Even bedbugs seem to spread from hotel to hotel via travelers \parencite{barabasi2016network}.
     	\end{itemize}
-    \end{minipage}\begin{minipage}{0.5\textwidth}
-	    \only<2>{
-	    	\begin{information}
-	    		{\footnotesize Studies found that most people adopt innovative ideas based on the experience of their neighbors or community.
-	    		\begin{itemize}
-	    			\item The adoption of hybrid seed corn among farmers \parencite{ryan2017acceptance};
-	    			\item The adoption of tetracycline by physicians \parencite{Coleman1957-tv}.
-	    		\end{itemize}
-	    		}
-	    	\end{information}
-	    }
-	\end{minipage}
+    \end{minipage}%\begin{minipage}{0.5\textwidth}
+%	    \only<2>{
+%	    	\begin{information}
+%	    		{\footnotesize Studies found that most people adopt innovative ideas based on the experience of their neighbors or community.
+%	    		\begin{itemize}
+%	    			\item The adoption of hybrid seed corn among farmers \parencite{ryan2017acceptance};
+%	    			\item The adoption of tetracycline by physicians \parencite{Coleman1957-tv}.
+%	    		\end{itemize}
+%	    		}
+%	    	\end{information}
+%	    }
+%	\end{minipage}
 
     
 }
 
 \end{frame}
 
-\begin{frame}{Introduction}
-	\begin{minipage}{\textwidth}
-		\onslide<1->{
-			The early models built to study such phenomena are the so-called \textit{compartmental models}.
-			\begin{itemize}
-				\item Compartments are states;
-				\item Each agent/individual belongs to one state.
-			\end{itemize}
-		}
-		
-		\onslide<3->{
-			\begin{definition}[Homogeneous Mixing Hypothesis]
-				The assumption that every individual from one compartment has the same chance of interacting with an individual from another compartment.
-			\end{definition}
-		}
-		
-		\begin{itemize}
-			\item<4-> The homogeneous mixing hypothesis is \textcolor{red}{\textbf{false}}.
-			\item<5-> The \textbf{structure of the contact network} is what facilitates the contagion.
-		\end{itemize}
-		
-	\end{minipage}
+%\begin{frame}{Introduction}
 %	\begin{minipage}{\textwidth}
-%		\only<2>{
-%			\begin{exampleblock}{Example (SIR)}
-%				\begin{figure}
-%					\centering
-%					\begin{subfigure}[c]{0.5\textwidth}
-%						\centering
-%						\includegraphics[width=\textwidth]{SIR.png}
-%					\end{subfigure}\quad
-%					\begin{subfigure}[c]{0.2\textwidth}
-%						\centering
-%						\includegraphics[width=\textwidth]{sir-graphic.png}
-%					\end{subfigure}
-%				\end{figure}
-%			\end{exampleblock}
+%		\onslide<1->{
+%			The early models built to study such phenomena are the so-called \textit{compartmental models}.
+%			\begin{itemize}
+%				\item Compartments are states;
+%				\item Each agent/individual belongs to one state.
+%			\end{itemize}
 %		}
-%		\only<5>{
-%			\begin{information}
-%				{\footnotesize Studies have shown that the airport mobility network provides reliable information for the prediction and control of airborne epidemics like H1N1 \parencite{SorianoPaos2022}.}
-%			\end{information}
+%		
+%		\onslide<3->{
+%			\begin{definition}[Homogeneous Mixing Hypothesis]
+%				The assumption that every individual from one compartment has the same chance of interacting with an individual from another compartment.
+%			\end{definition}
 %		}
+%		
+%		\begin{itemize}
+%			\item<4-> The homogeneous mixing hypothesis is \textcolor{red}{\textbf{false}}.
+%			\item<5-> The \textbf{structure of the contact network} is what facilitates the contagion.
+%		\end{itemize}
+%		
 %	\end{minipage}
-\end{frame}
+%%	\begin{minipage}{\textwidth}
+%%		\only<2>{
+%%			\begin{exampleblock}{Example (SIR)}
+%%				\begin{figure}
+%%					\centering
+%%					\begin{subfigure}[c]{0.5\textwidth}
+%%						\centering
+%%						\includegraphics[width=\textwidth]{SIR.png}
+%%					\end{subfigure}\quad
+%%					\begin{subfigure}[c]{0.2\textwidth}
+%%						\centering
+%%						\includegraphics[width=\textwidth]{sir-graphic.png}
+%%					\end{subfigure}
+%%				\end{figure}
+%%			\end{exampleblock}
+%%		}
+%%		\only<5>{
+%%			\begin{information}
+%%				{\footnotesize Studies have shown that the airport mobility network provides reliable information for the prediction and control of airborne epidemics like H1N1 \parencite{SorianoPaos2022}.}
+%%			\end{information}
+%%		}
+%%	\end{minipage}
+%\end{frame}
 
 \section{The Threshold Model}
 
@@ -237,12 +237,12 @@ Universidade Federal do Ceará}
     \begin{itemize}
         \item<1-> A vertex is either \textbf{active (infected)} or \textbf{inactive (susceptible)}.
     \end{itemize}
-    \item<2-> The individuals change their state based on their neighbors' state.
-    \begin{itemize}
-        \item<2-> A threshold value represents \textbf{how susceptible} an individual is to the contagious agent.
-        \item<2-> Smaller thresholds: early adopters / low immunity;
-        \item<4-> Bigger thresholds: laggards / greater resistance.
-    \end{itemize}
+    \item<1-> The individuals change their state based on their neighbors' state.
+%    \begin{itemize}
+%        \item<2-> A threshold value represents \textbf{how susceptible} an individual is to the contagious agent.
+%        \item<2-> Smaller thresholds: early adopters / low immunity;
+%        \item<4-> Bigger thresholds: laggards / greater resistance.
+%    \end{itemize}
 \end{itemize}
 }
 \onslide<2->{
@@ -340,26 +340,34 @@ Universidade Federal do Ceará}
 \begin{frame}{Problems arising from the Threshold Model}
 	Several computational problems arise from the Threshold Model.
 	\begin{itemize}
-		\item<1-> \textbf{Influence Maximization} (\textsc{IM}) \parencite{kempe}: find a seed set of bounded cardinality that maximizes the number of infected vertices.
+		\item<1-> \textbf{Influence Maximization} (\textsc{IM}) \parencite{kempe}. $\NP$-complete.
+		\item<1-> \textbf{Target Set Selection} (\textsc{TSS}) \parencite{DREYER2009}. $\NP$-complete.
+		\item<1-> Variations:
 		\begin{itemize}
-			\item<2-> Decision version is \NP-complete even for bipartite graphs.
-			\item<3-> \NP-complete even for $k$-regular graphs if we require $S$ to infect all vertices of $G$ -- \textbf{Target Set Selection} (\textsc{TSS}) \parencite{DREYER2009}.
+			\item<1-> Directed version;
+			\item<1-> Majority version: $t(v) = \lceil \frac{d(v)}{2} \rceil \quad \forall v \in V(G)$;
+			\item<1-> \textsc{TSS} with maximum activation time \parencite{Keiler2023, Flocchini2003, Marcilon2018};
+			\item<1-> \textsc{TSS} with activation time equal to~1 \parencite{Arajo2023};
 		\end{itemize}
+%		\begin{itemize}
+%			\item<2-> Decision version is  even for bipartite graphs.
+%			\item<3-> \NP-complete even for $k$-regular graphs if we require $S$ to infect all vertices of $G$ -- \textbf{Target Set Selection} (\textsc{TSS}) .
+%		\end{itemize}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Problems arising from the Threshold Model}
-	
-	\onslide<1->{
-		Variations of these problems:
-		\begin{itemize}
-			\item Directed version;
-			\item Majority version: $t(v) = \lceil \frac{d(v)}{2} \rceil \quad \forall v \in V(G)$;
-			\item \textsc{TSS} with maximum activation time \parencite{Keiler2023, Flocchini2003, Marcilon2018};
-			\item \textsc{TSS} with activation time equal to~1 \parencite{Arajo2023};
-		\end{itemize}
-	}
-\end{frame}
+%\begin{frame}{Problems arising from the Threshold Model}
+%	
+%	\onslide<1->{
+%		Variations of these problems:
+%		\begin{itemize}
+%			\item Directed version;
+%			\item Majority version: $t(v) = \lceil \frac{d(v)}{2} \rceil \quad \forall v \in V(G)$;
+%			\item \textsc{TSS} with maximum activation time \parencite{Keiler2023, Flocchini2003, Marcilon2018};
+%			\item \textsc{TSS} with activation time equal to~1 \parencite{Arajo2023};
+%		\end{itemize}
+%	}
+%\end{frame}
 
 \begin{frame}{Problems arising from the Threshold Model}
 	
@@ -367,18 +375,18 @@ Universidade Federal do Ceará}
 	
 	\begin{itemize}
 		\item<1-> \textbf{Firefighter};
+%		\begin{itemize}
+%			\item<1-> A fire breaks at some vertex and will spread;
+%			\item<2-> The goal is to place firefighters to protect the vertices from the fire.
+%			\item<5-> \NP-complete \textbf{even for trees!} (And a bunch of other classes)
+%		\end{itemize}
+		\item<6-> \textbf{Influence Immunization Bounding} (\textsc{IIB});
 		\begin{itemize}
-			\item<2-> A fire breaks at some vertex and will spread;
-			\item<3-> The goal is to place firefighters to protect the vertices from the fire.
-			\item<6-> \NP-complete \textbf{even for trees!} (And a bunch of other classes)
-		\end{itemize}
-		\item<7-> \textbf{Influence Immunization Bounding} (\textsc{IIB});
-		\begin{itemize}
-			\item<7-> A generalization of Firefighter? \textbf{No, but sort of...}
+			\item<6-> A generalization of Firefighter? %\textbf{No, but sort of...}
 		\end{itemize}
 	\end{itemize}
 	
-	\only<2>{
+	\only<1>{
 		\begin{figure}
 		\centering
 		\begin{tikzpicture}
@@ -390,7 +398,7 @@ Universidade Federal do Ceará}
 		\end{figure}
 	}
 	
-	\only<3>{
+	\only<2>{
 		\begin{figure}
 			\centering
 			\begin{tikzpicture}
@@ -402,7 +410,7 @@ Universidade Federal do Ceará}
 		\end{figure}
 	}
 	
-	\only<4>{
+	\only<3>{
 		\begin{figure}
 			\centering
 			\begin{tikzpicture}
@@ -414,7 +422,7 @@ Universidade Federal do Ceará}
 		\end{figure}
 	}
 	
-	\only<5>{
+	\only<4>{
 		\begin{figure}
 			\centering
 			\begin{tikzpicture}
@@ -426,7 +434,7 @@ Universidade Federal do Ceará}
 		\end{figure}
 	}
 	
-	\only<6>{
+	\only<5->{
 		\begin{figure}
 			\centering
 			\begin{tikzpicture}
@@ -447,43 +455,43 @@ Universidade Federal do Ceará}
 	
 	\begin{itemize}
 		\item<1-> Option 1: raise the vertex threshold above its degree;
-		\item<4-> \only<4>{Option 2: make the vertex invisible -- remove it.}\only<5>{\textcolor{red}{\textbf{Option 2: make the vertex invisible -- remove it.}}}
+		\item<1-> \textcolor{red}{\textbf{Option 2: make the vertex invisible -- remove it.}}
 	\end{itemize}
 	
-	\only<1>{
-		\begin{figure}
-			\centering
-			\tikz \graph [spring layout, nodes={draw,circle}] { a[label=above:{\textcolor{red}{$+\infty$}}, draw=blue, line width=1mm] -- {u[fill=red], w[label=left:{\textcolor{red}{1}}], x[fill=red], y[label=right:{\textcolor{red}{1}}], z[fill=red]} };
-		\end{figure}
-	}
+%	\only<1>{
+%		\begin{figure}
+%			\centering
+%			\tikz \graph [spring layout, nodes={draw,circle}] { a[label=above:{\textcolor{red}{$+\infty$}}, draw=blue, line width=1mm] -- {u[fill=red], w[label=left:{\textcolor{red}{1}}], x[fill=red], y[label=right:{\textcolor{red}{1}}], z[fill=red]} };
+%		\end{figure}
+%	}
+%	
+%	\only<2>{
+%		\begin{minipage}[c]{0.5\textwidth}
+%			\begin{figure}
+%				\centering
+%				\tikz \graph [spring layout, nodes={draw,circle}] { a[label=above:{\textcolor{red}{3}}] -- {u[fill=red], w[label=left:{\textcolor{red}{1}}], x[label=left:{\textcolor{red}{$+\infty$}}, draw=blue, line width=1mm, fill=red], y[label=right:{\textcolor{red}{1}}], z[fill=red]} };
+%			\end{figure}
+%		\end{minipage}\begin{minipage}[c]{0.5\textwidth}
+%			\begin{remark}[Option 1]
+%				Infected vertices can also be immunized. In this option, the immunized infected vertices still \textbf{can infect others}.
+%			\end{remark}
+%		\end{minipage}
+%	}
+%	
+%	\only<3>{
+%		\begin{minipage}[c]{0.5\textwidth}
+%			\begin{figure}
+%				\centering
+%				\tikz \graph [spring layout, nodes={draw,circle}] { a[label=above:{\textcolor{red}{3}}, fill=red] -- {u[fill=red], w[label=left:{\textcolor{red}{1}}], x[label=left:{\textcolor{red}{$+\infty$}}, draw=blue, line width=1mm, fill=red], y[label=right:{\textcolor{red}{1}}], z[fill=red]} };
+%			\end{figure}
+%		\end{minipage}\begin{minipage}[c]{0.5\textwidth}
+%			\begin{remark}[Option 1]
+%				Infected vertices can also be immunized. In this option, the immunized infected vertices still \textbf{can infect others}.
+%			\end{remark}
+%		\end{minipage}
+%	}
 	
-	\only<2>{
-		\begin{minipage}[c]{0.5\textwidth}
-			\begin{figure}
-				\centering
-				\tikz \graph [spring layout, nodes={draw,circle}] { a[label=above:{\textcolor{red}{3}}] -- {u[fill=red], w[label=left:{\textcolor{red}{1}}], x[label=left:{\textcolor{red}{$+\infty$}}, draw=blue, line width=1mm, fill=red], y[label=right:{\textcolor{red}{1}}], z[fill=red]} };
-			\end{figure}
-		\end{minipage}\begin{minipage}[c]{0.5\textwidth}
-			\begin{remark}[Option 1]
-				Infected vertices can also be immunized. In this option, the immunized infected vertices still \textbf{can infect others}.
-			\end{remark}
-		\end{minipage}
-	}
 	
-	\only<3>{
-		\begin{minipage}[c]{0.5\textwidth}
-			\begin{figure}
-				\centering
-				\tikz \graph [spring layout, nodes={draw,circle}] { a[label=above:{\textcolor{red}{3}}, fill=red] -- {u[fill=red], w[label=left:{\textcolor{red}{1}}], x[label=left:{\textcolor{red}{$+\infty$}}, draw=blue, line width=1mm, fill=red], y[label=right:{\textcolor{red}{1}}], z[fill=red]} };
-			\end{figure}
-		\end{minipage}\begin{minipage}[c]{0.5\textwidth}
-			\begin{remark}[Option 1]
-				Infected vertices can also be immunized. In this option, the immunized infected vertices still \textbf{can infect others}.
-			\end{remark}
-		\end{minipage}
-	}
-	
-	\only<4-5>{
 		\begin{minipage}[c]{0.5\textwidth}
 			\begin{figure}
 				\centering
@@ -495,11 +503,11 @@ Universidade Federal do Ceará}
 				
 			\end{figure}
 		\end{minipage}\begin{minipage}[c]{0.5\textwidth}
-			\begin{remark}[Option 2]
+			\onslide<2->{\begin{remark}[Option 2]
 				In this option, immunized vertices do not infect nor get infected.
-			\end{remark}
+			\end{remark}}
 		\end{minipage}
-	}
+	
 \end{frame}
 
 \begin{frame}{Influence Immunization Bounding}
@@ -617,41 +625,41 @@ Universidade Federal do Ceará}
 	A little of \textbf{Parameterized Complexity}.
 \end{frame}
 
-\begin{frame}{Parameterized Complexity}
-	We can define a (classical) decision problem as follows:
-	\begin{itemize}
-		\item<1-> Let $\Sigma$ be a finite alphabet, and $Q \subseteq \Sigma^*$.
-	\end{itemize}
-	\onslide<1->{
-		\noindent\makebox[\textwidth][c]{%
-			\begin{minipage}{0.5\textwidth}
-				\begin{framed}
-					\textit{Input}: $x \in \Sigma^*$.\\
-					\textit{Question}: Decide whether $x \in Q$.
-				\end{framed}
-		\end{minipage}}
-	}
-	\onslide<2->{
-		\begin{minipage}{0.45\textwidth}
-			\begin{definition}
-				A \textbf{parameter} is a function $\kappa:\Sigma^* \rightarrow \mathbb{N}$ that takes the input of a problem to the naturals.
-			\end{definition}
-		\end{minipage}\hfill\begin{minipage}{0.45\textwidth}
-		\begin{example}
-			A parameter for \textsc{SAT} can be $\kappa(\varphi) = \text{``Number of variables of $\varphi$''}$, where $\varphi$ is a CNF formula.
-		\end{example}
-		\end{minipage}
-	}
-\end{frame}
+%\begin{frame}{Parameterized Complexity}
+%	We can define a (classical) decision problem as follows:
+%	\begin{itemize}
+%		\item<1-> Let $\Sigma$ be a finite alphabet, and $Q \subseteq \Sigma^*$.
+%	\end{itemize}
+%	\onslide<1->{
+%		\noindent\makebox[\textwidth][c]{%
+%			\begin{minipage}{0.5\textwidth}
+%				\begin{framed}
+%					\textit{Input}: $x \in \Sigma^*$.\\
+%					\textit{Question}: Decide whether $x \in Q$.
+%				\end{framed}
+%		\end{minipage}}
+%	}
+%	\onslide<2->{
+%		\begin{minipage}{0.45\textwidth}
+%			\begin{definition}
+%				A \textbf{parameter} is a function $\kappa:\Sigma^* \rightarrow \mathbb{N}$ that takes the input of a problem to the naturals.
+%			\end{definition}
+%		\end{minipage}\hfill\begin{minipage}{0.45\textwidth}
+%		\begin{example}
+%			A parameter for \textsc{SAT} can be $\kappa(\varphi) = \text{``Number of variables of $\varphi$''}$, where $\varphi$ is a CNF formula.
+%		\end{example}
+%		\end{minipage}
+%	}
+%\end{frame}
 
 \begin{frame}{Parameterized Complexity}
-	Now we can define a \textbf{parameterized problem}.
+	%Let's define a \textbf{parameterized problem}.
 	
 	\begin{definition}
 		A \textit{parameterized problem} is a pair $(P, \kappa)$, such that $P$ is a decision problem and $\kappa$ is a parameter for $P$.
 	\end{definition}
 	
-	\onslide<2->{
+	\onslide<1->{
 		\noindent\makebox[\textwidth][c]{%
 			\begin{minipage}{0.75\textwidth}
 				\begin{framed}
@@ -662,21 +670,23 @@ Universidade Federal do Ceará}
 				\end{framed}
 		\end{minipage}}
 	}
+	
+	\textcolor{red}{\textbf{Parameters of the problem matter for its tractability.}}
 \end{frame}
 
-\begin{frame}{Parameterized Complexity}
-	But what is the motivation behind this?
-	\begin{itemize}
-		\item<1-> \NP-hard problems cannot have \textbf{all instances} solved in polynomial time, unless $\P = \NP$.
-		\item<2-> But in practice, \textbf{only a subset} of them is relevant.
-		\begin{itemize}
-			\item<2-> VLSI design: the number of circuit layers is \textcolor{red}{usually $\leq 10$};
-			\item<2-> Computational biology: real instances of DNA chain reconstruction have special properties, e.g., \textcolor{red}{treewidth $\leq 11$};
-			\item<2-> Robotics: the number of degrees of freedom in motion planning problems is \textcolor{red}{usually $\leq 10$}.
-		\end{itemize}
-		\item<3-> This means that \textbf{parameters of the problem matter for its tractability}.
-	\end{itemize}
-\end{frame}
+%\begin{frame}{Parameterized Complexity}
+%	But what is the motivation behind this?
+%	\begin{itemize}
+%		\item<1-> \NP-hard problems cannot have \textbf{all instances} solved in polynomial time, unless $\P = \NP$.
+%		\item<2-> But in practice, \textbf{only a subset} of them is relevant.
+%		\begin{itemize}
+%			\item<2-> VLSI design: the number of circuit layers is \textcolor{red}{usually $\leq 10$};
+%			\item<2-> Computational biology: real instances of DNA chain reconstruction have special properties, e.g., \textcolor{red}{treewidth $\leq 11$};
+%			\item<2-> Robotics: the number of degrees of freedom in motion planning problems is \textcolor{red}{usually $\leq 10$}.
+%		\end{itemize}
+%		\item<3-> This means that \textbf{parameters of the problem matter for its tractability}.
+%	\end{itemize}
+%\end{frame}
 
 \begin{frame}{Parameterized Complexity}
 	Let $x \in \Sigma^*$ be an instance of a parameterized problem $(P, \kappa)$.
@@ -710,13 +720,13 @@ Universidade Federal do Ceará}
 		\item<2-> $k$-\textsc{Clique} is the parameterized analogous to \textsc{3-Sat};
 		\begin{itemize}
 			\item<2-> No one has managed to find a $\FPT$ algorithm;
-			\item<3-> \textbf{Hypothesis: $k$-\textsc{Clique} is not in $\FPT$.}
+			\item<2-> \textbf{Hypothesis: $k$-\textsc{Clique} is not in $\FPT$.}
 		\end{itemize}
-		\item<4-> The $\W[t]$-hardness is the parameterized analogous of $\NP$-hardness.
+		\item<3-> The $\W[t]$-hardness is the parameterized analogous of $\NP$-hardness.
 		\begin{itemize}
-			\item<4-> $k$-\textsc{Clique} is $\W[1]$-hard;
-			\item<5-> \textsc{Hitting Set} and \textsc{Dominating Set} are $\W[2]$-hard;
-			\item<6-> We can show other problems are $\W[t]$-hard by using $\FPT$-reductions.
+			\item<3-> $k$-\textsc{Clique} is $\W[1]$-hard;
+			\item<3-> \textsc{Hitting Set} and \textsc{Dominating Set} are $\W[2]$-hard;
+			\item<3-> We can show other problems are $\W[t]$-hard by using $\FPT$-reductions.
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -766,11 +776,11 @@ Universidade Federal do Ceará}
 	Let $G=(V,E)$ be a graph with thresholds $t:V(G) \rightarrow \mathbb{N}$ and seed set $S \subseteq V(G)$.
 	
 	\begin{definition}
-		Let $Y \subseteq V(G)$. If, by immunizing the vertices of $Y$, the infection in $(G, t)$ is restricted to \textbf{at most} $k$ vertices, we say that $Y$ is a \textbf{$k$-immunizing set}.
+		Let $Y \subseteq V(G)$. If, by immunizing the vertices of $Y$, the infection in $(G, t)$ is restricted to \textbf{at most} $k$ vertices, we say that $Y$ is a \textbf{$k$-restricting set}.
 	\end{definition}
 	
 	\begin{definition}
-		The \textbf{$k$-immunization number of $(G, t)$}, denoted by $$\text{Im}(G, t, k)$$, is size of a \textbf{mimimum $k$-immunizing set} of $(G, t)$.
+		The \textbf{$k$-restricting number of $(G, t)$}, denoted by $$\mathfrak{R}(G, t, k)$$, is size of a \textbf{mimimum $k$-restricting set} of $(G, t)$.
 	\end{definition}
 \end{frame}
 
@@ -780,24 +790,24 @@ Universidade Federal do Ceará}
 		\onslide<1->{
 			Consider the graph on the right.
 			\begin{example}
-				$Y = \{c, h\}$ is a $3$-immunizing set of $(G, t)$.
+				$Y = \{c, h\}$ is a $3$-restricting set of $(G, t)$.
 				
-				$\text{Im}(G, t, k=3) = 2$.
+				$\mathfrak{R}(G, t, k=3) = 2$.
 			\end{example}
 		}
 		\onslide<2->{
 			\begin{Definition}
-				If $k = |S|$, then we say that $\text{Im}(G, t, k=|S|)$ is the \textbf{inhibition number of $(G, t)$}, and denote it by $\text{In}(G, t)$.
+				If $k = |S|$, then we say that $\mathfrak{R}(G, t, k=|S|)$ is the \textbf{total restricting number of $(G, t)$}, and denote it by $\mathfrak{R}_T(G, t)$.
 			\end{Definition}
 			
 			\begin{example}
-				$\text{In}(G, t) = \text{Im}(G, t, k=3)=2$.
+				$\mathfrak{R}_T(G, t) = \mathfrak{R}(G, t, k=3)=2$.
 			\end{example}
 		}
 		
 		\onslide<3->{
 			\begin{remark}
-				For any suitable $k$, we have that $$\text{Im}(G, t, k) \leq \text{In}(G, t)$$
+				For any suitable $k$, we have that $$\mathfrak{R}(G, t, k) \leq \mathfrak{R}_T(G, t)$$
 			\end{remark}
 		}
 	\end{minipage}\begin{minipage}[t]{0.4\textwidth}
@@ -817,107 +827,130 @@ Universidade Federal do Ceará}
 	
 \end{frame}
 
-\begin{frame}{Influence Immunization Bounding (cont.)}
-	We can also define a \textbf{restricted version} of \textsc{IIB}, which we call \textsc{r-IIB}.
-	
-	\onslide<1->{
-		\noindent\makebox[\textwidth][c]{%
-			\begin{minipage}{0.70\textwidth}
-				\begin{framed}
-					\textbf{Restricted Influence Immunization Bounding} (\textsc{r-IIB})\\
-					\textit{Input}: A graph $G=(V, E)$ with thresholds $t:V(G) \rightarrow \mathbb{N}$, seed set $S \subseteq V(G)$, and $k, l \in \mathbb{N}$.\\
-					\textit{Question}: Decide whether there exists $Y \subseteq \textcolor{red}{V(G) \setminus S}$ such that $|Y| \leq l$ and $Y$ is a $k$-immunizing set of $G$.
-				\end{framed}
-		\end{minipage}}
-	}
-	
+%\begin{frame}{Influence Immunization Bounding (cont.)}
+%	We can also define a \textbf{restricted version} of \textsc{IIB}, which we call \textsc{r-IIB}.
+%	
+%	\onslide<1->{
+%		\noindent\makebox[\textwidth][c]{%
+%			\begin{minipage}{0.70\textwidth}
+%				\begin{framed}
+%					\textbf{Restricted Influence Immunization Bounding} (\textsc{r-IIB})\\
+%					\textit{Input}: A graph $G=(V, E)$ with thresholds $t:V(G) \rightarrow \mathbb{N}$, seed set $S \subseteq V(G)$, and $k, l \in \mathbb{N}$.\\
+%					\textit{Question}: Decide whether there exists $Y \subseteq \textcolor{red}{V(G) \setminus S}$ such that $|Y| \leq l$ and $Y$ is a $k$-immunizing set of $G$.
+%				\end{framed}
+%		\end{minipage}}
+%	}
+%	
+%	\begin{itemize}
+%		\item \textsc{r-IIB} is also $\W[1]$-hard when parameterized by $k$ or by $l$.
+%	\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Influence Immunization Bounding (cont.)}
+%	
+%	\begin{minipage}[t]{0.6\textwidth}
+%		\only<1-2>{
+%			Consider the graph on the right.
+%			
+%			\begin{definition}
+%				$Y \subseteq V(G)$ is a \textbf{restricted $k$-immunizing set} of $(G, t)$ if $Y$ is a $k$-immunizing set of $(G, t)$ and $Y \cap S = \emptyset$.
+%			\end{definition}
+%			
+%			\begin{itemize}
+%				\item<1-> \textcolor{red}{\textbf{$Y = \{c, h\}$ is \underline{not} a restricted $k$-immunizing set of $(G, t)$.}}.
+%				\item<2-> \textcolor{blue}{\textbf{$Y = \{c, g\}$ \underline{is} a restricted $k$-immunizing set of $(G, t)$.}}
+%			\end{itemize}
+%		}
+%		
+%		\only<3->{
+%			\begin{definition}
+%				The \textbf{restricted $k$-immunization number of $(G, t)$}, denoted by $$\text{Im}_r(G, t, k)$$, is the size of a \textbf{mimimum restricted $k$-immunizing set} of $(G, t)$.
+%			\end{definition}
+%			
+%			\begin{itemize}
+%				\item The \textbf{restricted inhibition number} $\text{In}_r(G, t)$ is analogous.
+%				\item \textbf{But why study the restricted version?}
+%			\end{itemize}
+%			
+%		}
+%			
+%	\end{minipage}\begin{minipage}[t]{0.4\textwidth}
+%		\only<1>{
+%			\begin{figure}
+%				\centering
+%				\tikz \graph [spring layout, nodes={draw,circle}] {
+%					{[clique] a[label=above:{\textcolor{red}{1}}, fill=red], b[label=above:{\textcolor{red}{2}}], c[label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm], d[label=right:{\textcolor{red}{3}}]};
+%					{[clique] c, d, e[fill=red, label=left:{\textcolor{red}{1}}], f[label=right:{\textcolor{red}{2}}]};
+%					{[clique] e, f, g[label=above:{\textcolor{red}{2}}]};
+%					g -- h[fill=red, label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm];
+%				};
+%				
+%			\end{figure}
+%		}
+%		
+%		\only<2->{
+%			\begin{figure}
+%				\centering
+%				\tikz \graph [spring layout, nodes={draw,circle}] {
+%					{[clique] a[label=above:{\textcolor{red}{1}}, fill=red], b[label=above:{\textcolor{red}{2}}], c[label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm], d[label=right:{\textcolor{red}{3}}]};
+%					{[clique] c, d, e[fill=red, label=left:{\textcolor{red}{1}}], f[label=right:{\textcolor{red}{2}}]};
+%					{[clique] e, f, g[label=above:{\textcolor{red}{2}}, draw=blue, line width=1mm]};
+%					g -- h[fill=red, label=left:{\textcolor{red}{1}}];
+%				};
+%				
+%			\end{figure}
+%		}
+%		
+%	\end{minipage}
+%	
+%\end{frame}
+%
+%\begin{frame}{Influence Immunization Bounding (cont.)}
+%	The restricted version gives an upper bound for the original problem.
+%	
+%	\begin{remark}
+%		For any suitable $k$, we have that $$\text{Im}(G, t, k) \leq \text{Im}_r(G, t, k)$$
+%	\end{remark}
+%	
+%	\begin{itemize}
+%		\item<1-> A restricted $k$-immunizing set for $(G, t)$ is also a (unrestricted) $k$-immunizing set for $(G, t)$.
+%	\end{itemize}
+%\end{frame}
+
+\section{Related Work}
+
+\begin{frame}{Related Work}
 	\begin{itemize}
-		\item \textsc{r-IIB} is also $\W[1]$-hard when parameterized by $k$ or by $l$.
+		\item \fullcite{Fomin_Cutting}
+		\item \fullcite{Hayrapetyan2005}
+		\item \fullcite{Mehta2022}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Influence Immunization Bounding (cont.)}
-	
-	\begin{minipage}[t]{0.6\textwidth}
-		\only<1-2>{
-			Consider the graph on the right.
-			
-			\begin{definition}
-				$Y \subseteq V(G)$ is a \textbf{restricted $k$-immunizing set} of $(G, t)$ if $Y$ is a $k$-immunizing set of $(G, t)$ and $Y \cap S = \emptyset$.
-			\end{definition}
-			
-			\begin{itemize}
-				\item<1-> \textcolor{red}{\textbf{$Y = \{c, h\}$ is \underline{not} a restricted $k$-immunizing set of $(G, t)$.}}.
-				\item<2-> \textcolor{blue}{\textbf{$Y = \{c, g\}$ \underline{is} a restricted $k$-immunizing set of $(G, t)$.}}
-			\end{itemize}
-		}
-		
-		\only<3->{
-			\begin{definition}
-				The \textbf{restricted $k$-immunization number of $(G, t)$}, denoted by $$\text{Im}_r(G, t, k)$$, is the size of a \textbf{mimimum restricted $k$-immunizing set} of $(G, t)$.
-			\end{definition}
-			
-			\begin{itemize}
-				\item The \textbf{restricted inhibition number} $\text{In}_r(G, t)$ is analogous.
-				\item \textbf{But why study the restricted version?}
-			\end{itemize}
-			
-		}
-			
-	\end{minipage}\begin{minipage}[t]{0.4\textwidth}
-		\only<1>{
-			\begin{figure}
-				\centering
-				\tikz \graph [spring layout, nodes={draw,circle}] {
-					{[clique] a[label=above:{\textcolor{red}{1}}, fill=red], b[label=above:{\textcolor{red}{2}}], c[label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm], d[label=right:{\textcolor{red}{3}}]};
-					{[clique] c, d, e[fill=red, label=left:{\textcolor{red}{1}}], f[label=right:{\textcolor{red}{2}}]};
-					{[clique] e, f, g[label=above:{\textcolor{red}{2}}]};
-					g -- h[fill=red, label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm];
-				};
-				
-			\end{figure}
-		}
-		
-		\only<2->{
-			\begin{figure}
-				\centering
-				\tikz \graph [spring layout, nodes={draw,circle}] {
-					{[clique] a[label=above:{\textcolor{red}{1}}, fill=red], b[label=above:{\textcolor{red}{2}}], c[label=left:{\textcolor{red}{1}}, draw=blue, line width=1mm], d[label=right:{\textcolor{red}{3}}]};
-					{[clique] c, d, e[fill=red, label=left:{\textcolor{red}{1}}], f[label=right:{\textcolor{red}{2}}]};
-					{[clique] e, f, g[label=above:{\textcolor{red}{2}}, draw=blue, line width=1mm]};
-					g -- h[fill=red, label=left:{\textcolor{red}{1}}];
-				};
-				
-			\end{figure}
-		}
-		
-	\end{minipage}
-	
-\end{frame}
-
-\begin{frame}{Influence Immunization Bounding (cont.)}
-	The restricted version gives an upper bound for the original problem.
-	
-	\begin{remark}
-		For any suitable $k$, we have that $$\text{Im}(G, t, k) \leq \text{Im}_r(G, t, k)$$
-	\end{remark}
-	
+\begin{frame}{Related Work}
 	\begin{itemize}
-		\item<1-> A restricted $k$-immunizing set for $(G, t)$ is also a (unrestricted) $k$-immunizing set for $(G, t)$.
+		\item Firefighter is very conceptually related \parencite{Anshelevich2010};
+		\item Game theoretical approach \parencite{Aspnes2006,Chen2010,Moscibroda2006,Meier2014};
+		\item Spectral graph theory \parencite{Ahmad2020, Chen2016, Chakrabarti2008, Tariq2017}.
 	\end{itemize}
+	
 \end{frame}
 
 \section{Our Results}
 
-\begin{frame}
-	\sectionpage
+%\begin{frame}
+%	\sectionpage
+%\end{frame}
+
+\begin{frame}{}
+	\textbf{\huge Our Results}
 \end{frame}
 
 \part{Paths and Complete Graphs with $t(v) = c$}
 
-\begin{frame}
-	\partpage
-\end{frame}
+%\begin{frame}
+%	\partpage
+%\end{frame}
 
 \subsection{A bound for paths with $t(v)=2$}
 
@@ -1087,23 +1120,120 @@ Universidade Federal do Ceará}
 
 \subsection{Exact value for paths with $t(v)=2$}
 
-\begin{frame}{Exact value for paths with $t(v)=2$}
-	\begin{definition}
-		Let $G=(V, E)$ be a graph and $S \subseteq V(G)$ a seed set of $G$. Then:
-		\begin{itemize}
-			\item $P=v_1v_2v_3$ is a $\bullet\circ\bullet$-path if $P$ is a \textbf{maximal $S$-alternating path} of length exactly~3 such that $v_1, v_3 \in S$.
-			\item $P=v_1v_2v_3v_4$ is a $\bullet\circ\bullet\circ$-path if $P$ is a $S$-alternating path of length~4 such that $v_1, v_3 \in S$.
-		\end{itemize}
-	\end{definition}
-\end{frame}
+%\begin{frame}{Exact value for paths with $t(v)=2$}
+%	\begin{definition}
+%		Let $G=(V, E)$ be a graph and $S \subseteq V(G)$ a seed set of $G$. Then:
+%		\begin{itemize}
+%			\item $P=v_1v_2v_3$ is a $\bullet\circ\bullet$-path if $P$ is a \textbf{maximal $S$-alternating path} of length exactly~3 such that $v_1, v_3 \in S$.
+%			\item $P=v_1v_2v_3v_4$ is a $\bullet\circ\bullet\circ$-path if $P$ is a $S$-alternating path of length~4 such that $v_1, v_3 \in S$.
+%		\end{itemize}
+%	\end{definition}
+%\end{frame}
 
 \subsection{Complete graphs with $t(v)=c$}
 
-\part{Polynomial Algorithm for the $k$-Immunization Number in Trees}
-
-\begin{frame}
-	\partpage
+\begin{frame}{Complete graphs with $t(v)=c$}
+	\begin{proposition}
+		\label{prop:complete-fixed}
+		Let $G \cong K_n$ be a complete graph on $n$ vertices with thresholds $t(v) = c$ for all $v \in V(G)$, $S \subseteq V(G)$ a seed set of $G$, and $k \in \mathbb{N}$. Then:
+		
+		\[
+		\text{Im}(G, t, k) =
+		\begin{cases}
+			\min\{|S|-c+1, n-k\}, & \text{if } |S| \geq c\\
+			0, & \text{otherwise.}  
+		\end{cases}
+		\]
+	\end{proposition}
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}{0.45\textwidth}
+			\centering
+			\resizebox{!}{.33\textheight}{\begin{tikzpicture}[scale=0.8, every node/.style={circle, draw}]
+				
+				\node[circle, draw, text=red] (A) {2};
+				\node[circle, draw, above right=of A, text=red] (B) {2};
+				\node[circle, draw, below right=of B,text=red] (C) {2};
+				\node[circle, draw, below=of A, text=red] (D) {2};
+				\node[circle, draw, below=of C, fill=red, text=red] (E) {E};
+				\node[circle, draw, below right=of D, text=red] (F) {2};
+				
+				
+				% Draw edges between all pairs of nodes
+				\draw (A) -- (B);
+				\draw (A) -- (C);
+				\draw (A) -- (D);
+				\draw (A) -- (E);
+				\draw (B) -- (C);
+				\draw (B) -- (D);
+				\draw (B) -- (E);
+				\draw (C) -- (D);
+				\draw (C) -- (E);
+				\draw (D) -- (E);
+				\draw (F) -- (E);
+				\draw (F) -- (D);
+				\draw (F) -- (C);
+				\draw (F) -- (B);
+				\draw (F) -- (A);
+				
+			\end{tikzpicture}}
+			%\caption{When $|S| < c$, no vertex will ever be infected.}
+			%\label{subfig:s_menor_c}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}{0.45\textwidth}
+			\centering
+			\resizebox{!}{.33\textheight}{\begin{tikzpicture}[scale=0.8, every node/.style={circle, draw}]
+				
+				\node[circle, draw, fill=red, text=red] (A) {3};
+				\node[circle, draw, above right=of A, text=red, text=red] (B) {3};
+				\node[circle, draw, below right=of B, fill=red, text=red] (C) {3};
+				\node[circle, draw, below=of A, fill=red, text=red] (D) {3};
+				\node[circle, draw, below=of C, fill=red, text=red] (E) {E};
+				\node[circle, draw, below right=of D, text=red] (F) {3};
+				
+				
+				% Draw edges between all pairs of nodes
+				\draw (A) -- (B);
+				\draw (A) -- (C);
+				\draw (A) -- (D);
+				\draw (A) -- (E);
+				\draw (B) -- (C);
+				\draw (B) -- (D);
+				\draw (B) -- (E);
+				\draw (C) -- (D);
+				\draw (C) -- (E);
+				\draw (D) -- (E);
+				\draw (F) -- (E);
+				\draw (F) -- (D);
+				\draw (F) -- (C);
+				\draw (F) -- (B);
+				\draw (F) -- (A);
+				
+				\node[draw=blue, rectangle, fit=(C), inner sep=4pt] {};
+				\node[draw=blue, rectangle, fit=(E), inner sep=4pt] {};
+				
+				\node[draw=green, rectangle, fit=(B), inner sep=4pt] {};
+				\node[draw=green, rectangle, fit=(F), inner sep=4pt] {};
+				
+			\end{tikzpicture}}
+			%\caption{Suppose $k = 4$. Then, we have two options: we either immunize $|S| - c + 1 = 2$ infected vertices (blue) or $n - k = 2$ uninfected vertices (green).}
+			%\label{subfig:s_maior_c}
+		\end{subfigure}
+	\end{figure}
 \end{frame}
+
+%\part{Polynomial Algorithm for the $k$-Immunization Number in Trees}
+%
+%\begin{frame}
+%	\partpage
+%\end{frame}
+%
+%\begin{frame}{Polynomial Algorithm for Trees}
+%	\begin{itemize}
+%		\item Para dois naturais $x$ e $y$, defina $$\mathfrak{P}_x(y) = \{(a_1, \dots, a_x) \in \mathbb{N}^x \mid a_1 + \dots + a_x = y\}$$
+%	\end{itemize}
+%\end{frame}
 
 %\part{Polynomial Algorithm the Inhibition Number when $t(v) = 1$}
 %
@@ -1113,9 +1243,9 @@ Universidade Federal do Ceará}
 
 \part{Hardness for Chordal Graphs}
 
-\begin{frame}
-	\partpage
-\end{frame}
+%\begin{frame}
+%	\partpage
+%\end{frame}
 
 \begin{frame}{Hardness for Chordal Graphs}
 	\begin{definition}
@@ -1434,7 +1564,7 @@ Universidade Federal do Ceará}
 \begin{frame}{Hardness for Chordal Graphs}
 	
 	\begin{itemize}
-		\item \textcolor{red}{\textbf{$G$ has a dominating set of size $\leq k$ if and only if $(G, t, S)$ has a $|S|$-imunizing set of size $\leq l = k$.}}
+		\item \textcolor{red}{\textbf{$G$ has a dominating set of size $\leq k$ if and only if $(G, t, S)$ has a $|S|$-imunizing set of size $l \leq k$.}}
 	\end{itemize}
 	
 	%\begin{minipage}[c]{0.50\textwidth}
@@ -1455,22 +1585,22 @@ Universidade Federal do Ceará}
 	%\end{minipage}\begin{minipage}[c]{0.50\textwidth}
 	%\end{minipage}
 	\begin{itemize}
-		\item We conclude that \textsc{IIB} is $\W[1]$-hard for chordal graphs parameterized by $l$, and also $\NP$-complete for split graphs.
+		\item \textsc{IIB} is $\W[1]$-hard for chordal graphs parameterized by $l$, and $\NP$-complete for split graphs.
 	\end{itemize}
 \end{frame}
 
 \part{Hardness for Bipartite Graphs}
 
-\begin{frame}
-	\partpage
-\end{frame}
+%\begin{frame}
+%	\partpage
+%\end{frame}
 
 \begin{frame}{Hardness for Bipartite Graphs}
 	\begin{minipage}{.45\textwidth}
 		\cite{Cordasco2023} showed that \textsc{IIB} is $\W[2]$-hard parameterized by $|S|+l$ even on bipartite graphs.
-		\begin{itemize}
-			\item Their graph looked like this. \textbf{The part $B$ has mixed susceptible and infected vertices.}
-		\end{itemize}
+%		\begin{itemize}
+%			\item Their graph looked like this. \textbf{The part $B$ has mixed susceptible and infected vertices.}
+%		\end{itemize}
 		\begin{proposition}
 			\textsc{IIB} is $\NP$-complete on bipartite graphs even if $A$ is entirely susceptible and $B$ is entirely infected.
 		\end{proposition}
@@ -1532,7 +1662,13 @@ Universidade Federal do Ceará}
 
 \begin{frame}{Hardness for Bipartite Graphs}
 	\begin{itemize}
-		\item On the \textsc{Set Cover} problem, we are given a universe set $\mathcal{U} = \{a_1, a_2, \dots, a_n\}$, a collection $\mathcal{S} = \{S_1, S_2, \dots, S_m\}$ of subsets of $\mathcal{U}$, and a parameter $c \in \mathbb{N}$, and the goal is to find $C \subset \mathcal{S}$ such that $|C| \leq c$ and the union of all sets in $C$ is equal to $\mathcal{U}$.
+		\item Reduction from \textsc{Set Cover}.
+		\begin{itemize}
+			\item Universe set $\mathcal{U} = \{a_1, a_2, \dots, a_n\}$;
+			\item $\mathcal{S} = \{S_1, S_2, \dots, S_m\}$;
+			\item Parameter $c \in \mathbb{N}$.
+		\end{itemize}
+% we are given a , a collection  of subsets of $\mathcal{U}$, and a , and the goal is to find $C \subset \mathcal{S}$ such that $|C| \leq c$ and the union of all sets in $C$ is equal to $\mathcal{U}$.
 	\end{itemize}
 	\begin{enumerate}
 		\item Create a bipartite graph $G$ such that $V(G) = \mathcal{U} \cup \mathcal{S}$ and $E(G) = \{a_iS_j \mid a_i \in S_j\}$;
@@ -1652,9 +1788,9 @@ Universidade Federal do Ceará}
 
 \part{Hardness for Planar Bipartite Subcubic Graphs}
 
-\begin{frame}
-	\partpage
-\end{frame}
+%\begin{frame}
+%	\partpage
+%\end{frame}
 
 \begin{frame}{Hardness for Planar Bipartite Subcubic Graphs}
 	\begin{definition}
@@ -1853,9 +1989,9 @@ Universidade Federal do Ceará}
 
 \part{Pathwidth Based Bounds}
 
-\begin{frame}
-	\partpage
-\end{frame}
+%\begin{frame}
+%	\partpage
+%\end{frame}
 
 \section{Conclusion and Future Work}
 

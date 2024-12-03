@@ -19,6 +19,140 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{Ahmad2020}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=676b3fc9a38f667678575be2a6d3787f}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4d16d884a89f980caf0c02791f639cdf}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={Sarwan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=29e24621402438f3019faa8812b1e938}{%
+           family={Tariq},
+           familyi={T\bibinitperiod},
+           given={Juvaria},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=091debb9a341de7b2647ca89cf5359fe}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Imdadullah},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44dcad863934ebee369d4b90d9f194f2}{%
+           family={Shabbir},
+           familyi={S\bibinitperiod},
+           given={Mudassir},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc7138348a852912092794d101195811}{%
+           family={Zaman},
+           familyi={Z\bibinitperiod},
+           given={Arif},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{41e4c73d50a9ae347bfcc8fe962dce40}
+      \strng{fullhash}{c6ce0a732665dd2bdc29ad8afb0cc5a8}
+      \strng{bibnamehash}{41e4c73d50a9ae347bfcc8fe962dce40}
+      \strng{authorbibnamehash}{41e4c73d50a9ae347bfcc8fe962dce40}
+      \strng{authornamehash}{41e4c73d50a9ae347bfcc8fe962dce40}
+      \strng{authorfullhash}{c6ce0a732665dd2bdc29ad8afb0cc5a8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0020-0255}
+      \field{journaltitle}{Information Sciences}
+      \field{month}{5}
+      \field{title}{Combinatorial trace method for network immunization}
+      \field{volume}{519}
+      \field{year}{2020}
+      \field{pages}{215\bibrangedash 228}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/j.ins.2020.01.037
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.ins.2020.01.037
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.ins.2020.01.037
+      \endverb
+    \endentry
+    \entry{Anshelevich2010}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=783ce9a89335994e5a0b7f9abece16fd}{%
+           family={Anshelevich},
+           familyi={A\bibinitperiod},
+           given={Elliot},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=577a2230fbf79c5a5e612f51eacaf7cc}{%
+           family={Chakrabarty},
+           familyi={C\bibinitperiod},
+           given={Deeparnab},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f764492c8f3ffd3c3a7284964218cfdd}{%
+           family={Hate},
+           familyi={H\bibinitperiod},
+           given={Ameya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30d52466e3a1992147b3efa2df226338}{%
+           family={Swamy},
+           familyi={S\bibinitperiod},
+           given={Chaitanya},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{3c118a9cfadb439802efe4299f6328cb}
+      \strng{fullhash}{4a3daaa5959b90dba8273187417d14a1}
+      \strng{bibnamehash}{3c118a9cfadb439802efe4299f6328cb}
+      \strng{authorbibnamehash}{3c118a9cfadb439802efe4299f6328cb}
+      \strng{authornamehash}{3c118a9cfadb439802efe4299f6328cb}
+      \strng{authorfullhash}{4a3daaa5959b90dba8273187417d14a1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-0541}
+      \field{journaltitle}{Algorithmica}
+      \field{month}{12}
+      \field{number}{1–2}
+      \field{title}{Approximability of the Firefighter Problem: Computing Cuts over Time}
+      \field{volume}{62}
+      \field{year}{2010}
+      \field{pages}{520\bibrangedash 536}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s00453-010-9469-y
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/s00453-010-9469-y
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s00453-010-9469-y
+      \endverb
+    \endentry
     \entry{Arajo2023}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=7d2f335c2dcd957fd87c446e07b5ba17}{%
@@ -67,50 +201,60 @@
       \verb http://dx.doi.org/10.1016/j.dam.2022.12.021
       \endverb
     \endentry
-    \entry{barabasi2016network}{book}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=15bacd7ddfc866c5dd96976d4b0244d5}{%
-           family={Barabási},
-           familyi={B\bibinitperiod},
-           given={Albert-László},
-           giveni={A\bibinithyphendelim L\bibinitperiod},
+    \entry{Aspnes2006}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8273a9e5e0f1976714e0f36cfb448466}{%
+           family={Aspnes},
+           familyi={A\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=5996b175b9fa8551c3fa09da65426167}{%
-           family={Pósfai},
-           familyi={P\bibinitperiod},
-           given={Márton},
-           giveni={M\bibinitperiod},
+        {{un=0,uniquepart=base,hash=ef2295ebf3d3a2705d1100d46aaf9e82}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
            givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Cambridge}%
+        {{un=0,uniquepart=base,hash=6b77d1324a309d7e773e6ab45a3b0be7}{%
+           family={Yampolskiy},
+           familyi={Y\bibinitperiod},
+           given={Aleksandr},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Cambridge University Press}%
+        {Elsevier BV}%
       }
-      \strng{namehash}{3c0a20b3e913df9584530b6efb70d6c7}
-      \strng{fullhash}{3c0a20b3e913df9584530b6efb70d6c7}
-      \strng{bibnamehash}{3c0a20b3e913df9584530b6efb70d6c7}
-      \strng{authorbibnamehash}{3c0a20b3e913df9584530b6efb70d6c7}
-      \strng{authornamehash}{3c0a20b3e913df9584530b6efb70d6c7}
-      \strng{authorfullhash}{3c0a20b3e913df9584530b6efb70d6c7}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \strng{namehash}{13b671d107e9ec33057a97e0509f4e94}
+      \strng{fullhash}{13b671d107e9ec33057a97e0509f4e94}
+      \strng{bibnamehash}{13b671d107e9ec33057a97e0509f4e94}
+      \strng{authorbibnamehash}{13b671d107e9ec33057a97e0509f4e94}
+      \strng{authornamehash}{13b671d107e9ec33057a97e0509f4e94}
+      \strng{authorfullhash}{13b671d107e9ec33057a97e0509f4e94}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{La 4ème de couverture indique : "Networks are everywhere, from the Internet, to social networks, and the genetic networks that determine our biological existence. Illustrated throughout in full colour, this pioneering textbook, spanning a wide range of topics from physics to computer science, engineering, economics and the social sciences, introduces network science to an interdisciplinary audience. From the origins of the six degrees of separation to explaining why networks are robust to random failures, the author explores how viruses like Ebola and H1N1 spread, and why it is that our friends have more friends than we do. Using numerous real-world examples, this innovatively designed text includes clear delineation between undergraduate and graduate level material"}
-      \field{isbn}{9781107076266 1107076269}
-      \field{title}{Network science}
-      \field{year}{2016}
+      \field{issn}{0022-0000}
+      \field{journaltitle}{Journal of Computer and System Sciences}
+      \field{month}{9}
+      \field{number}{6}
+      \field{title}{Inoculation strategies for victims of viruses and the sum-of-squares partition problem}
+      \field{volume}{72}
+      \field{year}{2006}
+      \field{pages}{1077\bibrangedash 1093}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1016/j.jcss.2006.02.003
+      \endverb
       \verb{urlraw}
-      \verb http://barabasi.com/networksciencebook/
+      \verb http://dx.doi.org/10.1016/j.jcss.2006.02.003
       \endverb
       \verb{url}
-      \verb http://barabasi.com/networksciencebook/
+      \verb http://dx.doi.org/10.1016/j.jcss.2006.02.003
       \endverb
-      \keyw{required sna snaseminar}
     \endentry
     \entry{Bertossi1984-vk}{article}{}
       \name{author}{1}{}{%
@@ -148,6 +292,206 @@
       \field{year}{1984}
       \field{pages}{37\bibrangedash 40}
       \range{pages}{4}
+    \endentry
+    \entry{Chakrabarti2008}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=1995e37eb2dfe4651f28297cbdc3f466}{%
+           family={Chakrabarti},
+           familyi={C\bibinitperiod},
+           given={Deepayan},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a84866b4900b3fe9a714de1f78dbf282}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47f64381ad069e88d82016d4c642356d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chenxi},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c5235c87fe464a2e5c745d3d7091692}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jurij},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=976e034dd29cfc47640ae45c16d21a9d}{%
+           family={Faloutsos},
+           familyi={F\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery (ACM)}%
+      }
+      \strng{namehash}{839fe1f2305ade2a67331ec12bf13035}
+      \strng{fullhash}{c4b6810952fdcb388682ba338925fdc0}
+      \strng{bibnamehash}{839fe1f2305ade2a67331ec12bf13035}
+      \strng{authorbibnamehash}{839fe1f2305ade2a67331ec12bf13035}
+      \strng{authornamehash}{839fe1f2305ade2a67331ec12bf13035}
+      \strng{authorfullhash}{c4b6810952fdcb388682ba338925fdc0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1557-7406}
+      \field{journaltitle}{ACM Transactions on Information and System Security}
+      \field{month}{1}
+      \field{number}{4}
+      \field{title}{Epidemic thresholds in real networks}
+      \field{volume}{10}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 26}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1145/1284680.1284681
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1145/1284680.1284681
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1145/1284680.1284681
+      \endverb
+    \endentry
+    \entry{Chen2010}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=4d4a17dd8b76410f9198e42f08a453f7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Po-An},
+           giveni={P\bibinithyphendelim A\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=b9186a0f4c1b364c4a2e9884d3c749e1}{%
+           family={David},
+           familyi={D\bibinitperiod},
+           given={Mary},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=548c8439009be7e3768757c6ff4fc6d3}{%
+           family={Kempe},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{bba25dda4c7ee22249d35b6a3b92960b}
+      \strng{fullhash}{bba25dda4c7ee22249d35b6a3b92960b}
+      \strng{bibnamehash}{bba25dda4c7ee22249d35b6a3b92960b}
+      \strng{authorbibnamehash}{bba25dda4c7ee22249d35b6a3b92960b}
+      \strng{authornamehash}{bba25dda4c7ee22249d35b6a3b92960b}
+      \strng{authorfullhash}{bba25dda4c7ee22249d35b6a3b92960b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 11th ACM conference on Electronic commerce}
+      \field{month}{6}
+      \field{series}{EC ’10}
+      \field{title}{Better vaccination strategies for better people}
+      \field{year}{2010}
+      \field{pages}{179\bibrangedash 188}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/1807342.1807370
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1145/1807342.1807370
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1145/1807342.1807370
+      \endverb
+    \endentry
+    \entry{Chen2016}{article}{}
+      \name{author}{7}{}{%
+        {{un=1,uniquepart=given,hash=da31f56113cb61a1fef7cf7543eefff8}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=accfc7f5c581f746112f5fd641490dda}{%
+           family={Tong},
+           familyi={T\bibinitperiod},
+           given={Hanghang},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb994a5b857fcb5190875c14d7485080}{%
+           family={Prakash},
+           familyi={P\bibinitperiod},
+           given={B.\bibnamedelimi Aditya},
+           giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad596aaa3fe4ccdb67388ccb833a8666}{%
+           family={Tsourakakis},
+           familyi={T\bibinitperiod},
+           given={Charalampos\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70d0c119ded502b95ee9a5df9d705934}{%
+           family={Eliassi-Rad},
+           familyi={E\bibinithyphendelim R\bibinitperiod},
+           given={Tina},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=976e034dd29cfc47640ae45c16d21a9d}{%
+           family={Faloutsos},
+           familyi={F\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4c4b4c06aa7b1d5c9f6c1fc6c256fa1}{%
+           family={Chau},
+           familyi={C\bibinitperiod},
+           given={Duen\bibnamedelima Horng},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers (IEEE)}%
+      }
+      \strng{namehash}{1ccea5f857df28e6e13a0cd4be28bb7d}
+      \strng{fullhash}{4e5514a8a2978e0daf58e9ab731f308b}
+      \strng{bibnamehash}{1ccea5f857df28e6e13a0cd4be28bb7d}
+      \strng{authorbibnamehash}{1ccea5f857df28e6e13a0cd4be28bb7d}
+      \strng{authornamehash}{1ccea5f857df28e6e13a0cd4be28bb7d}
+      \strng{authorfullhash}{4e5514a8a2978e0daf58e9ab731f308b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1041-4347}
+      \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Node Immunization on Large Graphs: Theory and Algorithms}
+      \field{volume}{28}
+      \field{year}{2016}
+      \field{pages}{113\bibrangedash 126}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/tkde.2015.2465378
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/TKDE.2015.2465378
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/TKDE.2015.2465378
+      \endverb
     \endentry
     \entry{Coleman1957-tv}{article}{}
       \name{author}{3}{}{%
@@ -462,6 +806,127 @@
       \verb http://dx.doi.org/10.1016/S1570-8667(03)00022-4
       \endverb
     \endentry
+    \entry{Fomin_Cutting}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=79f82fca58f3e65e15c5f702996ec47f}{%
+           family={Fomin},
+           familyi={F\bibinitperiod},
+           given={Fedor\bibnamedelima V.},
+           giveni={F\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc8655679e2b0c6fadcfe50e1575fd49}{%
+           family={Golovach},
+           familyi={G\bibinitperiod},
+           given={Petr\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f65647eaa893b75995ce8750540f8c92}{%
+           family={Korhonen},
+           familyi={K\bibinitperiod},
+           given={Janne\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=1a126fe7ca5387e01e1bebcd84f3c49b}{%
+           family={Chatterjee},
+           familyi={C\bibinitperiod},
+           given={Krishnendu},
+           giveni={K\bibinitperiod}}}%
+        {{hash=518084f050a5e29de4a4b897152582cb}{%
+           family={Sgall},
+           familyi={S\bibinitperiod},
+           given={Jirí},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{7aed18d4881ec59e27b4e83c24031ce9}
+      \strng{fullhash}{7aed18d4881ec59e27b4e83c24031ce9}
+      \strng{bibnamehash}{7aed18d4881ec59e27b4e83c24031ce9}
+      \strng{authorbibnamehash}{7aed18d4881ec59e27b4e83c24031ce9}
+      \strng{authornamehash}{7aed18d4881ec59e27b4e83c24031ce9}
+      \strng{authorfullhash}{7aed18d4881ec59e27b4e83c24031ce9}
+      \strng{editorbibnamehash}{a710d8b29e0cca580bcdf3a0d221f32c}
+      \strng{editornamehash}{a710d8b29e0cca580bcdf3a0d221f32c}
+      \strng{editorfullhash}{a710d8b29e0cca580bcdf3a0d221f32c}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the parameterized complexity of separating a small set of vertices from a graph by a small vertex-separator. That is, given a graph G and integers k, t, the task is to find a vertex set X with |X|{\thinspace}≤{\thinspace}k and |N(X)|{\thinspace}≤{\thinspace}t. We show that the problem is fixed-parameter tractable (FPT) when parameterized by t but W[1]-hard when parameterized by k, anda terminal variant of the problem, where X must contain a given vertex s, is W[1]-hard when parameterized either by k or by t alone, but is FPT when parameterized by k{\thinspace}+{\thinspace}t.We also show that if we consider edge cuts instead of vertex cuts, the terminal variant is NP-hard.}
+      \field{booktitle}{Mathematical Foundations of Computer Science 2013}
+      \field{isbn}{978-3-642-40313-2}
+      \field{title}{On the Parameterized Complexity of Cutting a Few Vertices from a Graph}
+      \field{year}{2013}
+      \field{pages}{421\bibrangedash 432}
+      \range{pages}{12}
+    \endentry
+    \entry{Hayrapetyan2005}{inbook}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e3dff944c1759dd2b7f7166afdf9addb}{%
+           family={Hayrapetyan},
+           familyi={H\bibinitperiod},
+           given={Ara},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=548c8439009be7e3768757c6ff4fc6d3}{%
+           family={Kempe},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1fa432bd47e1bcf2ea7ea80e9bd4dcaf}{%
+           family={Pál},
+           familyi={P\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd1986de4095f57f4f4e373898b6df53}{%
+           family={Svitkina},
+           familyi={S\bibinitperiod},
+           given={Zoya},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{3cfa78f0d46771679d69b99b832bd1ff}
+      \strng{fullhash}{9c76897f461b5eae85031a8e6bb29640}
+      \strng{bibnamehash}{3cfa78f0d46771679d69b99b832bd1ff}
+      \strng{authorbibnamehash}{3cfa78f0d46771679d69b99b832bd1ff}
+      \strng{authornamehash}{3cfa78f0d46771679d69b99b832bd1ff}
+      \strng{authorfullhash}{9c76897f461b5eae85031a8e6bb29640}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Algorithms – ESA 2005}
+      \field{isbn}{9783540319511}
+      \field{issn}{1611-3349}
+      \field{title}{Unbalanced Graph Cuts}
+      \field{year}{2005}
+      \field{pages}{191\bibrangedash 202}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/11561071_19
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/11561071_19
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/11561071_19
+      \endverb
+    \endentry
     \entry{Keiler2023}{article}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=4e59477513ca8c146c651bdcd861b574}{%
@@ -677,6 +1142,152 @@
       \verb http://dx.doi.org/10.1016/j.tcs.2017.10.014
       \endverb
     \endentry
+    \entry{Mehta2022}{misc}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1209bcf8626849f42f269d75da12d10b}{%
+           family={Mehta},
+           familyi={M\bibinitperiod},
+           given={Hermish},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01a01ecd994f70c2f0fdbc90561c7501}{%
+           family={Reichman},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f89d9fdbcf53139bee9328861d444093}
+      \strng{fullhash}{f89d9fdbcf53139bee9328861d444093}
+      \strng{bibnamehash}{f89d9fdbcf53139bee9328861d444093}
+      \strng{authorbibnamehash}{f89d9fdbcf53139bee9328861d444093}
+      \strng{authornamehash}{f89d9fdbcf53139bee9328861d444093}
+      \strng{authorfullhash}{f89d9fdbcf53139bee9328861d444093}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Local treewidth of random and noisy graphs with applications to stopping contagion in networks}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb arXiv:2204.07827
+      \endverb
+    \endentry
+    \entry{Meier2014}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=54ca3fb5a0b303d5127cffd2ceca41f6}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={Dominic},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1b7941b8c34981fce3e36c8c5fe08a35}{%
+           family={Pignolet},
+           familyi={P\bibinitperiod},
+           given={Yvonne\bibnamedelima Anne},
+           giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58ef30159a40139f51c8605979d5ffb5}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c162b9d03517a96680df0dc8d8263eb}{%
+           family={Wattenhofer},
+           familyi={W\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{ade1d059299431c4afddb517a8e7608f}
+      \strng{fullhash}{d30026a84b2275d4aad68d882c948699}
+      \strng{bibnamehash}{ade1d059299431c4afddb517a8e7608f}
+      \strng{authorbibnamehash}{ade1d059299431c4afddb517a8e7608f}
+      \strng{authornamehash}{ade1d059299431c4afddb517a8e7608f}
+      \strng{authorfullhash}{d30026a84b2275d4aad68d882c948699}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1389-1286}
+      \field{journaltitle}{Computer Networks}
+      \field{month}{4}
+      \field{title}{On the Windfall and price of friendship: Inoculation strategies on social networks}
+      \field{volume}{62}
+      \field{year}{2014}
+      \field{pages}{221\bibrangedash 236}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.bjp.2013.12.004
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.bjp.2013.12.004
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.bjp.2013.12.004
+      \endverb
+    \endentry
+    \entry{Moscibroda2006}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=81d9cc0af2eda655e48bdf2eeb27db62}{%
+           family={Moscibroda},
+           familyi={M\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58ef30159a40139f51c8605979d5ffb5}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=509d6c60ced82b269ae96ccb72d3e69a}{%
+           family={Wattenhofer},
+           familyi={W\bibinitperiod},
+           given={Rogert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{faafbb7b8012448e3183898e61b96dda}
+      \strng{fullhash}{faafbb7b8012448e3183898e61b96dda}
+      \strng{bibnamehash}{faafbb7b8012448e3183898e61b96dda}
+      \strng{authorbibnamehash}{faafbb7b8012448e3183898e61b96dda}
+      \strng{authornamehash}{faafbb7b8012448e3183898e61b96dda}
+      \strng{authorfullhash}{faafbb7b8012448e3183898e61b96dda}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the twenty-fifth annual ACM symposium on Principles of distributed computing}
+      \field{month}{7}
+      \field{series}{PODC06}
+      \field{title}{When selfish meets evil: byzantine players in a virus inoculation game}
+      \field{year}{2006}
+      \field{pages}{35\bibrangedash 44}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/1146381.1146391
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1145/1146381.1146391
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1145/1146381.1146391
+      \endverb
+    \endentry
     \entry{ryan2017acceptance}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=522d6cd601963c5bbabe5a168cb852cd}{%
@@ -707,76 +1318,60 @@
       \field{title}{Acceptance and diffusion of hybrid corn seed in two Iowa communities}
       \field{year}{1950}
     \endentry
-    \entry{SorianoPaos2022}{article}{}
-      \name{author}{6}{}{%
-        {{un=0,uniquepart=base,hash=c3fa252f399b5b62096ea1d3272266b2}{%
-           family={Soriano‐Paños},
-           familyi={S\bibinithyphendelim P\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ed917827264f5dd3034f8955ef732ab2}{%
-           family={Cota},
-           familyi={C\bibinitperiod},
-           given={Wesley},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e22a097d1e9120b76d5383f7587c302d}{%
-           family={Ferreira},
-           familyi={F\bibinitperiod},
-           given={Silvio\bibnamedelima C.},
-           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f3a50a51656c45b67ebd266458832b26}{%
-           family={Ghoshal},
-           familyi={G\bibinitperiod},
-           given={Gourab},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=6a357114624f649b1b1dedd6e3c92cbd}{%
-           family={Arenas},
-           familyi={A\bibinitperiod},
-           given={Alex},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=3cdd528ea6024b87e2687c1a99adf20e}{%
-           family={Gómez‐Gardeñes},
-           familyi={G\bibinithyphendelim G\bibinitperiod},
-           given={Jesús},
+    \entry{Tariq2017}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=29e24621402438f3019faa8812b1e938}{%
+           family={Tariq},
+           familyi={T\bibinitperiod},
+           given={Juvaria},
            giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=676b3fc9a38f667678575be2a6d3787f}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=091debb9a341de7b2647ca89cf5359fe}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Imdadullah},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44dcad863934ebee369d4b90d9f194f2}{%
+           family={Shabbir},
+           familyi={S\bibinitperiod},
+           given={Mudassir},
+           giveni={M\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Wiley}%
+        {arXiv}%
       }
-      \strng{namehash}{8b8fa5d413a2acf87c1390c3bbe15edc}
-      \strng{fullhash}{9a786b0ed6b6b024d55ae6fb333c7410}
-      \strng{bibnamehash}{8b8fa5d413a2acf87c1390c3bbe15edc}
-      \strng{authorbibnamehash}{8b8fa5d413a2acf87c1390c3bbe15edc}
-      \strng{authornamehash}{8b8fa5d413a2acf87c1390c3bbe15edc}
-      \strng{authorfullhash}{9a786b0ed6b6b024d55ae6fb333c7410}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \strng{namehash}{b6abe9d0e71d5e80bfb93ae594235c0f}
+      \strng{fullhash}{3525886ef13833f0c2adcab7c57919e3}
+      \strng{bibnamehash}{b6abe9d0e71d5e80bfb93ae594235c0f}
+      \strng{authorbibnamehash}{b6abe9d0e71d5e80bfb93ae594235c0f}
+      \strng{authornamehash}{b6abe9d0e71d5e80bfb93ae594235c0f}
+      \strng{authorfullhash}{3525886ef13833f0c2adcab7c57919e3}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1521-3889}
-      \field{journaltitle}{Annalen der Physik}
-      \field{month}{3}
-      \field{number}{6}
-      \field{title}{Modeling Communicable Diseases, Human Mobility, and Epidemics: A Review}
-      \field{volume}{534}
-      \field{year}{2022}
+      \field{title}{Scalable Approximation Algorithm for Network Immunization}
+      \field{year}{2017}
       \verb{doi}
-      \verb 10.1002/andp.202100482
+      \verb 10.48550/ARXIV.1711.00784
       \endverb
       \verb{urlraw}
-      \verb http://dx.doi.org/10.1002/andp.202100482
+      \verb https://arxiv.org/abs/1711.00784
       \endverb
       \verb{url}
-      \verb http://dx.doi.org/10.1002/andp.202100482
+      \verb https://arxiv.org/abs/1711.00784
       \endverb
+      \keyw{Discrete Mathematics (cs.DM),Social and Information Networks (cs.SI),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
     \entry{Wagner1937-ud}{article}{}
       \name{author}{1}{}{%

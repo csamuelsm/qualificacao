@@ -1,11 +1,12 @@
 \babel@toc {english}{}\relax 
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{The Threshold Model}{9}{0}{2}
-\beamer@sectionintoc {3}{Influence Immunization Bounding}{30}{0}{3}
-\beamer@sectionintoc {4}{Parameterized Complexity}{42}{0}{4}
-\beamer@sectionintoc {5}{Influence Immunization Bounding (cont.)}{58}{0}{5}
-\beamer@sectionintoc {6}{Our Results}{68}{0}{6}
-\beamer@subsectionintoc {6}{1}{A bound for paths with $t(v)=2$}{70}{1}{6}
-\beamer@subsectionintoc {6}{2}{Exact value for paths with $t(v)=2$}{73}{1}{6}
-\beamer@subsectionintoc {6}{3}{Complete graphs with $t(v)=c$}{74}{1}{6}
-\beamer@sectionintoc {7}{Conclusion and Future Work}{109}{6}{7}
+\beamer@sectionintoc {2}{The Threshold Model}{3}{0}{2}
+\beamer@sectionintoc {3}{Influence Immunization Bounding}{20}{0}{3}
+\beamer@sectionintoc {4}{Parameterized Complexity}{29}{0}{4}
+\beamer@sectionintoc {5}{Influence Immunization Bounding (cont.)}{36}{0}{5}
+\beamer@sectionintoc {6}{Related Work}{41}{0}{6}
+\beamer@sectionintoc {7}{Our Results}{43}{0}{7}
+\beamer@subsectionintoc {7}{1}{A bound for paths with $t(v)=2$}{44}{1}{7}
+\beamer@subsectionintoc {7}{2}{Exact value for paths with $t(v)=2$}{47}{1}{7}
+\beamer@subsectionintoc {7}{3}{Complete graphs with $t(v)=c$}{47}{1}{7}
+\beamer@sectionintoc {8}{Conclusion and Future Work}{78}{5}{8}
