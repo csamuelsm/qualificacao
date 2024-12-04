@@ -116,6 +116,7 @@ nomail,
 }
 
 \newtheorem{proposition}{Proposition}
+%\newtheorem{problem}{Problem}
 
 
 \title[Restricting infections on graphs]{Restricting infections on graphs}
@@ -523,7 +524,7 @@ Universidade Federal do Ceará}
 		}
 		
 		\onslide<6->{
-			We want to find a immunizing set $Y \subseteq V(G)$ such that:
+			We want to find a restricting set $Y \subseteq V(G)$ such that:
 			\begin{itemize}
 				\item<6-> $|Y| \leq l$; and
 				\item<7-> By immunizing $Y$ at time $\tau=0$, the \textbf{infection gets restricted to at most $k$ vertices}.
@@ -1564,7 +1565,7 @@ Universidade Federal do Ceará}
 \begin{frame}{Hardness for Chordal Graphs}
 	
 	\begin{itemize}
-		\item \textcolor{red}{\textbf{$G$ has a dominating set of size $\leq k$ if and only if $(G, t, S)$ has a $|S|$-imunizing set of size $l \leq k$.}}
+		\item \textcolor{red}{\textbf{$G$ has a dominating set of size $\leq k$ if and only if $(G, t, S)$ has a $|S|$-restricting set of size $l \leq k$.}}
 	\end{itemize}
 	
 	%\begin{minipage}[c]{0.50\textwidth}
@@ -1688,11 +1689,8 @@ Universidade Federal do Ceará}
 		\end{example}
 		\onslide<2>{
 			\begin{proposition}
-				$(\mathcal{U}, \mathcal{S})$ has a set cover of size $\leq c$ if and only if $(G, t)$ has a $|\mathcal{S}|$-immunizing set of size $\leq c$.
+				$(\mathcal{U}, \mathcal{S})$ has a set cover of size $\leq c$ if and only if $(G, t)$ has a $|\mathcal{S}|$-restricting set of size $\leq c$.
 			\end{proposition}
-			\begin{itemize}
-				\item The problem remains hard even on this restricted instance for bipartite graphs.
-			\end{itemize}
 		}
 	\end{minipage}\begin{minipage}{.5\textwidth}
 		\only<1>{
@@ -1957,11 +1955,11 @@ Universidade Federal do Ceará}
 	\end{itemize}
 	
 	\begin{proposition}
-		$Y = (\{x \mid \mathcal{S}(x) = \textsc{True}\} \cup \{\overline{x} \mid \mathcal{S}(x) = \textsc{False}\}$) is a $(2|V(\varphi)|)$-immunizing set for $(G_{\varphi}, t_{\varphi})$ and $|Y| \leq |V(\varphi)|$.
+		$Y = (\{x \mid \mathcal{S}(x) = \textsc{True}\} \cup \{\overline{x} \mid \mathcal{S}(x) = \textsc{False}\}$) is a $(2|V(\varphi)|)$-restricting set for $(G_{\varphi}, t_{\varphi})$ and $|Y| \leq |V(\varphi)|$.
 	\end{proposition}
 	
 	\begin{itemize}
-		\item<2> Now, suppose $Y$ is a $(2|V(\varphi)|)$-immunizing set for $(G_{\varphi}, t_{\varphi})$ and $|Y| \leq |V(\varphi)|$. 
+		\item<2> Now, suppose $Y$ is a $(2|V(\varphi)|)$-restricting set for $(G_{\varphi}, t_{\varphi})$ and $|Y| \leq |V(\varphi)|$. 
 	\end{itemize}
 	
 	\onslide<2>{
@@ -1979,24 +1977,161 @@ Universidade Federal do Ceará}
 	\begin{proposition}
 		$G_{\varphi}$ is planar bipartite subcubic.
 	\end{proposition}
-	\begin{itemize}
-		\item<1-> Clause vertices have degree at most~3, positive literals vertices have degree~3, negative literals vertices have degree~2, and auxiliary vertices have degree~2.
-		\item<2-> Let $A$ be the set of auxiliary vertices. Then we have the partition $(X, Y)$ of $V(G_{\varphi})$ such that $X = A \cup \mathcal{C}(\varphi)$ and $Y=\{x, \overline{x} \mid x \in V(\varphi)\}$.
-		\item<3-> Since $G_{\varphi}$ is subcubic, it cannot have a $K_5$ minor.
-		\item<3-> In order to have a $K_{3, 3}$ minor, we should have 3~clauses connected with 3~equal positive literals. Since each positive literal appears only twice, $G_{\varphi}$ is planar.
-	\end{itemize}
+%	\begin{itemize}
+%		\item<1-> Clause vertices have degree at most~3, positive literals vertices have degree~3, negative literals vertices have degree~2, and auxiliary vertices have degree~2.
+%		\item<2-> Let $A$ be the set of auxiliary vertices. Then we have the partition $(X, Y)$ of $V(G_{\varphi})$ such that $X = A \cup \mathcal{C}(\varphi)$ and $Y=\{x, \overline{x} \mid x \in V(\varphi)\}$.
+%		\item<3-> Since $G_{\varphi}$ is subcubic, it cannot have a $K_5$ minor.
+%		\item<3-> In order to have a $K_{3, 3}$ minor, we should have 3~clauses connected with 3~equal positive literals. Since each positive literal appears only twice, $G_{\varphi}$ is planar.
+%	\end{itemize}
 \end{frame}
 
-\part{Pathwidth Based Bounds}
-
-%\begin{frame}
-%	\partpage
+%\part{Pathwidth Based Bounds}
+%
+%%\begin{frame}
+%%	\partpage
+%%\end{frame}
+%
+%\begin{frame}{Pathwidth Based Bounds}
+%	Let $s$ be the vertex obtained by the identification of $S$.
+%	\begin{equation}
+%		\label{eq:condition1}
+%		k \geq |H_{T_s}(\{s\})|
+%	\end{equation}
+%	
+%	\begin{figure}[h]
+%		\centering
+%		\begin{subfigure}[b]{1\textwidth}
+%			\centering
+%			\begin{tikzpicture}[scale=0.8, node distance=2cm, every node/.style={circle, draw, inner sep=3pt, minimum size=4pt, scale=0.6}]
+%				
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:2}] (A)  {A};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:2}] (B) [above right of=A] {B};
+%				
+%				\node[fill=black, text=white] (C) [below right of=B] {C};
+%				\node[fill=black, text=white] (D) [above left of=A] {D};
+%				\node[fill=black, text=white] (E) [above right of=C] {E};
+%				
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:2}] (F) [below right of=E] {F};
+%				
+%				\node[fill=black, text=white] (G) [below of=A] {G};
+%				
+%				\node[label={[rectangle, inner sep=5pt, text=red]above left:3}] (H) [below of=C] {H};
+%				
+%				\node[fill=black, text=white] (I) [below left of=G] {I};
+%				
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:2}] (J) [below of=F] {J};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (K) [right of=F] {K};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (L) [right of=J] {L};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (M) [right of=K] {M};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (N) [above right of=M] {N};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (O) [below right of=M] {O};
+%				
+%				\node[draw=none, fill=none] (P) [below right of=N] {$G$};
+%				
+%				\draw (A) -- (B);
+%				\draw (B) -- (C);
+%				\draw (A) -- (C);
+%				\draw (A) -- (D);
+%				\draw (D) -- (B);
+%				\draw (E) -- (C);
+%				\draw (E) -- (B);
+%				\draw (E) -- (F);
+%				\draw (C) -- (F);
+%				\draw (G) -- (A);
+%				\draw (H) -- (G);
+%				\draw (H) -- (C);
+%				\path[-] (H) edge[bend left=30] (I);
+%				\path[-] (I) edge[bend left=30] (A);
+%				\draw (I) -- (G);
+%				\draw (H) -- (J);
+%				\draw (K) -- (J);
+%				\draw (K) -- (F);
+%				\draw (L) -- (J);
+%				\draw (K) -- (M);
+%				\draw (M) -- (N);
+%				\draw (M) -- (O);
+%				
+%				\node[rectangle, dashed, draw=green, inner sep=8pt, fit=(F)] (Q) {};
+%				\node[rectangle, dashed, draw=green, inner sep=8pt, fit=(H)] (R) {};
+%				\node[rectangle, dashed, draw=green, inner sep=8pt, fit=(J)] (S) {};
+%				
+%			\end{tikzpicture}
+%			\caption{Graph $G$ with thresholds in red and the immunizing set $Y=\{F, H, J\}$ obtained from the path decomposition of $G'$ highlighted in green. We can see that it's possible to further decrease the size of this immunizing set by removing $J$, obtaining a~7-immunzing set for $G$ of size~2.}
+%		\end{subfigure}\\
+%		\begin{subfigure}[b]{1\textwidth}
+%			\centering
+%			\begin{tikzpicture}[scale=0.8, node distance=2cm, every node/.style={circle, draw, inner sep=3pt, minimum size=4pt, scale=0.6}]
+%				
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (A)  {A};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (B) [above right of=A] {B};
+%				
+%				\node[fill=black, text=white] (C) [below right of=B] {$s$};
+%				
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (F) [below right of=E] {F};
+%				
+%				\node[label={[rectangle, inner sep=5pt, text=red]above left:1}] (H) [below of=C] {H};
+%				
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:2}] (J) [below of=F] {J};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (K) [right of=F] {K};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (L) [right of=J] {L};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (M) [right of=K] {M};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (N) [above right of=M] {N};
+%				\node[label={[rectangle, inner sep=5pt, text=red]above:1}] (O) [below right of=M] {O};
+%				
+%				\node[draw=none, fill=none] (P) [below right of=N] {$G'$};
+%				
+%				\draw[line width=1pt, color=red] (A) -- (B);
+%				\draw[line width=1pt, color=red] (B) -- (C);
+%				\draw[line width=1pt, color=red] (A) -- (C);
+%				\draw[line width=1pt, color=red] (C) -- (F);
+%				\draw[line width=1pt, color=red] (H) -- (C);
+%				\draw (H) -- (J);
+%				\draw (K) -- (J);
+%				\draw (K) -- (F);
+%				\draw (L) -- (J);
+%				\draw (K) -- (M);
+%				\draw (M) -- (N);
+%				\draw (M) -- (O);
+%				
+%			\end{tikzpicture}
+%			\caption{Graph $G'$ obtained with the transformation and the subgraph induced by the vertices from the bags of $T_s$ in red.}
+%		\end{subfigure}\\
+%		\begin{subfigure}[b]{1\textwidth}
+%			\centering
+%			\begin{tikzpicture}[scale=0.8, node distance=3cm, every node/.style={circle, draw, inner sep=3pt, minimum size=4pt, scale=0.6}]
+%				
+%				\node[rectangle, draw=blue, minimum width=50pt, inner sep=10pt, label={[rectangle, inner sep=5pt, text=blue]above:$X_i$}] (A)  {A, B, $s$};
+%				
+%				\node[rectangle, draw=blue, minimum width=50pt, inner sep=10pt, label={[rectangle, inner sep=5pt, text=blue]above:$X_f$}] (B) [right of=A]  {$s$, F, H};
+%				
+%				\node[rectangle, draw=red, minimum width=50pt, inner sep=10pt, label={[rectangle, inner sep=5pt, text=red]above:$X_{f+1}$}] (C) [right of=B]  {F, H, J};
+%				
+%				\node[rectangle, minimum width=50pt, inner sep=10pt] (D) [right of=C]  {F, J, L};
+%				
+%				\node[rectangle, minimum width=50pt, inner sep=10pt] (E) [right of=D]  {F, J, K};
+%				
+%				\node[rectangle, minimum width=50pt, inner sep=10pt] (F) [right of=E]  {K, M};
+%				
+%				\node[rectangle, minimum width=50pt, inner sep=10pt] (G) [right of=F]  {M, N, O};
+%				
+%				\draw (A) -- (B) -- (C) -- (D) -- (E) -- (F) -- (G);
+%				
+%			\end{tikzpicture}
+%			\caption{The path decomposition of $G'$ with $X_i$, $X_f$, and $X_{f+1}$ highlighted.}
+%		\end{subfigure}
+%		\caption{A graph with thresholds, a seed set, and a immunizing set obtained from the path decomposition of $G'$.}
+%		\label{fig:pw-bound-example}
+%	\end{figure}
 %\end{frame}
 
 \section{Conclusion and Future Work}
 
-\begin{frame}
-	\sectionpage
+%\begin{frame}
+%	\sectionpage
+%\end{frame}
+
+\begin{frame}{}
+	\textbf{\huge Conclusion and Future Work}
 \end{frame}
 
 \begin{frame}{Conclusion and Future Work}
@@ -2006,10 +2141,10 @@ Universidade Federal do Ceará}
 		draw=black!20, thick, fill=white, font=\footnotesize},
 	>={Stealth[round,sep]}, rounded corners, semithick]
 	\graph [layered layout, level distance=1.6cm, sibling sep=1em, sibling distance=1.2cm] {
-		"General Graphs"[label={[text width=2.5cm, align=left]right:{\textcolor{red}{$\W$-hard}\\\textcolor{blue}{Polyn. for inhibition when $t(v)=1$}}}] -> {"Complete"[label={[text width=2cm, align=center]below:{\textcolor{blue}{Polynomial $t(v)=c$}}}], "Minor-closed"[label={[text width=2.2cm, align=center]below:{\textcolor{blue}{Assymp. bounds for conn. $S$}}}], "Chordal"[label={[text width=2cm, align=center]below:{\textcolor{blue}{$\W[1]$-hard}}}], "Bipartite"[label={[text width=2cm, align=center]below:{\textcolor{red}{$W[2]$-hard}\\ \textcolor{blue}{$\NP$-c}}}], "Bounded $nd(G)$"[label=below:{\textcolor{red}{$\W[1]-hard$}}], "Bounded $\Delta(G)$"[label={[text width=2.2cm, align=left]right:{\textcolor{red}{$\W[2]$-hard}}}]};
+		"General Graphs"[label={[text width=2.5cm, align=left]right:{\textcolor{red}{$\W$-hard}\\}}] -> {"Complete"[label={[text width=2cm, align=center]below:{\textcolor{blue}{Polynomial $t(v)=c$}}}], "Minor-closed", "Chordal"[label={[text width=2cm, align=center]below:{\textcolor{blue}{$\W[1]$-hard}}}], "Bipartite"[label={[text width=2cm, align=center]below:{\textcolor{red}{$W[2]$-hard}\\ \textcolor{blue}{$\NP$-c}}}], "Bounded $nd(G)$"[label=below:{\textcolor{red}{$\W[1]-hard$}}], "Bounded $\Delta(G)$"[label={[text width=2.2cm, align=left]right:{\textcolor{red}{$\W[2]$-hard}}}]};
 		"Minor-closed" -> {"Bounded $tw(G)$"[label={[text width=2.2cm, align=right]left:{\textcolor{red}{$\W[1]$-hard}}}], "Planar"[label={[text width=2cm, align=center]below:{\textcolor{blue}{$\NP$-c}}}]};
 		"Bounded $\Delta(G)$" -> "$\Delta(G) \leq 3$"[label={[text width=2cm, align=center]below:{\textcolor{blue}{$\NP$-c}}}];
-		"Bounded $tw(G)$" -> "Trees"[label={[text width=2cm, align=right]left:{\textcolor{blue}{Polynomial}}}];
+		"Bounded $tw(G)$" -> "Trees"[label={[text width=2cm, align=right]left:{\textcolor{orange}{In progress...}}}];
 		"Chordal" -> "Trees";
 		"Bipartite" -> {"Trees", "Planar $\cap$ Bipartite $\cap$ $\Delta(G) \leq 3$"[label={[text width=2cm, align=left]right:{\textcolor{blue}{$\NP$-c}}}]};
 		"Planar" -> {"Trees", "Planar $\cap$ Bipartite $\cap$ $\Delta(G) \leq 3$"};
@@ -2021,8 +2156,26 @@ Universidade Federal do Ceará}
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Conclusion and Future Work}
+	\begin{problem}
+	Investigate the complexity of \textsc{IIB} on other graph classes, such as cacti and $k$-regular.
+	\end{problem}
+	
+	\begin{problem}
+	Introduce and study directed and reversible versions of \textsc{IIB}.
+	\end{problem}
+	
+	\begin{problem}
+	Study graph structural parameters and modulators such as $vc(G)$, $fvs(G)$, $td(G)$ and others.
+	\end{problem}
+	
+	\begin{problem}
+	Find polynomial algorithms or show $\NP$-completeness for \textit{total restriction}.
+	\end{problem}
+\end{frame}
+
 \begin{frame}{}
-	Obrigado.
+	Thank you.
 \end{frame}
 
 \begin{frame}[noframenumbering,plain,allowframebreaks]{References}
